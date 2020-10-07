@@ -1,5 +1,5 @@
 body {
-    background-color:#EAE2B7;
+    background-color: #273043;
     line-height: 1.5;
 }
 
@@ -14,9 +14,9 @@ header, main, footer {
 }
 
 header, footer {
-    background-color:#003049;
-    border: 8px solid #F77F00;
-    color: #FCBF49;
+    background-color:#1B80BF;
+    border: 8px solid #C95D63;
+    color: #F2F2F2;
     text-align: center;
 }
 
@@ -25,19 +25,14 @@ header, footer, h1, h2, h3, h4, h5, h6 {
     padding: 1rem;
 }
 
-h2 {
-    color: #003049;
-    text-align: center;
-}
-
-h3, h4, h5, h6 {
-    background-color: #FCBF49;
-    color: #003049;
+h2, h3, h4, h5, h6 {
+    color: #F2AA52;
     text-align: center;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    color: #F2F2F2;
 }
 
 a {
@@ -52,12 +47,12 @@ ul {
 /* lines between menu links */
 li {
     float: left;
-    border-right: 1px solid #FCBF49;
+    border-right: 1px solid #F2AA52;
 }
 
 li a {
     display: block;
-    color: #EAE2B7;
+    color: #F2F2F2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
