@@ -1,20 +1,13 @@
-@media only screen and (min-width: 32.5em) {
-
-    #logo {
-        max-width: 175px;
-    }
+@media only screen and (min-width: 75em) {
     
-    .navigation {
-        display: flex;
-    }
-    .navigation li {
+    nav ul li {
         display: block;
         flex: 1 1 auto;
     }
-    .navigation a {
+    nav a {
         text-align: center;
     }
-    .navigation li:first-child {
+    .nav li:first-child {
         display: none;
     }
 
