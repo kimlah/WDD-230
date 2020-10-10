@@ -23,6 +23,11 @@ img {
     margin: 0 auto;
 }
 
+.icon {
+    border: none;
+    display: block;
+}
+
 /* Main CSS */
 h1 {
     font-family: 'Inria Serif', serif;
@@ -46,6 +51,10 @@ main p {
 
 .motto {
     color: #E0E0E0;
+}
+
+.contact {
+    text-align: center;
 }
 
 /* Header, footer and main CSS */
