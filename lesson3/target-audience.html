@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit-cover">
-    <title>Weather School Project</title>
-    <meta name="description" content="weatherschoolproject.com is a websire devoted
-    to helping teachers educate students about weather.">
+    <title>Bright or Stormy</title>
+    <meta name="description" content="weatherspecifics.com is a websire devoted
+    to forecasting weather to residents in SE Idaho.">
 
-    <link rel="stylesheet" href="normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&display=swap" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <h1>The Weather School Project-Target Audience</h1>
+        <h1>Bright or Stormy</h1>
+        <h3 class="motto">No matter the weather, we've got you covered.</h3>
         <nav><ul>
             <li><a href="index.html">Purpose</a></li>
-            <li><a href="target-audience.html">Target Audience</a></li>
+            <li class="active"><a href="target-audience.html">Target Audience</a></li>
             <li><a href="color-scheme.html">Color Scheme</a></li>
             <li><a href="typography.html">Typography</a></li>
         </ul></nav>
@@ -24,33 +28,33 @@
     <main> 
         <h2>Target Audience</h2>
             <p>
-                Who: Elementary aged students, their parents or 
-                guardians and elementary educators.
+                Who: Residents around Preston, Soda Springs and Fish Haven, Idaho
+                or visitors to the area.
             </p>
             <p>
-                Age: 5 to 11 year old students, 25-60 year old parents, 
-                guardians and educators.
+                Age: 14 to 100 years old.
             </p>
             <p>
-                Motivation: To improve weather unit study in elementary schools,
-                bridging the gap between home and school learning.
+                Motivation: To improve resident enjoyment by supplying the weather knowledge
+                needed to help them be prepared, no matter the weather.
             </p>
         <h2>Two Personas</h2>
             <h3>Gemma Hanson</h3>
                 <p>
-                    Demographics: 8 year old, 2nd Grade, student in Mr. O'Connor's class.
-                    Lives with her mom, two sisters and brother.
+                    Demographics: 18 year old high school senior living in Soda Springs, Idaho. 
+                    She likes to be prepared and not bring unneccesary coats or layers to school.
+
                 </p>
                 <p>
-                    Goals and motivation for using this site: Learn about weather in SE
-                    Idaho with her 2nd grade class while completing a home based weather 
-                    project with the help of her parents. She is excited to learn about 
-                    storms and why they happen.
+                    Goals and motivation for using this site: Be prepared but not overpacked for 
+                    school. She doesn't want to bring her rain jacket unless there is a chance of
+                    rain but also doesn't want to wear jeans if it's going to be 90 degrees. She 
+                    also wants to make plans with her friends for the next weekend and doesn't 
+                    want to change plans at the last minute.
                 </p>
                 <p>
-                    Technology: Has a ChromeBook from the school because her family does
-                    not have a computer. Her mom has a smart phone that they can access 
-                    the website on as well.
+                    Technology: Always has her smart phone readily available. Uses a laptop
+                    daily for homework and social media. 
                 </p>
 
             <h3>Thomas O'Connor</h3>
@@ -60,8 +64,9 @@
                 </p>
                 <p>
                     Goals and motivation for using this site: Passionate about weather and the 
-                    effects it has on the earth. Excited to share his passion with his student's 
-                    while trying to connect and have participation with parents and guardians.
+                    effects it has on the earth. Excited to share his passion with his class. He 
+                    likes to hike and wants to check the weather in advance so he is prepared on 
+                    hikes, especially with his kids. 
                 </p>
                 <p>
                     Technology: Avid Apple user. Has a MacBook Air, current iphone, and an ipad.
@@ -80,6 +85,7 @@
         <p>&copy; <span id="currentYear"></span> | Keeley Imlah | Washington | <a class="byui-link" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
+    <script src="js/responsive-menu.js"></script>
     <script src="js/currentyear.js"></script>
     <script src="js/lastmodified.js"></script>
 </body>

@@ -1,32 +1,89 @@
+/* Background color and line-height for entire page */
 body {
     background-color: #273043;
     line-height: 1.25;
 }
 
+/* Logo CSS */
 #logo {
-    max-width: 125px;
+    max-width: 100px;
     float: left;
-    padding-right: 35px;
+    padding: 20px 20px;
 }
 
+/* Header, footer and main CSS */
 header, main, footer {
     margin: 1.25rem auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 header, footer {
+    font-family: 'DM Sans', sans-serif;
+    padding: 1rem;
     background-color:#1B80BF;
     border: 8px solid #C95D63;
     color: #F2F2F2;
     text-align: center;
 }
 
-header, footer, h1, h2, h3, h4, h5, h6 {
+/* Navigation CSS */
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #F2AA52;
+} 
+
+nav {
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,.5);
+    color: #F2F2F2;
+}
+
+nav ul li a:active {
+    background-color: rgba(0,0,0,.2);
+    color: #F2AA52;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,.2);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*-----Clearfix: Force an element not to collapse-----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main CSS */
+h1 {
     font-family: 'DM Sans', sans-serif;
     padding: 1rem;
 }
 
 h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', sans-serif;
+    padding: 1rem;
     color: #F2AA52;
     text-align: center;
 }
@@ -34,48 +91,4 @@ h2, h3, h4, h5, h6 {
 p {
     font-family: 'Montserrat', sans-serif;
     color: #F2F2F2;
-}
-
-a {
-    text-decoration: none;
-}
-
-nav {
-    margin: 0 auto;
-    max-width: 760px;
-}
-
-.navigation {
-    list-style: none;
-    padding: 0;
-}
-
-.navigation li:first-child {
-    display: block;
-    padding: 0.75rem;
-    text-align: left;
-    text-decoration: none;
-    color: #C95D63;
-    font-weight: 700;
-}
-
-.navigation li {
-    display: none;
-}
-
-.navigation a {
-    display: block;
-    padding: 0.75rem;
-    text-align: left;
-    text-decoration: none;
-    color: #F2F2F2;
-    font-size: 22px;
-}
-
-.navigation a:hover {
-    background-color: #C95D63;
-}
-
-.responsive li {
-    display: block;
 }

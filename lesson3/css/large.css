@@ -7,8 +7,4 @@
     nav a {
         text-align: center;
     }
-    .nav li:first-child {
-        display: none;
-    }
-
 }

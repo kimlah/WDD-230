@@ -30,12 +30,13 @@ header img {
     max-width: 33%;
 }
 
-h2, p {
+h2 {
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
-h2 {
-    text-align: center;
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer a:link, footer a:visited {
