@@ -123,10 +123,6 @@ nav ul li a:hover {
     background-color: rgba(0,0,0,.2);
 }
 
-nav ul.hide {
-    display: none;
-}
-
 /*-----Clearfix: Force an element not to collapse-----*/
 .clearfix:after {
     content: "";
