@@ -1,5 +1,9 @@
 @media only screen and (min-width: 50em) {
     
+    .logo {
+        max-width: 125px;
+    }
+
     nav button {
         display: none;
     }
