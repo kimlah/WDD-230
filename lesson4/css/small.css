@@ -8,19 +8,20 @@ main {
     padding: 2rem;
 }
 
-/* Logo CSS */
-#logo {
-    max-width: 100px;
-    float: left;
-    padding: 20px 20px;
-}
-
 /* Image CSS */
 img {
     max-width: 450px;
     border: 5px double #102F42;
     display: block;
     margin: 0 auto;
+}
+
+/* Logo CSS */
+.logo {
+    border: none;
+    max-width: 100px;
+    float: left;
+    padding: 20px 20px;
 }
 
 .icon {
