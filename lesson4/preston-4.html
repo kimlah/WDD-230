@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Preston, Idaho Town Page</title>
-    <meta name="description" content="Preston, Idaho town page for The Weather School Project. There will be 
+    <meta name="description" content="Preston, Idaho town page for Bright or Stormy. There will be 
     a current weather summary, 5 day forecast, and article.">
 
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Montserrat&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&display=swap" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
@@ -17,13 +17,14 @@
 
 <body>
     <header>
-        <img id="logo" src="images/logo5.png" alt="Logo for The Weather School Project">
-        <h1>The Weather School Project</h1>
+        <img class="logo" src="images/logo1.png" alt="Bright or Stormy logo with sun and thunder cloud.">
+        <h1>Bright or Stormy</h1>
+        <h3 class="motto">No matter the weather, we've got you covered.</h3>
     
 
     <nav>
         <button onclick="toggleMenu()"> &#9776; Menu </button>
-        <ul id="responsive-menu" class="hide-navigation">
+        <ul id="menu" class="hide-navigation">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="lesson4/preston-4.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -37,7 +38,7 @@
 
     <main>
         <h2>Preston, Idaho</h2>
-            <img src="" alt="description of image"> 
+            <img src="#" alt="description of image"> 
 
         <h3>Five Day Forecast</h3>
             <p>
@@ -46,29 +47,29 @@
         <h3>Article</h3>
 
         <h3>Contact Information</h3>
-            <p>
-                <img src="" alt="">
+            <p class=contact>
+                <img  class="icon" src="#" alt="map icon">
                 12345 Cherry Lane, Nowhere, Washington 99999
             </p>
-            <p>
-                <img src="" alt="">
+            <p class=contact>
+                <img  class="icon" src="#" alt="phone icon">
                 (000)000-0000
             </p>
-            <p>
-                <img src="" alt="">
+            <p class=contact>
+                <img  class="icon" src="#" alt="email icon">
                 email@email.com
             </p>
 
             
 
-        <img src="" alt="Map of area around Preston, Idaho.">
+        <img src="#" alt="Map of area around Preston, Idaho.">
     </main>
 
     <footer>
         &copy; <span id="currentYear"></span> - The Weather School Project | Keeley Imlah | Last Updated: <span id="lastModified"></span>
     </footer>
 
-    <script src="js/responsive-menu.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/current-year.js"></script>
     <script src="js/last-modified.js"></script>
 

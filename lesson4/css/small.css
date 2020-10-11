@@ -1,7 +1,11 @@
 /* Background color and line-height for entire page */
 body {
-    background-color: #273043;
+    background-color: #E0E0E0;
+}
+main {
+    background-color: #95969D;
     line-height: 1.25;
+    padding: 2rem;
 }
 
 /* Logo CSS */
@@ -11,6 +15,48 @@ body {
     padding: 20px 20px;
 }
 
+/* Image CSS */
+img {
+    max-width: 450px;
+    border: 5px double #102F42;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon {
+    border: none;
+    display: block;
+}
+
+/* Main CSS */
+h1 {
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    color: #E98A15;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    color: #102F42;
+    text-align: center;
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    line-height: 1.5;
+}
+
+.motto {
+    color: #E0E0E0;
+}
+
+.contact {
+    text-align: center;
+}
+
 /* Header, footer and main CSS */
 header, main, footer {
     margin: 1.25rem auto;
@@ -18,12 +64,25 @@ header, main, footer {
 }
 
 header, footer {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inria Serif', serif;
     padding: 1rem;
-    background-color:#1B80BF;
-    border: 8px solid #C95D63;
-    color: #F2F2F2;
+    background-color:#16425B;
+    border: 8px solid #FA9D4C;
+    color: #E0E0E0;
     text-align: center;
+}
+
+footer a:link, footer a:visited {
+    color: #E0E0E0;
+}
+
+footer a:hover {
+    color: #FA9D4C;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Navigation CSS */
@@ -64,31 +123,9 @@ nav ul li a:hover {
     background-color: rgba(0,0,0,.2);
 }
 
-nav ul.hide {
-    display: none;
-}
-
 /*-----Clearfix: Force an element not to collapse-----*/
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-}
-
-/* Main CSS */
-h1 {
-    font-family: 'DM Sans', sans-serif;
-    padding: 1rem;
-}
-
-h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', sans-serif;
-    padding: 1rem;
-    color: #F2AA52;
-    text-align: center;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    color: #F2F2F2;
 }
