@@ -1,0 +1,28 @@
+@media only screen and (min-width: 50em) {
+    
+    .logo {
+        max-width: 125px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul.hide-navigation, nav ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid #F2AA52;
+    }
+
+    /* I want to remove the last line after gallery but am removing all of them...
+    nav ul li a:last-child {
+        border-right: none;
+    } */
+}
