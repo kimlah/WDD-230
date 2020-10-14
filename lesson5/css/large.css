@@ -1,5 +1,8 @@
 @media only screen and (min-width: 75em) {
     
+    img {
+        max-width: 750px;
+    }
     nav ul li {
         display: block;
         flex: 1 1 auto;
@@ -10,4 +13,28 @@
     .nav li:first-child {
         display: none;
     }
+
+    .hero-div {
+        margin: 10px auto;
+        position: relative;
+        height: 350px;
+    }
+    
+    .hero-ph {
+        margin: 10px auto;
+        width: 100%;
+        height: auto;
+    }
+    
+    .weather-summary {
+        position: absolute;
+        top: 2.1rem;
+        left: 150px;
+        padding: 0rem .4rem .2rem;
+        width: 250px;
+        height: 250px;
+        background-color: #F2AA5298;
+    }
+
+
 }
