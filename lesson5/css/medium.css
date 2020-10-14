@@ -4,6 +4,10 @@
         max-width: 125px;
     }
 
+    img {
+        max-width: 600px;
+    }
+
     nav button {
         display: none;
     }

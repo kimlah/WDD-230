@@ -86,6 +86,20 @@ a {
     text-decoration: none;
 }
 
+.hero-ph {
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+}
+
+.weather-summary {
+    position: static;
+    background-color: #F2AA52;
+    padding: .4rem;
+    width: 100%;
+    height: 200px;
+}
+
 /* Navigation CSS */
 nav button {
     margin: .2rem 2%;
