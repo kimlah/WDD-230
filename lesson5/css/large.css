@@ -3,6 +3,13 @@
     img {
         max-width: 750px;
     }
+
+    .article-img {
+        float: right;
+        max-width: 30%;
+        margin: 25px;
+    }
+
     nav ul li {
         display: block;
         flex: 1 1 auto;
@@ -36,5 +43,7 @@
         background-color: #F2AA5298;
     }
 
-
+    .article {
+        padding: 20px;
+    }
 }
