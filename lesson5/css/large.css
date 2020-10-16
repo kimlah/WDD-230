@@ -1,8 +1,4 @@
 @media only screen and (min-width: 75em) {
-    
-    img {
-        max-width: 750px;
-    }
 
     .article-img {
         float: right;
@@ -44,6 +40,6 @@
     }
 
     .article {
-        padding: 20px;
+        margin: 2rem;
     }
 }
