@@ -17,6 +17,10 @@
 </head>
 
 <body>
+    <div class="message">
+        <h3>Saturday: Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h3>
+    </div>
+
     <header>
         <img class="logo" src="images/logo1.png" alt="Bright or Stormy logo with sun and thunder cloud.">
         <h1>Bright or Stormy</h1>
@@ -45,15 +49,42 @@
             </div>
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p>Label: Value</p>
-                <p>Label: Value</p>
-                <p>Label: Value</p>
+                <p>Currently: Value</p>
+                <p>High: Value</p>
+                <p>Wind Chill: Value</p>
+                <p>Wind Speed: Value</p>
+                <p>Humidity: Value</p>
             </section>
         </div>
 
         <h3>Five Day Forecast</h3>
-            <p>
-            </p>
+            <div class="forecast">
+                <div class="flex-col">
+                    <span class="col-head">Date</span>
+                    <img class="weather-img" src="images/" alt="weather image place holder">
+                    <span class="data">Forecast Info</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Date</span>
+                    <img class="weather-img" src="images/" alt="weather image place holder">
+                    <span class="data">Forecast Info</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Date</span>
+                    <img class="weather-img" src="images/" alt="weather image place holder">
+                    <span class="data">Forecast Info</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Date</span>
+                    <img class="weather-img" src="images/" alt="weather image place holder">
+                    <span class="data">Forecast Info</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Date</span>
+                    <img class="weather-img" src="images/" alt="weather image place holder">
+                    <span class="data">Forecast Info</span>
+                </div>
+            </div>
 
         <h3>Article Title</h3>
         <img class="article-img" src="images/pexels-lumn-294674.jpg" alt="man fishing. Photo by Lum3n from Pexels">
@@ -74,23 +105,24 @@
     </main>
 
     <footer>
+        <img class="area-map" src="images/pexels-binyamin-mellish-108942.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels.">
+
         <h3 class="contact">Contact Information</h3>
             <p class="contact">
-                &#11166;
                 12345 Cherry Lane, Somewhere, Washington 98999
-            </p>
-            <p class="contact">
+
                 &#128383;
                 (000)000-0000
+
                 &#9993;
-                email@email.com
+                brightorstormy@gmail.com
             </p>
 
-        <img class="area-map" src="images/pexels-binyamin-mellish-108942.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels.">
 
         &copy; <span id="currentYear"></span> - The Weather School Project | Keeley Imlah | Last Updated: <span id="lastModified"></span>
     </footer>
 
+    <script src="js/special-day.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/current-year.js"></script>
     <script src="js/last-modified.js"></script>
