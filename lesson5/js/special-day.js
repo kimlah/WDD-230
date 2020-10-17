@@ -1,5 +1,5 @@
-let d = new Date();
-d.getDay();
-if (d.getDay() == 5) {
-    document.querySelector('.message').display(block);
+let date = new Date();
+date.getDay();
+if (date.getDay() == 5) {
+    document.querySelector('.message').style.display = block;
 }

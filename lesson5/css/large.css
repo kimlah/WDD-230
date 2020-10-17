@@ -13,9 +13,6 @@
     nav a {
         text-align: center;
     }
-    .nav li:first-child {
-        display: none;
-    }
 
     .hero-div {
         margin: 10px auto;

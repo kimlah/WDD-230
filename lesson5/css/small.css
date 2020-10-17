@@ -1,3 +1,8 @@
+/* Wild Card */
+* {
+    box-sizing: border-box;
+}
+
 /* Background color and line-height for entire page */
 body {
     background-color: #E0E0E0;
@@ -13,25 +18,16 @@ img {
     border: 5px double #102F42;
 }
 
-.hero-img {
+.hero-img, .article-img, .area-map {
     margin: 10px auto;
     width: 100%;
 }
 
-.article-img {
-    height: 225px;
-}
-
-.area-map {
-    float: inline-end;
-    height: 225px;
-}
-
 /* Logo CSS */
 .logo {
+    flex: flex-grow;
     border: none;
     max-width: 100px;
-    float: left;
     padding: 20px 20px;
 }
 
@@ -66,12 +62,25 @@ main p {
 }
 
 /* Header, footer and main CSS */
-header, main, footer {
+header {
     margin: 1.25rem auto;
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    background-color:#16425B;
+    border: 8px solid #FA9D4C;
+    color: #E0E0E0;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+main {
+    margin: auto;
     max-width: 1000px;
 }
 
-header, footer {
+footer {
+    margin: auto;
+    max-width: 1000px;
     font-family: 'Inria Serif', serif;
     padding: 1rem;
     background-color:#16425B;
@@ -102,6 +111,12 @@ a {
 
 .article {
     margin: 1.5rem;
+    display: block;
+}
+
+.contact {
+    color: #F2AA52;
+    white-space: pre-line;
 }
 
 /* 5 Day Forecast Flex */
@@ -155,19 +170,19 @@ a {
 
 /* Navigation CSS */
 nav button {
-    margin: .2rem 2%;
     background-color: transparent;
     border: none;
-    font-size: 1.6rem;
-    color: #F2AA52;
+    font-size: 2rem;
+    color: #102F42 ;
 } 
 
 nav {
     margin: 0 auto;
-    max-width: 760px;
+    background-color: #F2AA52;
 }
 
 nav ul {
+    color: #102F42;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -183,7 +198,7 @@ nav ul li a {
     text-align: center;
     text-decoration: none;
     border-top: 1px solid rgba(0,0,0,.5);
-    color: #F2F2F2;
+    color: #102F42;
 }
 
 .active {
@@ -191,7 +206,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(0,0,0,.3);
+    background-color: #102F42;
     color: #E98A15;
 }
 
