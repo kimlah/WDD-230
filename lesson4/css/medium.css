@@ -21,8 +21,7 @@
         border-right: 1px solid #F2AA52;
     }
 
-    /* I want to remove the last line after gallery but am removing all of them...
     nav ul li a:last-child {
         border-right: none;
-    } */
+    } 
 }

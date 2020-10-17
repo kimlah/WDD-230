@@ -18,7 +18,7 @@ img {
     border: 5px double #102F42;
 }
 
-.hero-img, .article-img, .area-map {
+.hero-img, .article-img, .contact-img {
     margin: 10px auto;
     width: 100%;
 }
@@ -112,11 +112,6 @@ a {
 .article {
     margin: 1.5rem;
     display: block;
-}
-
-.contact {
-    color: #F2AA52;
-    white-space: pre-line;
 }
 
 /* 5 Day Forecast Flex */
