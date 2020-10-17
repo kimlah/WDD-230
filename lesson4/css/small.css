@@ -1,3 +1,8 @@
+/* Wild Card */
+* {
+     box-sizing: border-box;
+ }
+
 /* Background color and line-height for entire page */
 body {
     background-color: #E0E0E0;
@@ -10,10 +15,7 @@ main {
 
 /* Image CSS */
 img {
-    max-width: 450px;
     border: 5px double #102F42;
-    display: block;
-    margin: 0 auto;
 }
 
 /* Logo CSS */
@@ -22,11 +24,6 @@ img {
     max-width: 100px;
     float: left;
     padding: 20px 20px;
-}
-
-.icon {
-    border: none;
-    display: block;
 }
 
 /* Main CSS */
@@ -39,7 +36,6 @@ h1 {
 
 h2, h3, h4, h5, h6 {
     font-family: 'Inria Serif', serif;
-    padding: 1rem;
     color: #102F42;
     text-align: center;
 }
@@ -59,7 +55,15 @@ main p {
 }
 
 /* Header, footer and main CSS */
-header, main, footer {
+.name-motto {
+    text-align: center;
+}
+
+header {
+    margin: 1.25rem auto;
+}
+
+main, footer {
     margin: 1.25rem auto;
     max-width: 1000px;
 }
@@ -88,7 +92,6 @@ a {
 
 /* Navigation CSS */
 nav button {
-    margin: .2rem 2%;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
@@ -97,13 +100,16 @@ nav button {
 
 nav {
     margin: 0 auto;
-    max-width: 760px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+nav ul.hide-navigation {
+    display: none;
 }
 
 nav ul li a {
@@ -115,13 +121,14 @@ nav ul li a {
     color: #F2F2F2;
 }
 
-nav ul li a:active {
+.active {
     background-color: rgba(0,0,0,.2);
     color: #F2AA52;
 }
 
 nav ul li a:hover {
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.3);
+    color: #E98A15;
 }
 
 /*-----Clearfix: Force an element not to collapse-----*/
