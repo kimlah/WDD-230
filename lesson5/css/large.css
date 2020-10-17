@@ -1,9 +1,12 @@
 @media only screen and (min-width: 75em) {
 
     .article-img {
-        float: right;
+        flex: content;
         max-width: 30%;
-        margin: 25px;
+    }
+
+    .area-map {
+        width: 300px;
     }
 
     nav ul li {
@@ -28,8 +31,8 @@
     
     .weather-summary {
         position: absolute;
-        top: 2.1rem;
-        left: 150px;
+        top: 5rem;
+        left: 5rem;
         padding: 0rem .4rem .2rem;
         width: 250px;
         height: 250px;
