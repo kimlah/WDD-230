@@ -1,0 +1,234 @@
+/* Wild Card */
+* {
+    box-sizing: border-box;
+}
+
+/* Background color and line-height for entire page */
+body {
+    background-color: #E0E0E0;
+}
+main {
+    margin: auto;
+    max-width: 1000px;
+    background-color: #95969D;
+    line-height: 1.25;
+    padding: 2rem;
+}
+
+/* Image CSS */
+img {
+    border: 5px double #102F42;
+}
+
+.hero-img {
+    margin: 10px auto;
+    width: 100%;
+}
+
+/* Logo CSS */
+.logo {
+    flex: flex-grow;
+    border: none;
+    max-width: 100px;
+    padding: 20px 20px;
+}
+
+/* Main CSS */
+h1 {
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    color: #E98A15;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Inria Serif', serif;
+    color: #102F42;
+    text-align: center;
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    line-height: 1.5;
+}
+
+.message {
+    background-color: #F2AA52;
+    color: #102F42;
+    border: 2px dashed #16425B;
+}
+
+.motto {
+    color: #E0E0E0;
+}
+
+/* Header, footer and main CSS */
+header {
+    margin: 1.25rem auto;
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    background-color:#16425B;
+    border: 8px solid #FA9D4C;
+    color: #E0E0E0;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+footer {
+    margin: auto;
+    max-width: 1000px;
+    font-family: 'Inria Serif', serif;
+    padding: .5rem;
+    background-color:#16425B;
+    border: 8px solid #FA9D4C;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+footer h3 {
+    color: #E98A15;
+}
+
+.contact figure.contact-img {
+    width: 30%;
+    margin: 0 0 2% 0;
+    float: left;
+}
+
+.contact figure.contact-img img {
+    width: 100%;
+}
+
+footer a:link, footer a:visited {
+    color: #E0E0E0;
+}
+
+footer a:hover {
+    color: #FA9D4C;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.weather-summary {
+    position: static;
+    background-color: #F2AA52;
+    padding: .4rem;
+    width: 100%;
+}
+
+.article figure.article-img {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+.article figure.article-img img {
+    width: 100%;
+}
+
+.article figure.article-img figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* 5 Day Forecast Flex */
+.forecast {
+    display: flex;
+    flex-flow: row;
+}
+
+.flex-col {
+    flex: 1 1 auto;
+    background-color: #F2AA52;
+}
+
+.flex-col, .column-col, .grid-col {
+    border-bottom: 1px solid #102F42;
+    border-left: 1px solid #102F42;
+    text-align: center;
+}
+
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+    background-color: #E98A15;
+    color: black;
+}
+
+.flex, .column, .grid {
+    border-right: 1px solid #102F42;
+}
+
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #102F42;
+	text-align: center;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	text-align: center;
+}
+
+.col-head,th {
+	background-color: #16425B;
+	color: white;
+}
+
+.weather-img {
+    border: none;
+}
+
+
+/* Navigation CSS */
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #102F42 ;
+} 
+
+nav {
+    margin: 0 auto;
+    background-color: #F2AA52;
+}
+
+nav ul {
+    color: #102F42;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.hide-navigation {
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,.5);
+    color: #102F42;
+}
+
+.active {
+    background-color: rgba(0,0,0,.2);
+}
+
+nav ul li a:hover {
+    background-color: #102F42;
+    color: #E98A15;
+}
+
+/*-----Clearfix: Force an element not to collapse-----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
