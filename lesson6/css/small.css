@@ -26,11 +26,14 @@ img {
 }
 
 /* Logo CSS */
-.logo {
-    flex: flex-grow;
-    border: none;
-    max-width: 100px;
-    padding: 20px 20px;
+.logo figure.logo-img {
+    width: 25%;
+    float: left;
+
+}
+
+.logo figure.logo-img img {
+    width: 100%;
 }
 
 /* Main CSS */

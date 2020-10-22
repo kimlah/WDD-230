@@ -1,5 +1,9 @@
 @media only screen and (min-width: 75em) {
 
+    .logo figure.logo-img {
+        width: 10%;
+    }
+
     /* Nav */
     nav ul li {
         display: block;
