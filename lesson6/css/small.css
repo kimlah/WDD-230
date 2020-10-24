@@ -20,8 +20,12 @@ img {
     border: 5px double #102F42;
 }
 
-.hero-img {
+.hero figure.hero-img {
+    width: 100%;
     margin: 10px auto;
+}
+
+.hero figure.hero-img img {
     width: 100%;
 }
 
@@ -118,7 +122,6 @@ a {
 }
 
 .weather-summary {
-    position: static;
     background-color: #F2AA52;
     padding: .4rem;
     width: 100%;
