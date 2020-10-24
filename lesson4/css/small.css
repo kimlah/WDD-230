@@ -8,6 +8,8 @@ body {
     background-color: #E0E0E0;
 }
 main {
+    margin: auto;
+    max-width: 1000px;
     background-color: #95969D;
     line-height: 1.25;
     padding: 2rem;
@@ -21,9 +23,9 @@ img {
 /* Logo CSS */
 .logo {
     border: none;
-    max-width: 100px;
+    width: 125px;
     float: left;
-    padding: 20px 20px;
+    padding: 2rem;
 }
 
 /* Main CSS */
@@ -36,7 +38,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
     font-family: 'Inria Serif', serif;
-    color: #102F42;
+    color: #102f42;
     text-align: center;
 }
 
@@ -61,16 +63,20 @@ main p {
 
 header {
     margin: 1.25rem auto;
-}
-
-main, footer {
-    margin: 1.25rem auto;
-    max-width: 1000px;
-}
-
-header, footer {
     font-family: 'Inria Serif', serif;
     padding: 1rem;
+    background-color:#16425B;
+    border: 8px solid #FA9D4C;
+    color: #E0E0E0;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+footer {
+    margin: auto;
+    max-width: 1000px;
+    font-family: 'Inria Serif', serif;
+    padding: .5rem;
     background-color:#16425B;
     border: 8px solid #FA9D4C;
     color: #E0E0E0;
@@ -114,6 +120,7 @@ nav ul.hide-navigation {
 
 nav ul li a {
     display: block;
+    height: 100%;
     padding: .8rem;
     text-align: center;
     text-decoration: none;
