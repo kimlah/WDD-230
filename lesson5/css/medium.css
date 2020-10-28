@@ -20,3 +20,54 @@
         border: none;
     }
 }
+
+    /* Article DIV Grid */
+    .article {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-content: space-evenly;
+    }
+    .article-p {
+        grid-column: 1/3;
+    }
+    .article-img {
+        grid-column: 3/4;
+    }
+     
+    /* Contact DIV Grid */
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-content: space-evenly;
+    }
+    .contact-img {
+        grid-column: 1/3;
+    }
+    .contact-p {
+        grid-column: 3/5;
+    }
+
+    /* Hero Image */
+    .hero-div {
+        margin: 10px auto;
+        position: relative;
+        height: 350px;
+    }
+    
+    .hero-ph {
+        margin: 10px auto;
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Weather Summary */
+    .weather-summary {
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+        padding: 0rem .4rem .2rem;
+        width: 225px;
+        height: 225px;
+        background-color: #F2AA5298;
+    }
+}
