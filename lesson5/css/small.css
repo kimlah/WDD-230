@@ -25,16 +25,14 @@ img {
 
 /* Logo CSS */
 .logo {
-    flex: flex-grow;
     border: none;
     max-width: 100px;
-    padding: 20px 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 /* Main CSS */
 h1 {
     font-family: 'Inria Serif', serif;
-    padding: 1rem;
     color: #E98A15;
     text-align: center;
 }
@@ -52,6 +50,7 @@ main p {
 }
 
 .message {
+    display: none;
     background-color: #F2AA52;
     color: #102F42;
     border: 2px dashed #16425B;
@@ -62,15 +61,11 @@ main p {
 }
 
 /* Header, footer and main CSS */
-header {
-    margin: 1.25rem auto;
+.header {
     font-family: 'Inria Serif', serif;
     padding: 1rem;
     background-color:#16425B;
-    border: 8px solid #FA9D4C;
     color: #E0E0E0;
-    text-align: center;
-    vertical-align: baseline;
 }
 
 main {
@@ -80,7 +75,6 @@ main {
 
 footer {
     margin: auto;
-    max-width: 1000px;
     font-family: 'Inria Serif', serif;
     padding: 1rem;
     background-color:#16425B;
@@ -89,13 +83,13 @@ footer {
     text-align: center;
 }
 
-.contact figure.contact-img {
+.contact img {
     width: 30%;
     margin: 0 0 2% 0;
     float: left;
 }
 
-.contact figure.contact-img img {
+.contact img {
     width: 100%;
 }
 
@@ -136,8 +130,8 @@ a {
 
 /* 5 Day Forecast Flex */
 .forecast {
-    display: flex;
-    flex-flow: row;
+    display: grid;
+    
 }
 
 .flex-col {
@@ -145,13 +139,13 @@ a {
     background-color: #F2AA52;
 }
 
-.flex-col, .column-col, .grid-col {
+.column-col, .grid-col {
     border-bottom: 1px solid #102F42;
     border-left: 1px solid #102F42;
     text-align: center;
 }
 
-.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+td:hover, .column-col:hover, .grid-col:hover {
     background-color: #E98A15;
     color: black;
 }
