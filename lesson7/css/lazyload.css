@@ -1,0 +1,24 @@
+body {
+    background-color: #E0E0E0;
+}
+main {
+    margin: auto;
+    max-width: 1000px;
+    background-color: #95969D;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+/* Image CSS */
+img {
+    border: 5px double #102F42;
+}
+
+h1 {
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    color:#102F42;
+    text-align: center;
+}
+
