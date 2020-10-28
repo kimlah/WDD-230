@@ -49,7 +49,7 @@ main p {
     line-height: 1.5;
 }
 
-.message {
+.banner {
     display: none;
     background-color: #F2AA52;
     color: #102F42;
@@ -78,7 +78,6 @@ footer {
     font-family: 'Inria Serif', serif;
     padding: 1rem;
     background-color:#16425B;
-    border: 8px solid #FA9D4C;
     color: #E0E0E0;
     text-align: center;
 }
@@ -91,15 +90,6 @@ footer {
 
 .contact img {
     width: 100%;
-}
-
-footer a:link, footer a:visited {
-    color: #E0E0E0;
-}
-
-footer a:hover {
-    color: #FA9D4C;
-    font-weight: bold;
 }
 
 a {
@@ -203,6 +193,7 @@ nav ul.hide-navigation {
 
 nav ul li a {
     display: block;
+    height: 100%;
     padding: .8rem;
     text-align: center;
     text-decoration: none;
