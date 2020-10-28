@@ -1,7 +1,11 @@
 @media only screen and (min-width: 50em) {
 
-    .logo figure.logo-img {
-        width: 20%;
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .header figure.logo {
+        width: 100px;
     }
 
     nav button {
