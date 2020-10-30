@@ -30,15 +30,11 @@ img {
 }
 
 /* Logo CSS */
-.logo figure.logo-img {
+.logo {
+    border: none;
     width: 25%;
     float: left;
     margin: 0 2% 0 0;
-}
-
-.logo figure.logo-img img {
-    border: none;
-    width: 100%;
 }
 
 /* Main CSS */
@@ -74,20 +70,16 @@ main p {
 
 /* Header, footer and main CSS */
 header {
-    margin: 1.25rem auto;
     font-family: 'Inria Serif', serif;
     padding: 1rem;
     background-color:#16425B;
-    border: 8px solid #FA9D4C;
     color: #E0E0E0;
-    text-align: center;
-    vertical-align: baseline;
 }
 
 footer {
     margin: auto;
     font-family: 'Inria Serif', serif;
-    padding: .5rem;
+    padding: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
     text-align: center;
@@ -97,23 +89,10 @@ footer h3 {
     color: #E98A15;
 }
 
-.contact figure.contact-img {
+.contact img {
     width: 30%;
     margin: 0 0 2% 0;
     float: left;
-}
-
-.contact figure.contact-img img {
-    width: 100%;
-}
-
-footer a:link, footer a:visited {
-    color: #E0E0E0;
-}
-
-footer a:hover {
-    color: #FA9D4C;
-    font-weight: bold;
 }
 
 a {
