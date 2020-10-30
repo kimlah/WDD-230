@@ -95,10 +95,7 @@ a {
 }
 
 .weather-summary {
-    position: static;
-    background-color: #F2AA52;
-    padding: .4rem;
-    width: 100%;
+    display: none;
 }
 
 .article figure.article-img {
