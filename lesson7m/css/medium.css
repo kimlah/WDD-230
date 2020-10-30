@@ -22,9 +22,20 @@
         border: 1px solid rgba(0,0,0,.5);
     }
 
+    /* Weather Summary */
+    .weather-summary {
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+        padding: 0rem .4rem .2rem;
+        width: 250px;
+        height: 250px;
+        background-color: #F2AA5298;
+    }
+
     /* Body CSS */
     main {
-        max-width: 1000px;
+        max-width: 1200px;
     }
 
     /* Gallery CSS */

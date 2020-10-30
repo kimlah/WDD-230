@@ -175,7 +175,6 @@ a {
 /* 5 Day Forecast Flex */
 .forecast {
     display: grid;
-    
 }
 
 .flex-col {
@@ -225,6 +224,15 @@ td:hover, .column-col:hover, .grid-col:hover {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+}
+
+picture {
+    padding: 1em;
+}
+
+figcaption {
+    color: black;
+    text-align: center;
 }
 
 /*-----Clearfix: Force an element not to collapse-----*/
