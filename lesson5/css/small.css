@@ -8,6 +8,8 @@ body {
     background-color: #E0E0E0;
 }
 main {
+    margin: auto;
+    max-width: 1000px;
     background-color: #95969D;
     line-height: 1.25;
     padding: 2rem;
@@ -66,11 +68,6 @@ main p {
     padding: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
-}
-
-main {
-    margin: auto;
-    max-width: 1000px;
 }
 
 footer {

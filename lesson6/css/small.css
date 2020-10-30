@@ -62,6 +62,7 @@ main p {
 }
 
 .banner {
+    display: none;
     background-color: #F2AA52;
     color: #102F42;
     border: 2px dashed #16425B;
@@ -85,11 +86,9 @@ header {
 
 footer {
     margin: auto;
-    max-width: 1000px;
     font-family: 'Inria Serif', serif;
     padding: .5rem;
     background-color:#16425B;
-    border: 8px solid #FA9D4C;
     color: #E0E0E0;
     text-align: center;
 }
