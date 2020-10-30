@@ -22,14 +22,9 @@
         height: auto;
     }
     
-    /* Weather Summary */
+    /* Weather Summary 
     .weather-summary {
-        position: absolute;
         top: 5rem;
         left: 5rem;
-        padding: 0rem .4rem .2rem;
-        width: 250px;
-        height: 250px;
-        background-color: #F2AA5298;
-    }
+    }*/
 }
