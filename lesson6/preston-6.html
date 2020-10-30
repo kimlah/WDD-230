@@ -21,51 +21,41 @@
     </div>
 
     <header  class="clearfix">
-        <div class="logo">
-            <figure class="logo-img">
-                <img src="images/logo1-removebg-preview.png" alt="Bright or Stormy logo with sun and thunder cloud." sizes="10vw"
-                srcset="images/logo1-removebg-200.png 200w, 
-                        images/logo1-500-6.png 500w, 
-                        images/logo1-800-6 800w">
-            </figure>
-        
+        <div class="header">
+            <img class="logo" src="images/logo1-removebg-preview.png" alt="Bright or Stormy logo with sun and thunder cloud.">
             <h1>Bright or Stormy</h1>
             <h3 class="motto">No matter the weather, we've got you covered.</h3>
         </div>
+        <nav>
+            <button onclick="toggleMenu()"> &#9776; Menu </button>
+            <ul id="menu" class="hide-navigation">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="lesson5/preston-5.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
     
-
     <main class="clearfix">
-        <div class="name-motto">
-            <nav>
-                <button onclick="toggleMenu()"> &#9776; Menu </button>
-                <ul id="menu" class="hide-navigation">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="lesson5/preston-5.html">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
-            </nav>
-        </div>
         <h2>Preston, Idaho</h2>
-        <div class="hero-summary">
-            <div class="hero">
-                <figure class = "hero-img">
-                    <img src="images/wdd230_image_franklinOriginal.jpeg" alt="image of mountain" sizes="90vw"
-                    srcset = "images/wdd230_image_franklin200.jpg 200w, 
-                    images/wdd230_image_franklin500.jpg 500w, 
-                    images/wdd230_image_franklin800.jpg 800w">
-                </figure>
-            </div>
+        <div class="hero">
+            <figure class = "hero-img">
+                <img src="images/hero-orig.jpg" alt="image of mountain" sizes="90vw"
+                srcset = "images/hero-400.jpg 400w,
+                images/hero-600.jpg 600w, 
+                images/hero-900.jpg 900w, 
+                images/hero-1200.jpg 1200w">
+            </figure>
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: Raining</p>
-                <p>High: <span id = "temp">42</span> &#176;F</p>
-                <p>Wind Chill: <span id = "windChill"></span> &#176;F</p>
-                <p>Humidity: 72%</p>
-                <p>Wind Speed: <span id= "windSpeed">14</span> MPH</p>
+                <p>Currently: 28</p>
+                <p>High: 38</p>
+                <p>Wind Chill: </p>
+                <p>Wind Speed: Value</p>
+                <p>Humidity: Value</p>
             </section>
         </div>
 
@@ -99,12 +89,9 @@
             </div>
 
         <h3>Article Title</h3>
-        <div class="article">
-            <figure class="article-img">
-                <img src="images/pexels-lumn-294674.jpg" alt="man fishing. Photo by Lum3n from Pexels" sizes="33vw"
-                srcset = "images/NAME 200w,
-                images/NAME 500w,
-                images/NAME 800w">
+        <article class="article">
+            <figure class="article-img"></figure>
+                <img src="images/pexels-lumn-294674.jpg" alt="man fishing. Photo by Lum3n from Pexels" sizes="33vw">
                 <figcaption>Fishing in Preston, Idaho</figcaption>
             </figure>
             <p class="article-p">
@@ -120,21 +107,18 @@
                 rhoncus aenean vel elit scelerisque mauris pellentesque. Vulputate eu scelerisque felis imperdiet 
                 proin fermentum leo vel. Pharetra massa massa ultricies mi quis.
             </p>
-        </div>
+        </article>
     </main>
 
     <footer class="clearfix">
         <div class="contact">
             <figure class="contact-img">
-                <img src="images/pexels-binyamin-mellish-108942.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels." sizes = "33vw"
-                srcset = "images/NAME 200w,
-                images/NAME 500w,
-                images/NAME 800w">
+                <img src="images/pexels-binyamin-mellish-108942.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels.">
             </figure>
             <h3>Contact Information</h3>
-            <p class="contact-p"> 12345 Cherry Lane, Somewhere, Washington 98999
-            &#128383; (000)000-0000
-            &#9993;  brightorstormy@gmail.com</p>
+            <p class="contact-p"> 12345 Cherry Lane, Somewhere, Washington 98999</p>
+            <p class="contact-p">&#128383; (000)000-0000</p>
+            <p class="contact-p">&#9993;  brightorstormy@gmail.com</p>
         </div>
 
         &copy; <span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <span id="currentDate"></span>
