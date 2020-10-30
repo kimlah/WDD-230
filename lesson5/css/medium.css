@@ -1,9 +1,10 @@
 @media only screen and (min-width: 50em) {
     
-    .logo {
-        max-width: 125px;
+    .header figure.logo {
+        width: 100px;
     }
 
+    /* Nav */
     nav button {
         display: none;
     }
@@ -18,33 +19,6 @@
 
     nav ul li a {
         border: none;
-    }
-}
-
-    /* Article DIV Grid */
-    .article {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        align-content: space-evenly;
-    }
-    .article-p {
-        grid-column: 1/3;
-    }
-    .article-img {
-        grid-column: 3/4;
-    }
-     
-    /* Contact DIV Grid */
-    .contact {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        align-content: space-evenly;
-    }
-    .contact-img {
-        grid-column: 1/3;
-    }
-    .contact-p {
-        grid-column: 3/5;
     }
 
     /* Hero Image */
@@ -63,11 +37,11 @@
     /* Weather Summary */
     .weather-summary {
         position: absolute;
-        top: 5rem;
-        left: 5rem;
+        top: 2.5rem;
+        left: 2.5rem;
         padding: 0rem .4rem .2rem;
-        width: 225px;
-        height: 225px;
+        width: 250px;
+        height: 250px;
         background-color: #F2AA5298;
     }
 }
