@@ -37,6 +37,7 @@ h1 {
     font-family: 'Inria Serif', serif;
     color: #E98A15;
     text-align: center;
+    padding: 1rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -79,14 +80,14 @@ footer {
     text-align: center;
 }
 
+footer h3 {
+    color: #E98A15;
+}
+
 .contact img {
     width: 30%;
     margin: 0 0 2% 0;
     float: left;
-}
-
-.contact img {
-    width: 100%;
 }
 
 a {
@@ -118,7 +119,6 @@ a {
 /* 5 Day Forecast Flex */
 .forecast {
     display: grid;
-    
 }
 
 .flex-col {
