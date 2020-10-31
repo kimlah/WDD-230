@@ -75,8 +75,7 @@ img {
 /* Logo CSS */
 .logo {
     border: none;
-    max-width: 125px;
-    padding: 10px 0px 2px 0px;
+    max-width: 100px;
 }
 
 /* Body CSS */
@@ -84,7 +83,7 @@ h1 {
     font-family: 'Inria Serif', serif;
     color: #E98A15;
     text-align: center;
-    padding: 2rem 1rem 0 1rem;
+    padding: 1rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -118,7 +117,7 @@ main p {
 }
 
 .article figure.article-img {
-    width: 30%;
+    width: 40%;
     margin: 0 0 0 2%;
     float: right;
 }
@@ -134,38 +133,36 @@ main p {
 
 /* Header and Footer CSS */
 header {
-    margin: auto;
+    display: flex;
     font-family: 'Inria Serif', serif;
+    padding: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
 }
 
-footer {
+.name-motto {
     margin: auto;
+}
+
+.contact {
+    text-align: center;
+}
+.contact figure.contact-img {
+    width: 40%;
+    margin: 2% 2% 2% 0;
+    float: left;
+}
+
+.contact figure.contact-img img {
+    width: 100%;
+}
+
+footer {
     font-family: 'Inria Serif', serif;
     padding: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
     text-align: center;
-}
-
-footer h3 {
-    color: #E98A15;
-}
-
-.contact img {
-    width: 30%;
-    margin: 0 0 2% 0;
-    float: left;
-}
-
-footer a:link, footer a:visited {
-    color: #E0E0E0;
-}
-
-footer a:hover {
-    color: #FA9D4C;
-    font-weight: bold;
 }
 
 a {
@@ -217,6 +214,7 @@ td:hover, .column-col:hover, .grid-col:hover {
 
 .weather-img {
     border: none;
+    height: 65px;
 }
 
 /* Gallery CSS */
