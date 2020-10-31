@@ -30,12 +30,16 @@
         padding: 0rem .4rem .2rem;
         width: 250px;
         height: 250px;
-        background-color: #F2AA5298;
     }
 
     /* Body CSS */
     main {
         max-width: 1200px;
+    }
+
+    /* ARTICLE AND CONTACT IMG*/
+    .article figure.article-img, .contact figure.contact-img {
+        width: 250px;
     }
 
     /* Gallery CSS */

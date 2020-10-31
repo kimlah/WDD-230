@@ -1,15 +1,16 @@
 @media only screen and (min-width: 75em) {
 
-    /* Nav */
-    nav ul li {
-        flex: 1 1 auto;
+      /* ARTICLE AND CONTACT IMG*/
+      .article figure.article-img, .contact figure.contact-img {
+        width: 200px;
     }
-    nav a {
-        text-align: center;
-    } 
-
+    
     /* Gallery CSS */
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     } 
+
+    .hover-large:hover {
+        box-shadow: 0 0 20px #333;
+    }
 }
