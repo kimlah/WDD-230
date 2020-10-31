@@ -13,7 +13,6 @@
     .hero-div {
         margin: 10px auto;
         position: relative;
-        height: 350px;
     }
     
     .hero-ph {
@@ -22,9 +21,4 @@
         height: auto;
     }
     
-    /* Weather Summary 
-    .weather-summary {
-        top: 5rem;
-        left: 5rem;
-    }*/
 }
