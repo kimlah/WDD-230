@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
@@ -20,17 +20,19 @@
         <h3>Saturday: Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h3>
     </div>
 
-    <header  class="clearfix">
+    <header class="clearfix">
         <div class="header">
             <img class="logo" src="images/logo1-removebg-preview.png" alt="Bright or Stormy logo with sun and thunder cloud.">
-            <h1>Bright or Stormy</h1>
-            <h3 class="motto">No matter the weather, we've got you covered.</h3>
+            <div class="name-motto">
+                <h1>Bright or Stormy</h1>
+                <h3 class="motto">No matter the weather, we've got you covered.</h3>
+            </div>
         </div>
         <nav>
             <button onclick="toggleMenu()"> &#9776; Menu </button>
             <ul id="menu" class="hide-navigation">
                 <li><a href="#">Home</a></li>
-                <li class="active"><a href="lesson5/preston-5.html">Preston</a></li>
+                <li class="active"><a href="preston-6.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -52,10 +54,10 @@
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
                 <p>Currently: 28</p>
-                <p>High: 38</p>
-                <p>Wind Chill: </p>
-                <p>Wind Speed: Value</p>
-                <p>Humidity: Value</p>
+                <p>High: <span id = "temp">42</span> &#176;F</p>
+                <p>Wind Chill: <span id = "windChill"></span> &#176;F</p>
+                <p>Wind Speed: 72%</p>
+                <p>Humidity: <span id= "windSpeed">14</span> MPH</p>
             </section>
         </div>
 
@@ -108,19 +110,16 @@
                 proin fermentum leo vel. Pharetra massa massa ultricies mi quis.
             </p>
         </article>
-    </main>
-
-    <footer class="clearfix">
         <div class="contact">
-            <figure class="contact-img">
-                <img src="images/pexels-binyamin-mellish-108942.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels.">
-            </figure>
+            <img src="images/pexels-binyamin-mellish-108942.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels.">
             <h3>Contact Information</h3>
             <p class="contact-p"> 12345 Cherry Lane, Somewhere, Washington 98999</p>
             <p class="contact-p">&#128383; (000)000-0000</p>
             <p class="contact-p">&#9993;  brightorstormy@gmail.com</p>
         </div>
+    </main>
 
+    <footer>
         &copy; <span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <span id="currentDate"></span>
     </footer>
 
