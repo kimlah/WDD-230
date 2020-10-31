@@ -9,7 +9,6 @@ body {
 }
 main {
     margin: auto;
-    max-width: 1000px;
     background-color: #95969D;
     line-height: 1.25;
     padding: 2rem;
@@ -29,7 +28,6 @@ img {
 .logo {
     border: none;
     max-width: 100px;
-    padding: 20px 20px 10px 20px;
 }
 
 /* Main CSS */
@@ -42,8 +40,12 @@ h1 {
 
 h2, h3, h4, h5, h6 {
     font-family: 'Inria Serif', serif;
-    color: #102F42;
+    color: black;
     text-align: center;
+}
+
+.header {
+    padding: 3rem;
 }
 
 main p {
@@ -65,10 +67,15 @@ main p {
 
 /* Header, footer and main CSS */
 .header {
+    display: flex;
     font-family: 'Inria Serif', serif;
     padding: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
+}
+
+.name-motto {
+    margin: auto;
 }
 
 footer {
@@ -80,14 +87,17 @@ footer {
     text-align: center;
 }
 
-footer h3 {
-    color: #E98A15;
+.contact {
+    text-align: center;
+}
+.contact figure.contact-img {
+    width: 55%;
+    margin: 2% 2% 2% 0;
+    float: left;
 }
 
-.contact img {
-    width: 30%;
-    margin: 0 0 2% 0;
-    float: left;
+.contact figure.contact-img img {
+    width: 100%;
 }
 
 a {
@@ -95,11 +105,18 @@ a {
 }
 
 .weather-summary {
-    display: none;
+    position: static;
+    background-color: #16425B90;
+    padding: .4rem;
+    width: 100%;
+}
+
+.weather-summary h3, .weather-summary p {
+    color: white;
 }
 
 .article figure.article-img {
-    width: 30%;
+    width: 50%;
     margin: 0 0 0 2%;
     float: right;
 }
@@ -115,7 +132,7 @@ a {
 
 /* 5 Day Forecast Flex */
 .forecast {
-    display: grid;
+    display: none;
 }
 
 .flex-col {
@@ -159,7 +176,6 @@ td:hover, .column-col:hover, .grid-col:hover {
 .weather-img {
     border: none;
 }
-
 
 /* Navigation CSS */
 nav button {

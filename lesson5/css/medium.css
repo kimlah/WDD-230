@@ -1,5 +1,8 @@
 @media only screen and (min-width: 50em) {
     
+    main {
+        max-width: 1200px;
+    }
     .header figure.logo {
         width: 100px;
     }
@@ -18,14 +21,13 @@
     }
 
     nav ul li a {
-        border: none;
+        border: 1px solid rgba(0,0,0,.5);
     }
 
     /* Hero Image */
     .hero-div {
         margin: 10px auto;
         position: relative;
-        height: 350px;
     }
     
     .hero-ph {
@@ -36,14 +38,17 @@
     
     /* Weather Summary */
     .weather-summary {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+        top: -310px;
+        left: 40px;
         padding: 0rem .4rem .2rem;
         width: 250px;
         height: 250px;
         background-color: #F2AA5298;
+    }
+
+    /* 5 Day Forecast Flex */
+    .forecast {
+        display: grid;
     }
 }
