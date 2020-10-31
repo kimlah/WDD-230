@@ -44,11 +44,16 @@
         padding: 0rem .4rem .2rem;
         width: 250px;
         height: 250px;
-        background-color: #F2AA5298;
     }
 
     /* 5 Day Forecast Flex */
     .forecast {
         display: grid;
     }
+
+    /* ARTICLE AND CONTACT IMG*/
+    .article figure.article-img, .contact figure.contact-img {
+        width: 250px;
+    }
+
 }
