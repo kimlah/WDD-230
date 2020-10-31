@@ -9,14 +9,13 @@
     a current weather summary, 5 day forecast, and article.">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Montserrat&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
 </head>
 
-<body class="clearfix">
+<body>
     <div class="banner">
         <h3>Saturday: Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h3>
     </div>
@@ -24,9 +23,10 @@
     <header class="clearfix">
         <div class="header">
             <img class="logo" src="images/logo-orig.png" alt="Bright or Stormy logo with sun and thunder cloud.">
-        
-            <h1>Bright or Stormy</h1>
-            <h3 class="motto">No matter the weather, we've got you covered.</h3>
+            <div class="name-motto">
+                <h1>Bright or Stormy</h1>
+                <h3 class="motto">No matter the weather, we've got you covered.</h3>
+            </div>
         </div>
         <nav>
             <button onclick="toggleMenu()"> &#9776; Menu </button>
@@ -42,7 +42,7 @@
     </header>
     
 
-    <main>
+    <main class="clearfix">
         <h2>Preston, Idaho</h2>
         <div class="hero">
             <figure class = "hero-img">
@@ -55,39 +55,39 @@
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
                 <p>Currently: 28</p>
-                <p>High: 38</p>
-                <p>Wind Chill: </p>
-                <p>Wind Speed: Value</p>
-                <p>Humidity: Value</p>
+                <p>High: <span id = "temp">42</span> &#176;F</p>
+                <p>Wind Chill: <span id = "windChill"></span> &#176;F</p>
+                <p>Wind Speed: 72%</p>
+                <p>Humidity: <span id= "windSpeed">14</span> MPH</p>
             </section>
         </div>
 
-        <h3>Five Day Forecast</h3>
             <div class="forecast">
+                <h3>Five Day Forecast</h3>
                 <div class="grid-col">
                     <span class="col-head">Date</span>
-                    <img class="weather-img" src="images/" alt="weather image place holder">
-                    <span class="data">Forecast Info</span>
+                    <img class="weather-img" src="images/cloudy-rain.png" alt="weather image place holder">
+                    <span class="data">High of 42 &#176;F, Rain Expected</span>
                 </div>
                 <div class="grid-col">
                     <span class="col-head">Date</span>
-                    <img class="weather-img" src="images/" alt="weather image place holder">
-                    <span class="data">Forecast Info</span>
+                    <img class="weather-img" src="images/cloudy-wind-rain.png" alt="weather image place holder">
+                    <span class="data">High of 40 &#176;F, Wind and Rain Expected</span>
                 </div>
                 <div class="grid-col">
                     <span class="col-head">Date</span>
-                    <img class="weather-img" src="images/" alt="weather image place holder">
-                    <span class="data">Forecast Info</span>
+                    <img class="weather-img" src="images/fog.png" alt="weather image place holder">
+                    <span class="data">High of 43 &#176;F, Fog should burn off mid-morning</span>
                 </div>
                 <div class="grid-col">
                     <span class="col-head">Date</span>
-                    <img class="weather-img" src="images/" alt="weather image place holder">
-                    <span class="data">Forecast Info</span>
+                    <img class="weather-img" src="images/cloudy-sunny.png" alt="weather image place holder">
+                    <span class="data">High of 44 &#176;F, Cloudy</span>
                 </div>
                 <div class="grid-col">
                     <span class="col-head">Date</span>
-                    <img class="weather-img" src="images/" alt="weather image place holder">
-                    <span class="data">Forecast Info</span>
+                    <img class="weather-img" src="images/cloud-pouring.png" alt="weather image place holder">
+                    <span class="data">High of 39 &#176;F, Pouring Rain Expected</span>
                 </div>
             </div>
 
@@ -111,24 +111,29 @@
                 proin fermentum leo vel. Pharetra massa massa ultricies mi quis.
             </p>
         </article>
-    </main>
-
-    <footer class="clearfix">
         <div class="contact">
-            <img src="images/map-orig.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels.">
             <h3>Contact Information</h3>
+            <figure class="contact-img">
+                <img src="images/map-orig.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels.">
+            </figure>
+            
             <p class="contact-p"> 12345 Cherry Lane, Somewhere, Washington 98999</p>
             <p class="contact-p">&#128383; (000)000-0000</p>
             <p class="contact-p">&#9993;  brightorstormy@gmail.com</p>
         </div>
+    </main>
 
+    <footer>
         &copy; <span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <span id="currentDate"></span>
     </footer>
 
-    <script src="js/special-day.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/web-font-load.js"></script>
+    <script src="js/banner.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/current-year.js"></script>
     <script src="js/current-date.js"></script>
     <script src="js/lazyload.js"></script>
+    <script src="js/windchill.js"></script>
     </body>
 </html>
