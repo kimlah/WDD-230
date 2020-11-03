@@ -1,0 +1,250 @@
+/* Wild Card */
+* {
+    box-sizing: border-box;
+}
+
+/* Background color and line-height for entire page */
+body {
+    background-color: #E0E0E0;
+}
+main {
+    margin: auto;
+    background-color: #95969D;
+    line-height: 1.25;
+    padding: 2rem;
+}
+
+.forecast, .article, .contact {
+    background-color: #F2AA5290;
+    border: 1px solid #102F42;
+    padding: 1rem;
+    margin: 10px 0 15px 0;
+}
+
+/* Image CSS */
+img {
+    border: 5px double #102F42;
+}
+
+/* Hero CSS */
+.hero figure.hero-img {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.hero figure.hero-img img {
+    width: 100%;
+}
+
+/* Logo CSS */
+.logo {
+    border: none;
+    max-width: 100px;
+}
+
+/* Main CSS */
+h1 {
+    font-family: 'Inria Serif', serif;
+    color: #E98A15;
+    text-align: center;
+    padding: 1rem;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Inria Serif', serif;
+    color: black;
+    text-align: center;
+}
+
+.header {
+    padding: 3rem;
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    line-height: 1.5;
+}
+
+.banner {
+    display: none;
+    background-color: #F2AA52;
+    color: #102F42;
+    border: 2px dashed #16425B;
+}
+
+.motto {
+    color: #E0E0E0;
+}
+
+/* Header, footer and main CSS */
+.header {
+    display: flex;
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    background-color:#16425B;
+    color: #E0E0E0;
+}
+
+.name-motto {
+    margin: auto;
+}
+
+footer {
+    margin: auto;
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    background-color:#16425B;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+    line-height: 2;
+}
+
+.contact figure.contact-img {
+    width: 50%;
+    margin: 2% 2% 2% 0;
+    float: left;
+}
+
+.contact figure.contact-img img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.weather-summary {
+    position: static;
+    background-color: #16425B90;
+    padding: .4rem;
+    width: 100%;
+}
+
+.weather-summary h3, .weather-summary p {
+    color: white;
+}
+
+.article figure.article-img {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+.article figure.article-img img {
+    width: 100%;
+}
+
+.article figure.article-img figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* 5 Day Forecast Flex */
+.forecast-table {
+    display: flex;
+    flex-flow: row;
+    border-right: 1px solid #102F42;
+}
+
+.forecast-head {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid #102F42;
+	color: black;
+}
+
+.forecast-col {
+    flex: 1 1 auto;
+    background-color: #16425B;
+    color: white;
+    border: 1px solid #102F42;
+    text-align: center;
+}
+
+.forecast-col:hover {
+    background-color: #102F42;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	text-align: center;
+}
+
+.weather-img {
+    border: none;
+    height: 45px;
+}
+
+/* Navigation CSS */
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #102F42 ;
+} 
+
+nav {
+    margin: 0 auto;
+    background-color: #F2AA52;
+}
+
+nav ul {
+    color: #102F42;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.hide-navigation {
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    height: 100%;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,.5);
+    color: #102F42;
+}
+
+.active {
+    background-color: rgba(0,0,0,.2);
+}
+
+nav ul li a:hover {
+    background-color: #102F42;
+    color: #E98A15;
+}
+
+/* Gallery CSS */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+picture {
+    padding: 1em;
+}
+
+figcaption {
+    color: black;
+    text-align: center;
+}
+
+/*-----Clearfix: Force an element not to collapse-----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
