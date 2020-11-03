@@ -1,0 +1,1 @@
+WebFront.load({google: {families: ['Inria Serif'],['Montserrat']}});
