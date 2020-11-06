@@ -70,10 +70,12 @@ main p {
 
 /* Header, footer and main CSS */
 header {
+    display: flex;
     font-family: 'Inria Serif', serif;
     padding: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
+    align-items: center;
 }
 
 footer {

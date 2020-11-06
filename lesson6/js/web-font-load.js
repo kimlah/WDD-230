@@ -1,1 +1,1 @@
-WebFront.load({google: {families: ['Inria Serif'],['Montserrat']}});
+WebFont.load({google: {families: ['Inria Serif'],['Montserrat']}});
