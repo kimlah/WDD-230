@@ -37,6 +37,7 @@ thead tr {
 tbody th {
     padding: 10px;
     text-emphasis: bold;
+    border: 1px solid lightgray;
 }
 
 tbody tr {
