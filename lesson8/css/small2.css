@@ -17,6 +17,7 @@ main {
 .forecast, .article, .contact, .report-received {
     background-color: #F2AA5290;
     border: 1px solid #102F42;
+    border-radius: 2px;
     padding: 1rem;
     margin: 10px 0 15px 0;
 }
@@ -30,6 +31,7 @@ img {
 .hero figure.hero-img {
     width: 100%;
     margin: 10px auto;
+    border-radius: 2px;
 }
 
 .hero figure.hero-img img {
@@ -56,10 +58,6 @@ h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.header {
-    padding: 3rem;
-}
-
 main p {
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -84,6 +82,7 @@ main p {
     padding: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
+    align-items: center;
 }
 
 .name-motto {
@@ -123,6 +122,7 @@ a {
     background-color: #16425B90;
     padding: .4rem;
     width: 100%;
+    border-radius: 2px;
 }
 
 .weather-summary h3, .weather-summary p {
@@ -133,6 +133,7 @@ a {
     width: 50%;
     margin: 0 0 0 2%;
     float: right;
+    border-radius: 2px;
 }
 
 .article figure.article-img img {
@@ -149,6 +150,7 @@ a {
     display: flex;
     flex-flow: row;
     border-right: 1px solid #102F42;
+    border-radius: 2px;
 }
 
 .forecast-head {
@@ -194,6 +196,7 @@ nav button {
 nav {
     margin: 0 auto;
     background-color: #F2AA52;
+    border-radius: 2px;
 }
 
 nav ul {
@@ -233,10 +236,6 @@ nav ul li a:hover {
     justify-items: center;
 }
 
-picture {
-    padding: 1em;
-}
-
 figcaption {
     color: black;
     text-align: center;
@@ -246,7 +245,7 @@ figcaption {
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #16425B;
-    border-radius: 10px;
+    border-radius: 2px;
     padding: .5rem 2%;
 }
 form legend {
@@ -264,7 +263,7 @@ form label.top input, form label.top select {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: .75rem;
     color: #555;
     width: 100%;
@@ -280,7 +279,7 @@ form input.submitBtn {
     border: none;
     background-color: #102F42;
     color: white;
-    border-radius: 1rem;
+    border-radius: 3px;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
