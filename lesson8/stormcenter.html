@@ -48,16 +48,16 @@
             <fieldset>
                 <legend>Contact Information</legend>
                 <label class="top">Full Name*<input type="text" name="name" required></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="email@email.com"></label>
-                <label class="top">Phone<input type="tel" name="phone" placeholder="(###)###-####" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="email@email.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="(###)###-####" required></label>
             </fieldset>
     
             <fieldset>
                 <legend>Storm Information</legend>
-                <label class="top">Zip Code<input type="zip" name="zip" placeholder="12345" required></label>
+                <label class="top">Zip Code*<input type="zip" name="zip" placeholder="12345" required></label>
                 <label class="top">Storm Date<input type="date" name="stormDate"></label>
             
-                <label class="top"for="selectstorm">Storm Type:
+                <label class="top"for="selectstorm">Storm Type
                     <select name="stormType" id="selectstorm" onchange="selectResponse()">
                         <option value="" disabled>Select a Storm Type ...</option>
                         <option value="flash-flood">Flash Flood</option>
@@ -67,7 +67,7 @@
                         <option value="tornado">Tornado</option>
                     </select></label>
                 <br>
-                <label class="flexly" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
+                <label for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span>
                 </label>
@@ -94,8 +94,9 @@
                     <option value="Soda Springs">
                 </datalist>
             </fieldset>
+
             <fieldset>
-                <div>Are you in danger?</div>
+                <div class="top">Are you in danger?</div>
                     <label class="sbs"><input type="radio" name="dangerLevel" value="yes">Yes</label>
                     <label class="sbs"><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
                     <label class="sbs"><input type="radio" name="dangerLevel" value="no">No</label>

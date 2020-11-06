@@ -243,20 +243,21 @@ figcaption {
 
 /*----------- FORM --------------*/
 form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #16425B;
+    margin: 2rem 1rem;
+    border: 1px solid black;
     border-radius: 2px;
     padding: .5rem 2%;
+    font-size: 1.25rem;
 }
 form legend {
-    color: #16425B;
+    color: black;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
 form label.top, form div {
     display: block;
     padding-top: 1rem;
-    color: #102F42;
+    color: black;
     font-size: 1rem;
 }
 form label.top input, form label.top select {
@@ -273,10 +274,13 @@ form label.top input, form label.top select {
 form label.sbs {
     display: block;
     padding: .75rem 0;
-    color: #555;
+    color: black;
+    line-height: .3;
+    font-size: 1rem;
 }
 form input.submitBtn {
-    border: none;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 2px;
     background-color: #102F42;
     color: white;
     border-radius: 3px;
@@ -286,18 +290,11 @@ form input.submitBtn {
     max-width: 20rem;
 }
 form label.top input:required {
-    border-left: red solid 3px;
+    border-left: red solid 2px;
 }
 
 form label.top input:required:valid {
-    border-left: green solid 3px;
-}
-
-/* FOOTER */
-footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
-    text-align: center;
+    border-left: none;
 }
 
 /*-----Clearfix: Force an element not to collapse-----*/

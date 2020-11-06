@@ -56,10 +56,6 @@ h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.header {
-    padding: 3rem;
-}
-
 main p {
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -84,6 +80,7 @@ main p {
     padding: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
+    align-items: center;
 }
 
 .name-motto {
@@ -231,10 +228,6 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-}
-
-picture {
-    padding: 1em;
 }
 
 figcaption {
