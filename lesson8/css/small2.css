@@ -1,3 +1,5 @@
+/*----ALL PAGES----*/
+
 /* Wild Card */
 * {
     box-sizing: border-box;
@@ -11,31 +13,11 @@ main {
     margin: auto;
     background-color: #95969D;
     line-height: 1.25;
-    padding: 2rem;
 }
 
-.forecast, .article, .contact, .report-received {
-    background-color: #F2AA5290;
-    border: 1px solid #102F42;
-    border-radius: 2px;
-    padding: 1rem;
-    margin: 10px 0 15px 0;
-}
-
-/* Image CSS */
+/* ALL IMAGES */
 img {
     border: 5px double #102F42;
-}
-
-/* Hero CSS */
-.hero figure.hero-img {
-    width: 100%;
-    margin: 10px auto;
-    border-radius: 2px;
-}
-
-.hero figure.hero-img img {
-    width: 100%;
 }
 
 /* Logo CSS */
@@ -44,7 +26,7 @@ img {
     max-width: 100px;
 }
 
-/* Main CSS */
+/* MAIN */
 h1 {
     font-family: 'Inria Serif', serif;
     color: #E98A15;
@@ -52,7 +34,14 @@ h1 {
     padding: 1rem;
 }
 
-h2, h3, h4, h5, h6 {
+h2 {
+    font-family: 'Inria Serif', serif;
+    color: black;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h3, h4, h5, h6 {
     font-family: 'Inria Serif', serif;
     color: black;
     text-align: center;
@@ -64,6 +53,7 @@ main p {
     line-height: 1.5;
 }
 
+/* BANNER */
 .banner {
     display: none;
     background-color: #F2AA52;
@@ -71,11 +61,7 @@ main p {
     border: 2px dashed #16425B;
 }
 
-.motto {
-    color: #E0E0E0;
-}
-
-/* Header, footer and main CSS */
+/* HEADER */
 .header {
     display: flex;
     font-family: 'Inria Serif', serif;
@@ -89,103 +75,11 @@ main p {
     margin: auto;
 }
 
-footer {
-    margin: auto;
-    font-family: 'Inria Serif', serif;
-    padding: 1rem;
-    background-color:#16425B;
+.motto {
     color: #E0E0E0;
-    text-align: center;
 }
 
-.contact {
-    text-align: center;
-    line-height: 2;
-}
-
-.contact figure.contact-img {
-    width: 50%;
-    margin: 2% 2% 2% 0;
-    float: left;
-}
-
-.contact figure.contact-img img {
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-.weather-summary {
-    position: static;
-    background-color: #16425B90;
-    padding: .4rem;
-    width: 100%;
-    border-radius: 2px;
-}
-
-.weather-summary h3, .weather-summary p {
-    color: white;
-}
-
-.article figure.article-img {
-    width: 50%;
-    margin: 0 0 0 2%;
-    float: right;
-    border-radius: 2px;
-}
-
-.article figure.article-img img {
-    width: 100%;
-}
-
-.article figure.article-img figcaption {
-    text-align: center;
-    font-size: .75rem;
-}
-
-/* 5 Day Forecast Flex */
-.forecast-table {
-    display: flex;
-    flex-flow: row;
-    border-right: 1px solid #102F42;
-    border-radius: 2px;
-}
-
-.forecast-head {
-    display: block;
-    padding: 5px;
-    text-align: center;
-    background-color: white;
-    border-bottom: 1px solid #102F42;
-	color: black;
-}
-
-.forecast-col {
-    flex: 1 1 auto;
-    background-color: #16425B;
-    color: white;
-    border: 1px solid #102F42;
-    text-align: center;
-}
-
-.forecast-col:hover {
-    background-color: #102F42;
-}
-
-.data {
-	display: block;
-	padding: 0 5px 5px;
-	text-align: center;
-}
-
-.weather-img {
-    border: none;
-    height: 45px;
-}
-
-/* Navigation CSS */
+/* NAVIGATION */
 nav button {
     background-color: transparent;
     border: none;
@@ -229,7 +123,138 @@ nav ul li a:hover {
     color: #E98A15;
 }
 
-/* Gallery CSS */
+/* FOOTER */
+footer {
+    margin: auto;
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    background-color:#16425B;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+/* Clearfix: Force an element not to collapse */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*----PRESTON PAGE----*/
+
+/* MAIN PRESTON PADDING */
+.preston {
+    padding: 0 2rem 2rem 2rem;
+}
+
+/* HERO */
+.hero figure.hero-img {
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.hero figure.hero-img img {
+    width: 100%;
+}
+
+/* WEATHER SUMMARY */
+.weather-summary {
+    position: static;
+    background-color: #16425B90;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.weather-summary h3, .weather-summary p {
+    color: white;
+}
+
+/* FORECAST, ARTICLE, CONTACT, REPORT-RECEIVED */
+.forecast, .article, .contact, .report-received {
+    background-color: #16425B50;
+    border: 1px solid #102F42;
+    border-radius: 2px;
+    padding: 1rem;
+    margin: 10px 0 15px 0;
+}
+
+/* 5 DAY FORECAST */
+.forecast-table {
+    display: flex;
+    flex-flow: row;
+    border-right: 1px solid #102F42;
+    border-radius: 2px;
+}
+
+.forecast-head {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid #102F42;
+	color: black;
+}
+
+.forecast-col {
+    flex: 1 1 auto;
+    background-color: #16425B;
+    color: white;
+    border: 1px solid #102F42;
+    text-align: center;
+}
+
+.forecast-col:hover {
+    background-color: #102F42;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	text-align: center;
+}
+
+.weather-img {
+    border: none;
+    height: 45px;
+}
+
+/* ARTICLE */
+.article figure.article-img {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+    border-radius: 2px;
+}
+
+.article figure.article-img img {
+    width: 100%;
+}
+
+.article figure.article-img figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    line-height: 2;
+}
+
+.contact figure.contact-img {
+    width: 50%;
+    margin: 2% 2% 2% 0;
+    float: left;
+}
+
+.contact figure.contact-img img {
+    width: 100%;
+}
+
+/*----GALLERY PAGE----*/
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -240,37 +265,66 @@ figcaption {
     color: black;
     text-align: center;
 }
+/*----STORMCENTER PAGE----*/
 
-/*----------- FORM --------------*/
+.stormcenter-p {
+    text-align: center;
+}
+
+/* FORM */
 form fieldset {
-    margin: 2rem 1rem;
-    border: 1px solid black;
+    width: 75%;
+    margin: 2rem 2rem;
+    border: 2px solid #E98A15;
     border-radius: 2px;
     padding: .5rem 2%;
     font-size: 1.25rem;
 }
+
 form legend {
     color: black;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
-form label.top, form div {
+
+form label.top, form div, form label.rating {
     display: block;
     padding-top: 1rem;
     color: black;
     font-size: 1rem;
 }
+
 form label.top input, form label.top select {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
+    border: 2px solid #102F42;
     border-radius: 2px;
     padding: .75rem;
-    color: #555;
+    color: black;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #34a5e750;
 }
+
+textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 2px solid #102F42;
+    border-radius: 2px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #34a5e750;
+    resize: none;
+}
+
+form ::placeholder {
+    color:black;
+}
+
 form label.sbs {
     display: block;
     padding: .75rem 0;
@@ -278,6 +332,16 @@ form label.sbs {
     line-height: .3;
     font-size: 1rem;
 }
+
+.danger-rating, #rating {
+    font-size: 1rem;
+}
+
+.additional-info {
+    display: block;
+    padding-top: .5rem;
+}
+
 form input.submitBtn {
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 2px;
@@ -285,21 +349,16 @@ form input.submitBtn {
     color: white;
     border-radius: 3px;
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
+    margin: 1rem 0 2rem 3rem;
     width: 96%;
     max-width: 20rem;
+    font-size: 1.25rem;
 }
+
 form label.top input:required {
     border-left: red solid 2px;
 }
 
 form label.top input:required:valid {
-    border-left: none;
-}
-
-/*-----Clearfix: Force an element not to collapse-----*/
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+    border-left: #102F42 solid 2px;
 }

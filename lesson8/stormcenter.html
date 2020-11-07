@@ -44,67 +44,78 @@
 
     <main class="clearfix">
         <h2>Storm Center</h2>
+        <p class="stormcenter-p">* required fields</p>
+
         <form method="get" action="thanks.html">
+
             <fieldset>
-                <legend>Contact Information</legend>
+                <legend><b>Contact Information</b></legend>
                 <label class="top">Full Name*<input type="text" name="name" required></label>
                 <label class="top">Email<input type="email" name="email" placeholder="email@email.com"></label>
-                <label class="top">Phone*<input type="tel" name="phone" placeholder="(###)###-####" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1236549876" required></label>
+                <label class="top">Zip Code*<input type="number" name="zip-code" placeholder="12345" required></label>
             </fieldset>
     
             <fieldset>
-                <legend>Storm Information</legend>
-                <label class="top">Zip Code*<input type="zip" name="zip" placeholder="12345" required></label>
+                <legend><b>Storm Information</b></legend>
+                
                 <label class="top">Storm Date<input type="date" name="stormDate"></label>
             
-                <label class="top"for="selectstorm">Storm Type
-                    <select name="stormType" id="selectstorm" onchange="selectResponse()">
-                        <option value="" disabled>Select a Storm Type ...</option>
+                <label class="top">Storm Type
+                    <select name="stormType">
+                        <option value="">Select a Storm Type...</option>
                         <option value="flash-flood">Flash Flood</option>
                         <option value="hail">Hail</option>
                         <option value="hurricane">Hurricane</option>
                         <option value="thunderstorm">Thunderstorm</option>
                         <option value="tornado">Tornado</option>
-                    </select></label>
-                <br>
-                <label for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span>
+                    </select>
                 </label>
-    
-                    <datalist id="tickmarks">
-                        <option value="0">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5">
-                        <option value="6">
-                        <option value="7">
-                        <option value="8">
-                        <option value="9">
-                        <option value="10">
-                    </datalist>
-                <br>
-                <label class="top"for="region">Region:
-                    <input name="region" list="region-list"></label>
-                <datalist id="region-list">
-                    <option value="Fish Haven">
-                    <option value="Preston">
-                    <option value="Soda Springs">
-                </datalist>
-            </fieldset>
 
-            <fieldset>
+                <label class="top" for="region">Region
+                    <select name="region">
+                        <option value="">Select a Region...</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                    </select>    
+                </label>
+                <br>
+                <label class="danger-rating" for="rating">Storm Severity (on a scale of 1 to 10)&nbsp;&nbsp;&nbsp; <br>
+                    <input type="range" value="5" min="1" max="10" step="1" list="rating" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">&nbsp;5</span>
+                </label>
+                
+                    <datalist id="rating">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+            
                 <div class="top">Are you in danger?</div>
                     <label class="sbs"><input type="radio" name="dangerLevel" value="yes">Yes</label>
                     <label class="sbs"><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
                     <label class="sbs"><input type="radio" name="dangerLevel" value="no">No</label>
             </fieldset>
+            
+            <fieldset>
+                <legend><b>Additional Information</b></legend>
+                    <label class="additional-info">
+                    <textarea row="12" cols="30" placeholder="Location of problems, injured people, etc."></textarea>
+                    </label>
+                </fieldset>
     
             <input class="submitBtn" type="submit" value="Report My Storm">
     
-            </form>
+        </form>
     
     </main>
 
@@ -118,7 +129,6 @@
     <script src="js/menu.js"></script>
     <script src="js/current-year.js"></script>
     <script src="js/current-date.js"></script>
-    <script src="js/lazyload.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/adjust-rating.js"></script>
     </body>
 </html>
