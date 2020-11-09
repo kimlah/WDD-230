@@ -1,0 +1,58 @@
+@media only screen and (min-width: 50em) {
+
+    /* logo */
+    .header figure.logo {
+        width: 100px;
+    }
+
+    /* Nav */
+    nav button {
+        display: none;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul.hide-navigation, nav ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        border: 1px solid rgba(0,0,0,.5);
+    }
+
+    /* Weather Summary */
+    .weather-summary {
+        position: relative;
+        top: -310px;
+        left: 40px;
+        padding: 0rem 1.4rem .2rem;
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Body CSS */
+    main {
+        max-width: 1200px;
+    }
+
+    /* ARTICLE AND CONTACT IMG*/
+    .article figure.article-img, .contact figure.contact-img {
+        width: 250px;
+    }
+
+    /* Gallery CSS */
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form fieldset {
+        border: 3px solid #E98A15;
+    }
+
+    form input.submitBtn {
+        margin: 1rem 0 2rem 5%;
+        
+    }
+}
