@@ -72,7 +72,7 @@
                     </select>
                 </label>
 
-                <label class="top" for="region">Region
+                <label class="top" for="region" id="region">Region
                     <select name="region">
                         <option value="">Select a Region...</option>
                         <option value="Fish Haven">Fish Haven</option>
@@ -81,7 +81,7 @@
                     </select>    
                 </label>
                 <br>
-                <label class="danger-rating" for="rating">Storm Severity (on a scale of 1 to 10)&nbsp;&nbsp;&nbsp; <br>
+                <label class="danger-rating" for="rating" id="rating">Storm Severity (on a scale of 1 to 10)&nbsp;&nbsp;&nbsp; <br>
                     <input type="range" value="5" min="1" max="10" step="1" list="rating" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">&nbsp;5</span>
                 </label>
@@ -109,7 +109,7 @@
             <fieldset>
                 <legend><b>Additional Information</b></legend>
                     <label class="additional-info">
-                    <textarea row="12" cols="30" placeholder="Location of problems, injured people, etc."></textarea>
+                    <textarea cols="30" placeholder="Location of problems, injured people, etc."></textarea>
                     </label>
                 </fieldset>
     
