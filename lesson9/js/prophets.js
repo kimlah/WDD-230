@@ -4,11 +4,29 @@ fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
+
     .then(function (jsonObject) {
         console.table(jsonObject); // temp checking for valid response & data parsing
-        for (let i=0; i < prophets.length; 1++) {
-            
-        }
-    });
+        const prophets = jsonObject["prophets"];
 
-const prophets = jsonObject['phophets'];
+        for (let i = 0; i < prophets.length; i++) {
+            let card = document.createElement("section");
+            let h2 = document.createElement("h2");
+
+            h2.textContent = prophets[i].name + " " + prophets[i].lastname;
+
+            card.appendChild(h2);
+
+            document.querySelector("div.cards").appendChild(card);
+
+                let p = document.createElement("p");
+
+                p.textContent = "Date of Birth: " + prophets[i].birthdate + "\nPlace of Birth: " + prophets[i].birthplace;
+
+                card.appendChild(p);
+
+            let image = document.createElement("img");
+                image.setAttribute("src", prophets[i].imageurl);
+                card.appendChild(image);
+        }
+});
