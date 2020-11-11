@@ -1,38 +1,19 @@
 /*---- MAIN STYLING ----*/
 
-/* Wild Card */
-* {
-    box-sizing: border-box;
-}
-
-/* Background color and line-height for entire page */
+/* Background color for entire page */
 body {
-    background-color: #E0E0E0;
-}
-
-main {
-    line-height: 1.25;
+    background-color: #caccd3;
 }
 
 /* ALL IMAGES */
 img {
     border: 5px double #102F42;
+    border-radius: 3px 3px;
+    max-width: 98%;
 }
 
 /* MAIN */
-h1 {
-    font-family: 'Inria Serif', serif;
-    color: #16425B;
-    text-align: center;
-}
-
-h2 {
-    font-family: 'Inria Serif', serif;
-    color: black;
-    text-align: center;
-}
-
-h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Inria Serif', serif;
     color: black;
     text-align: center;
@@ -41,7 +22,7 @@ h3, h4, h5, h6 {
 main p {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    line-height: 1.5;
+    text-align: center;
 }
 
 /* FOOTER */
@@ -49,46 +30,40 @@ footer {
     margin: auto;
     font-family: 'Inria Serif', serif;
     padding: 1rem;
-    background-color:#16425B;
-    color: #E0E0E0;
+    background-color:#102F42;
+    color: white;
     text-align: center;
-}
-
-/* Clearfix: Force an element not to collapse */
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /*---- SMALL VIEW ----*/
 .cards {
     display: grid;
-    width: 95%;
     grid-template-columns: 1fr;
-    margin: auto auto;
+    
 }
 
 .cards section {
-    background-color: #2c87bb;
+    background-color: #4fb2ca;
     padding: 1rem;
-    width: 98%;
+    margin: 1rem;
+    max-width: 100%;
+    border-radius: 3px 3px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*---- MEDIUM VIEW ----*/
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 40em) {
     .cards {
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
     }
+
 }
 
 /* ---- LARGE VIEW ----*/
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 65em) {
     .cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     } 
-
-    .hover-large:hover {
-        box-shadow: 0 0 20px #333;
-    }
 }
