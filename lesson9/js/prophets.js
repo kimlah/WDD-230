@@ -19,11 +19,17 @@ fetch(requestURL)
 
             document.querySelector("div.cards").appendChild(card);
 
-                let p = document.createElement("p");
+                let p1 = document.createElement("p");
 
-                p.textContent = "Date of Birth: " + prophets[i].birthdate + "\nPlace of Birth: " + prophets[i].birthplace;
+                p1.textContent = "Date of Birth: " + prophets[i].birthdate;
 
-                card.appendChild(p);
+                card.appendChild(p1);
+
+                let p2 = document.createElement("p");
+
+                p2.textContent = "Place of Birth: " + prophets[i].birthplace;
+
+                card.appendChild(p2);
 
             let image = document.createElement("img");
                 image.setAttribute("src", prophets[i].imageurl);
