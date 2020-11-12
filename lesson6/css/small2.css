@@ -27,9 +27,13 @@ img {
 }
 
 /* Hero CSS */
+.hero {
+    
+}
 .hero figure.hero-img {
     width: 100%;
     margin: 10px auto;
+    position: relative;
 }
 
 .hero figure.hero-img img {
