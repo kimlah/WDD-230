@@ -8,7 +8,7 @@ let temp = 34;
 let windSpeed = 15;
 
 function getWindChill(temp, windSpeed) {
-   if ((temp <= 30) && (windSpeed > 3.0)) {
+   if ((temp <= 50) && (windSpeed > 3.0)) {
       var windChill = (35.74 + (0.6215 * temp) - 
       (35.75 * (Math.pow(windSpeed, 0.16))) + 
       (0.4275 * temp * (Math.pow(windSpeed, 0.16)))).toFixed(0);
