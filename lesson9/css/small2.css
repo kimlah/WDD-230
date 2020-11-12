@@ -1,4 +1,4 @@
-/*----ALL PAGES----*/
+/*----------ALL PAGES----------*/
 
 /* Wild Card */
 * {
@@ -141,7 +141,7 @@ footer {
 }
 
 
-/*----PRESTON PAGE----*/
+/*----------PRESTON PAGE----------*/
 
 /* MAIN PRESTON PADDING */
 .preston {
@@ -161,7 +161,7 @@ footer {
 
 /* WEATHER SUMMARY */
 .weather-summary {
-    position: static;
+    position: relative;
     background-color: #16425B90;
     padding: 1rem;
     width: 100%;
@@ -254,7 +254,7 @@ footer {
     width: 100%;
 }
 
-/*----GALLERY PAGE----*/
+/*----------GALLERY PAGE----------*/
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -265,7 +265,7 @@ figcaption {
     color: black;
     text-align: center;
 }
-/*----STORMCENTER PAGE----*/
+/*----------STORMCENTER PAGE----------*/
 
 .stormcenter-p {
     text-align: center;
