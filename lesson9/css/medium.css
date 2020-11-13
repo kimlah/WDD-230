@@ -55,4 +55,36 @@
         margin: 1rem 0 2rem 5%;
         
     }
+
+    /*----------HOME PAGE----------*/
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cards section {
+        background-color: #16425B50;
+        padding: 1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 100%;
+        border: 1px solid #102F42;
+        border-radius: 3px 3px;
+    }
+    
+    .cards section:nth-child(even) {
+        text-align: right;
+    }
+
+    .cards section:nth-child(odd) {
+        text-align: left;
+    }
+
+    .cards image:nth-child(even) {
+        justify-items: left;
+    }
+
+    .cards image:nth-child(odd) {
+        justify-items: right;
+    }
 }

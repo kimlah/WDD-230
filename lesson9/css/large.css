@@ -13,4 +13,22 @@
     .hover-large:hover {
         box-shadow: 0 0 20px #333;
     }
+
+    /*----------HOME PAGE----------*/
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cards section {
+        margin-right: 15px;
+    }
+
+    .cards section:last-child {
+        margin-right: 0;
+    }
+
+    .cards img {
+        justify-items: center;
+        width: 200px;
+    }
 }
