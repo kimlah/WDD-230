@@ -53,6 +53,10 @@ main p {
     line-height: 1.5;
 }
 
+a {
+    color: white;
+}
+
 /* BANNER */
 .banner {
     display: none;
@@ -149,6 +153,9 @@ footer {
 }
 
 /* HERO */
+.hero {
+    position: relative;
+}
 .hero figure.hero-img {
     width: 100%;
     margin: 10px auto;
@@ -161,7 +168,6 @@ footer {
 
 /* WEATHER SUMMARY */
 .weather-summary {
-    position: relative;
     background-color: #16425B90;
     padding: 1rem;
     width: 100%;
@@ -361,4 +367,9 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: #102F42 solid 2px;
+}
+
+/*----------WIREFRAME PAGE----------*/
+.wireframes {
+    text-align: center;
 }
