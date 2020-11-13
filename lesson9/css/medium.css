@@ -24,8 +24,8 @@
 
     /* Weather Summary */
     .weather-summary {
-        position: relative;
-        top: -310px;
+        position: absolute;
+        top: 20px;
         left: 40px;
         padding: 0rem 1.4rem .2rem;
         width: 250px;

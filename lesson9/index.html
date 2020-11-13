@@ -31,7 +31,7 @@
         <nav>
             <button onclick="toggleMenu()"> &#9776; Menu </button>
             <ul id="menu" class="hide-navigation">
-                <li class="active"><a href="home-page.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="preston-9.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
@@ -42,8 +42,7 @@
     </header>
     
 
-    <main class="preston">
-        <h2 class="heading">Preston, Idaho</h2>
+    <main class="index">
         <div class="hero">
             <figure class = "hero-img">
                 <img src="images/hero-orig.jpg" alt="image of mountain" sizes="90vw"
@@ -52,51 +51,17 @@
                 images/hero-900.jpg 900w, 
                 images/hero-1200.jpg 1200w">
             </figure>
-            <section class="weather-summary">
-                <h3>Weather Summary</h3>
-                <p>Currently: 28</p>
-                <p>High: <span id = "temp">42</span> &#176;F</p>
-                <p>Wind Chill: <span id = "windchill"></span> &#176;F</p>
-                <p>Wind Speed: 72%</p>
-                <p>Humidity: <span id= "windSpeed">14</span> MPH</p>
-            </section>
         </div>
 
-            <div class="forecast">
-                <h3 class="heading">Five Day Forecast</h3>
-                <div class="forecast-table">
-                    <div class="forecast-col">
-                        <span class="forecast-head">Sunday</span>
-                        <img class="weather-img" src="images/cloudy-rain.png" alt="weather image place holder">
-                        <span class="data">High of 42 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Monday</span>
-                        <img class="weather-img" src="images/cloudy-wind-rain.png" alt="weather image place holder">
-                        <span class="data">High of 40 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Tuesday</span>
-                        <img class="weather-img" src="images/fog.png" alt="weather image place holder">
-                        <span class="data">High of 43 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Wednesday</span>
-                        <img class="weather-img" src="images/cloudy-sunny.png" alt="weather image place holder">
-                        <span class="data">High of 44 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Thursday</span>
-                        <img class="weather-img" src="images/cloud-pouring.png" alt="weather image place holder">
-                        <span class="data">High of 39 &#176;F</span>
-                    </div>
-                </div>
-            </div>
+        <div class="cards">
+
+        </div>
+    
 
         <article class="article">
             <h3 class="heading">Article Title</h3>
             <figure class="article-img">
-                <img src="images/pexels-lumn-294674.jpg" alt="man fishing. Photo by Lum3n from Pexels">
+                <img src="images/article-img.jpg" alt="man fishing. Photo by Lum3n from Pexels">
                 <figcaption>Fishing in Preston, Idaho</figcaption>
             </figure>
             <p class="article-p">
@@ -112,10 +77,10 @@
                 rhoncus aenean vel elit scelerisque mauris pellentesque. Vulputate eu scelerisque felis imperdiet 
                 proin fermentum leo vel. Pharetra massa massa ultricies mi quis.
             </p>
-        </article>
+        </article> 
         <div class="contact">
             <figure class="contact-img">
-                <img src="images/map-orig.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels.">
+                <img src="images/map.jpg" alt="Map of Idaho. Photo by Binyamin Mellish from Pexels.">
             </figure>
             <div class="contact-info">
                 <h3 class="heading">Contact Information</h3>
@@ -127,7 +92,7 @@
     </main>
 
     <footer>
-        &copy; <span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <span id="currentDate"></span>
+        &copy; <span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <a href="wireframes.html">Wireframes</a> |<span id="currentDate"></span>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -138,5 +103,6 @@
     <script src="js/current-date.js"></script>
     <script src="js/lazyload.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/se-idaho-towns.js"></script>
     </body>
 </html>
