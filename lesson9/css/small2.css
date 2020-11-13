@@ -373,3 +373,23 @@ form label.top input:required:valid {
 .wireframes {
     text-align: center;
 }
+
+/*----------HOME PAGE----------*/
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cards section {
+    background-color: #16425B50;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    border: 1px solid #102F42;
+    border-radius: 3px 3px;
+}
+
+.cards image {
+    justify-items: center;
+}
