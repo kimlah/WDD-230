@@ -60,32 +60,40 @@
     /* INDEX CARDS */
     .cards {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .cards section {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto;
+        padding: 0;
         max-width: 100%;
         border: 2px solid #102F42;
         border-radius: 3px 3px;
     }
 
     .cards h2 {
-        grid-column: span 2;
         grid-row: 1;
+        grid-column: span 2;
+        margin: 0;
     }
 
-
     .cards img {
+        float: left;
         width: 100%;
-        margin-left: 0;
-        margin-top: 0;
+        margin: 0;
+    }
+
+    .cards h3 {
+        grid-column: 2;
+        margin: 10px 0;
     }
 
     .cards p {
         grid-column: 2;
-        grid-row: 2;
+        margin: 0;
+        line-height: 3;
     }
 
     /* INDEX ARTICLE */
@@ -95,10 +103,8 @@
 
     .index-article {
         background-color: #16425B50;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        margin-left: 2.5%;
-        max-width: 95%;
+        margin: 15px auto;
+        max-width: 100%;
         border: 2px solid #102F42;
         border-radius: 5px 5px;
     }
@@ -112,10 +118,8 @@
     .index-contact {
         background-color: #16425B50;
         height: 275px;
-        margin-top: .75rem;
-        margin-bottom: .75rem;
-        margin-left: 2.5%;
-        max-width: 95%;
+        margin: 20px auto 0 auto;
+        max-width: 100%;
         border: 2px solid #102F42;
         border-radius: 5px 5px;
         text-align: center;

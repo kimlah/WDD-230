@@ -375,6 +375,7 @@ form label.top input:required:valid {
 }
 
 /*----------HOME PAGE----------*/
+/* TOWN CARDS */
 .cards {
     display: grid;
     grid-template-columns: 1fr;
