@@ -23,12 +23,9 @@
     }
     
     .cards section {
-        background-color: #16425B50;
         max-width: 100%;
         margin-right: 8px;
         margin-left: 0;
-        border: 2px solid #102F42;
-        border-radius: 5px 5px;
     }
 
     .cards section:last-child {
@@ -36,26 +33,25 @@
     }
     
     .cards h2 {
-        color: #E98A15;
-        background-color: #16425B;
         padding: 5px;
     }
     
-    .cards p {
-        text-align: center;
-    }
     
     .cards img {
         border: none;
         width: 100%;
-        padding-bottom: 0;
+        grid-column: span 2;
     }
 
-    .cards section {
-        max-width: 100%;
-        grid-template-columns: 1fr;
-        margin-right: 8px;
-        margin-left: 0;
+    .cards h3 {
+        grid-column: span 2;
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    .cards p {
+        grid-column: span 2;
+        
     }
 
     
