@@ -57,34 +57,85 @@
     }
 
     /*----------HOME PAGE----------*/
+    /* INDEX CARDS */
     .cards {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .cards section {
-        background-color: #16425B50;
-        padding: 1rem;
         margin-top: 10px;
         margin-bottom: 10px;
         max-width: 100%;
-        border: 1px solid #102F42;
+        border: 2px solid #102F42;
         border-radius: 3px 3px;
     }
+
+    .cards h2 {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+
+
+    .cards img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .cards p {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* INDEX ARTICLE */
+    .index-article-img {
+        width: 250px;
+    }
+
+    .index-article {
+        background-color: #16425B50;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 2.5%;
+        max-width: 95%;
+        border: 2px solid #102F42;
+        border-radius: 5px 5px;
+    }
     
-    .cards section:nth-child(even) {
-        text-align: right;
+    .index-article p {
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 5px;
+    }
+    /* INDEX CONTACT */
+    .index-contact {
+        background-color: #16425B50;
+        height: 275px;
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+        margin-left: 2.5%;
+        max-width: 95%;
+        border: 2px solid #102F42;
+        border-radius: 5px 5px;
+        text-align: center;
     }
 
-    .cards section:nth-child(odd) {
-        text-align: left;
+    .index-contact-img {
+        width: 300px;
+        margin: 0 4%;
+        float: left;
     }
 
-    .cards image:nth-child(even) {
-        justify-items: left;
+    .index-contact-img img {
+        display: inline-block;
+    }
+    
+    .index-contact-info {
+        font-size: 1rem;
     }
 
-    .cards image:nth-child(odd) {
-        justify-items: right;
+    .index-contact-p {
+        line-height: 2;
     }
 }
