@@ -57,7 +57,7 @@
     }
 
     /*----------HOME PAGE----------*/
-    /* INDEX CARDS */
+    /* TOWN CARDS */
     .cards {
         display: grid;
         grid-template-columns: 1fr;
