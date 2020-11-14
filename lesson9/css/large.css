@@ -1,5 +1,7 @@
 @media only screen and (min-width: 75em) {
 
+   
+
       /* ARTICLE AND CONTACT IMG*/
       .article figure.article-img, .contact figure.contact-img {
         width: 200px;
@@ -16,19 +18,53 @@
 
     /*----------HOME PAGE----------*/
     .cards {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    
     .cards section {
-        margin-right: 15px;
+        background-color: #16425B50;
+        max-width: 100%;
+        margin-right: 8px;
+        margin-left: 0;
+        border: 2px solid #102F42;
+        border-radius: 5px 5px;
     }
 
     .cards section:last-child {
         margin-right: 0;
     }
-
+    
+    .cards h2 {
+        color: #E98A15;
+        background-color: #16425B;
+        padding: 5px;
+    }
+    
+    .cards p {
+        text-align: center;
+    }
+    
     .cards img {
-        justify-items: center;
-        width: 200px;
+        border: none;
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .cards section {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        margin-right: 8px;
+        margin-left: 0;
+    }
+
+    
+
+    
+
+    .index-article, .index-contact {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
