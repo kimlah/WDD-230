@@ -1,5 +1,5 @@
 @media only screen and (min-width: 50em) {
-
+    /*----------ALL PAGES----------*/
     /* logo */
     .header figure.logo {
         width: 100px;
@@ -22,6 +22,12 @@
         border: 1px solid rgba(0,0,0,.5);
     }
 
+    /* Body CSS */
+    main {
+        max-width: 1200px;
+    }
+
+    /*----------PRESTON PAGE----------*/
     /* Weather Summary */
     .weather-summary {
         position: absolute;
@@ -32,21 +38,17 @@
         height: 250px;
     }
 
-    /* Body CSS */
-    main {
-        max-width: 1200px;
-    }
-
     /* ARTICLE AND CONTACT IMG*/
     .article figure.article-img, .contact figure.contact-img {
         width: 250px;
     }
 
-    /* Gallery CSS */
+    /*----------GALLERY----------*/
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
 
+    /*----------STORMCENTER----------*/
     form fieldset {
         border: 3px solid #E98A15;
     }
@@ -56,7 +58,7 @@
         
     }
 
-    /*----------HOME PAGE----------*/
+    /*----------HOME/INDEX PAGE----------*/
     /* TOWN CARDS */
     .cards {
         display: grid;
@@ -80,20 +82,30 @@
     }
 
     .cards img {
-        float: left;
+        grid-column: 1;
+        grid-row: 2;
         width: 100%;
         margin: 0;
     }
 
-    .cards h3 {
+    .cards div {
         grid-column: 2;
-        margin: 10px 0;
+        grid-row: 2;
+        padding-top: 2rem;
     }
 
-    .cards p {
+    .cards div h3 {
+        padding-bottom: 20px;
+    }
+
+    .cards img:nth-child(odd) {
         grid-column: 2;
-        margin: 0;
-        line-height: 3;
+        grid-row: 2;
+    }
+
+    .cards div:nth-child(odd) {
+        grid-column: 1;
+        grid-row: 2;
     }
 
     /* INDEX ARTICLE */

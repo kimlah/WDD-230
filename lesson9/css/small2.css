@@ -145,7 +145,7 @@ footer {
 }
 
 
-/*----------PRESTON PAGE----------*/
+/*----------PRESTON----------*/
 
 /* MAIN PRESTON PADDING */
 .preston {
@@ -260,7 +260,7 @@ footer {
     width: 100%;
 }
 
-/*----------GALLERY PAGE----------*/
+/*----------GALLERY----------*/
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -271,7 +271,7 @@ figcaption {
     color: black;
     text-align: center;
 }
-/*----------STORMCENTER PAGE----------*/
+/*----------STORMCENTER----------*/
 
 .stormcenter-p {
     text-align: center;
@@ -327,7 +327,7 @@ textarea {
     resize: none;
 }
 
-form ::placeholder {
+form :placeholder {
     color:black;
 }
 
@@ -369,12 +369,12 @@ form label.top input:required:valid {
     border-left: #102F42 solid 2px;
 }
 
-/*----------WIREFRAME PAGE----------*/
+/*----------WIREFRAME----------*/
 .wireframes {
     text-align: center;
 }
 
-/*----------HOME PAGE----------*/
+/*----------HOME/INDEX----------*/
 /* TOWN CARDS */
 .cards {
     display: grid;
