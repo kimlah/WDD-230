@@ -145,10 +145,10 @@ footer {
 }
 
 
-/*----------PRESTON----------*/
+/*----------PRESTON, SODA SPRINGS, FISH HAVEN----------*/
 
 /* MAIN PRESTON PADDING */
-.preston {
+.preston, .soda-springs, .fish-haven, .index {
     padding: 0 2rem 2rem 2rem;
 }
 
@@ -171,7 +171,8 @@ footer {
     background-color: #16425B90;
     padding: 1rem;
     width: 100%;
-    border-radius: 2px;
+    border: 5px double #102F42;
+    border-radius: 5px 5px;
 }
 
 .weather-summary h3, .weather-summary p {
@@ -181,8 +182,8 @@ footer {
 /* FORECAST, ARTICLE, CONTACT, REPORT-RECEIVED */
 .forecast, .article, .contact, .report-received {
     background-color: #16425B50;
-    border: 1px solid #102F42;
-    border-radius: 2px;
+    border: 5px double #102F42;
+    border-radius: 5px 5px;
     padding: 1rem;
     margin: 10px 0 15px 0;
 }
@@ -270,6 +271,10 @@ footer {
 figcaption {
     color: black;
     text-align: center;
+}
+
+.gallery img {
+    border-radius: 5px 5px;
 }
 /*----------STORMCENTER----------*/
 
@@ -376,6 +381,10 @@ form label.top input:required:valid {
 
 /*----------HOME/INDEX----------*/
 /* TOWN CARDS */
+.index {
+    padding: 5rem 2rem 2rem 2rem;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -385,9 +394,8 @@ form label.top input:required:valid {
     background-color: #16425B50;
     margin-top: .5rem;
     margin-bottom: .5rem;
-    margin-left: 2.5%;
-    max-width: 95%;
-    border: 2px solid #102F42;
+    max-width: 100%;
+    border: 5px double #102F42;
     border-radius: 5px 5px;
 }
 
@@ -413,15 +421,14 @@ form label.top input:required:valid {
     background-color: #16425B50;
     margin-top: .5rem;
     margin-bottom: .5rem;
-    margin-left: 2.5%;
-    max-width: 95%;
-    border: 1px solid #102F42;
+    max-width: 100%;
+    border: 5px double #102F42;
     border-radius: 5px 5px;
 }
 
 .index-article p {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .index-article-img {
@@ -447,9 +454,8 @@ form label.top input:required:valid {
     background-color: #16425B50;
     margin-top: .5rem;
     margin-bottom: .5rem;
-    margin-left: 2.5%;
-    max-width: 95%;
-    border: 1px solid #102F42;
+    max-width: 100%;
+    border: 5px double #102F42;
     border-radius: 5px 5px;
     text-align: center;
 }
@@ -470,4 +476,24 @@ form label.top input:required:valid {
 
 .index-contact-p {
     line-height: normal;
+}
+
+/*----------ATTRIBUTIONS----------*/
+.attributions h3 {
+    text-align: left;
+    padding: 1rem;
+    color: black;
+    background-color: #16425B90;
+}
+
+.attributions li {
+    list-style-type: square;
+}
+
+.attributions a {
+    color: #13496b;
+}
+
+.attributions a:visited {
+    color: #402179;
 }
