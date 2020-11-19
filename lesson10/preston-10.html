@@ -54,11 +54,11 @@
             </figure>
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: 28</p>
-                <p>High: <span id = "temp">42</span> &#176;F</p>
-                <p>Wind Chill: <span id = "windchill"></span> &#176;F</p>
-                <p>Wind Speed: 72%</p>
-                <p>Humidity: <span id= "windSpeed">14</span> MPH</p>
+                <p>Currently: <span id="current-summary"></span>&deg;F</p>
+                <p>High: <span id = "max-temp"></span> &#176;F</p>
+                <p>Wind Chill: <span id = "wind-chill"></span> &#176;F</p>
+                <p>Wind Speed: <span id="wind-speed"></span>&deg;F</p>
+                <p>Humidity: <span id= "humitity"></span> MPH</p>
             </section>
         </div>
 
@@ -128,16 +128,17 @@
     </main>
 
     <footer>
-        &copy;<span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <span id="currentDate"></span> | <a href="attributions.html">Attributions</a>
+        &copy;<span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <span id="currentDate"></span> | <a href="attributions.html" target="blank">Attributions</a>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/web-font-load.js"></script>
-    <script src="js/banner.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/current-year.js"></script>
-    <script src="js/current-date.js"></script>
-    <script src="js/lazyload.js"></script>
-    <script src="js/windchill.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/web-font-load.js"></script>
+        <script src="js/banner.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/current-year.js"></script>
+        <script src="js/current-date.js"></script>
+        <script src="js/lazyload.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="js/weather-api.js"></script>
     </body>
 </html>

@@ -50,9 +50,4 @@
     form fieldset {
         border: 3px solid #E98A15;
     }
-
-    form input.submitBtn {
-        margin: 1rem 0 2rem 5%;
-        
-    }
 }

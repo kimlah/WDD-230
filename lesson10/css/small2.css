@@ -277,15 +277,21 @@ figcaption {
     border-radius: 5px 5px;
 }
 /*----------STORMCENTER----------*/
-
-.stormcenter-p {
+.storm-center p {
     text-align: center;
 }
 
 /* FORM */
+.storm-form {
+    max-width: 25rem;
+    margin: auto;
+}
+
+.storm-form fieldset {
+    background-color: #E0E0E0;
+}
+
 form fieldset {
-    width: 75%;
-    margin: 2rem 2rem;
     border: 2px solid #E98A15;
     border-radius: 2px;
     padding: .5rem 2%;
@@ -360,9 +366,9 @@ form input.submitBtn {
     color: white;
     border-radius: 3px;
     padding: .75rem 1.5rem;
-    margin: 1rem 0 2rem 3rem;
-    width: 96%;
-    max-width: 20rem;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 25rem;
     font-size: 1.25rem;
 }
 
