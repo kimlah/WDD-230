@@ -50,7 +50,7 @@
 
             <fieldset>
                 <legend><b>Contact Information</b></legend>
-                <label class="top">Full Name*<input type="text" name="name" required></label>
+                <label class="top">Full Name*<input type="text" name="name" pattern="[A-zÀ-ž]+[A-zÀ-ž]" minlength="5" required></label>
                 <label class="top">Email<input type="email" name="email" placeholder="email@email.com"></label>
                 <label class="top">Phone*<input type="tel" name="phone" placeholder="1236549876" required></label>
                 <label class="top">Zip Code*<input type="number" name="zip-code" placeholder="12345" required></label>
@@ -62,19 +62,19 @@
                 <label class="top">Storm Date<input type="date" name="stormDate"></label>
             
                 <label class="top">Storm Type
-                    <select name="stormType">
-                        <option value="">Select a Storm Type...</option>
-                        <option value="flash-flood">Flash Flood</option>
-                        <option value="hail">Hail</option>
-                        <option value="hurricane">Hurricane</option>
-                        <option value="thunderstorm">Thunderstorm</option>
-                        <option value="tornado">Tornado</option>
-                    </select>
+                    <input type=text list=stormType>
+                    <datalist id="stormType">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
                 </label>
 
                 <label class="top" for="region">Region
                     <select name="region"  id="region">
-                        <option value="">Select a Region...</option>
+                        <option value="disabled" disabled>Select a Region...</option>
                         <option value="Fish Haven">Fish Haven</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
@@ -104,11 +104,8 @@
                     <label class="sbs"><input type="radio" name="dangerLevel" value="yes">Yes</label>
                     <label class="sbs"><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
                     <label class="sbs"><input type="radio" name="dangerLevel" value="no">No</label>
-            </fieldset>
             
-            <fieldset>
-                <legend><b>Additional Information</b></legend>
-                    <label class="additional-info">
+                <label class="top">Additional Information
                     <textarea cols="30" placeholder="Location of problems, injured people, etc."></textarea>
                     </label>
                 </fieldset>

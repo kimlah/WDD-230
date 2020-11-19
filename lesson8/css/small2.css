@@ -272,13 +272,17 @@ figcaption {
 }
 
 /* FORM */
+
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    font-size: 1.25rem;
+}
+
 form fieldset {
-    width: 75%;
-    margin: 2rem 2rem;
     border: 2px solid #E98A15;
     border-radius: 2px;
-    padding: .5rem 2%;
-    font-size: 1.25rem;
 }
 
 form legend {
@@ -304,7 +308,7 @@ form label.top input, form label.top select {
     color: black;
     width: 100%;
     max-width: 20rem;
-    background-color: #34a5e750;
+    background-color: white;
 }
 
 textarea {
@@ -317,11 +321,11 @@ textarea {
     color: black;
     width: 100%;
     max-width: 20rem;
-    background-color: #34a5e750;
+    background-color: white;
     resize: none;
 }
 
-form ::placeholder {
+form :placeholder {
     color:black;
 }
 
@@ -337,19 +341,13 @@ form label.sbs {
     font-size: 1rem;
 }
 
-.additional-info {
-    display: block;
-    padding-top: .5rem;
-}
-
 form input.submitBtn {
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 2px;
     background-color: #102F42;
     color: white;
-    border-radius: 3px;
     padding: .75rem 1.5rem;
-    margin: 1rem 0 2rem 3rem;
+    margin: 1rem 0 2rem 4%;
     width: 96%;
     max-width: 20rem;
     font-size: 1.25rem;
