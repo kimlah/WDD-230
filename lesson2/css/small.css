@@ -1,0 +1,53 @@
+body {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    color: #51ceca;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+h1, h2 {
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #411969;
+    border: 8px solid #8de6e3;
+    color: #d8e3e4;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.thirds, .contrast, .repitition {
+    background-color: #8de6e3;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.thirds p, .contrast p, .repitition p {
+    padding: 15px;
+}
+
+.thirdsimg, .contrastimg, .repititionimg {
+    max-width: 90%;
+    border: 4px solid #411969;
+}
+
+footer a:link, footer a:visited {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}

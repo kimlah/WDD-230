@@ -6,35 +6,46 @@
         <title>Keeley Imlah's Portal Homepage for WDD 230</title> 
         <meta name="description" content="Assignment Portal for Keeley Imlah in WDD 230: Web Frontend Development at BYU-I">
         
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tajawal&display=swap">
-        <link rel="stylesheet" href="small.css">
-        <link rel="stylesheet" href="medium.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="/lesson1/css/small.css">
+        <link rel="stylesheet" href="/lesson1/css/medium.css">
     </head>
 
     <body>
         <header>
-            <img src="portal_homepage_img.jpg" alt="Keeley Imlah with her son">
-            <h1>Keeley Imlah</h1>
+            <img src="/lesson1/images/portal-homepage-img.jpg" alt="Keeley Imlah with her son">
+            <h1>Keeley Imlah </h1>
         </header>
         <main>
-            <section>
                 <h2>WDD 230-Web Frontend Development: Assignment Portal</h2>
                 <ul>
-                    <li>Lesson 2: <a href="">Assignment Link 1</a></li>
-                    <li>Lesson 3: <a href="">Assignment Link 2</a></li>
-                    <li>Lesson 4: <a href="">Assignment Link 3</a></li>
-                    <li>Lesson 5: <a href="">Assignment Link 4</a></li>
-                    <li>Lesson 6: <a href="">Assignment Link 5</a></li>
-                    <li>Lesson 7: <a href="">Assignment Link 6</a></li>
+                    <li>Lesson 2: <a href="/lesson2/design-principles.html">Design Principles</a></li>
+                    <li>Lesson 3: <a href="/lesson3/index.html">Weather Site Plan</a></li>
+                    <li>Lesson 4: <a href="/lesson4/preston-4.html">Weather Header, Navigation & Footer</a></li>
+                    <li>Lesson 5: <a href="/lesson5/preston-5.html">Preston Page Continued</a></li>
+                    <li>Lesson 6: <a href="/lesson6/preston-6.html">Optimize Images, Hero Image, Windchill</a></li>
+                    <li>Lesson 7: <a href="/lesson7/lazyload.html">Lazy Loading Gallery</a> | <a href="/lesson7m/gallery-lesson7.html">Bright and Stormy Gallery</a></li>
+                    <li>Lesson 8: <a href="/lesson8/tablebuild.html">Table Build</a> | <a href="/lesson8/stormcenter.html">Storm Center</a></li>
+                    <li>Lesson 9: <a href="/lesson9/prophets.html">Prophet Cards</a> | <a href="/lesson9/index.html">Wireframes</a> | <a href="/lesson9/index.html">Home Page</a></li>
+                    <li>Lesson 10: <a href="/lesson10/preston-10.html">5 Day Forecast</a></li>
+                    <li>Lesson 11: <a href="/lesson11/index.html"></a>Final <i>Bright or Stormy</i> Webpage</li>
                 </ul>
-            </section>
         </main>
         <footer>
-            <p>&copy; <span id="currentYear"></span> | Keeley Imlah | Washington | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+            <p>&copy; <span id="currentYear"></span> | Keeley Imlah | Washington | <a class="byui-link" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
             <p>Last Updated: <span id="lastModified"></span></p>
         </footer>
-        <script src="lastModified.js"></script>
-        <script src="currentYear.js"></script>
+    </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">WebFront.load({
+            google: {
+                families: 
+                ['Tajawal'],['Open Sans']
+            }
+        });
+        </script>
+            
+        <script src="lesson1/js/currentyear.js"></script>
+        <script src="lesson1/js/lastmodified.js"></script>
     </body>
+
 </html>

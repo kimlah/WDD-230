@@ -1,0 +1,67 @@
+/* 
+► Use the thead, tbody, and tfoot tags in your table structure.
+
+► The font-family is Ubuntu, sans-serif.
+
+► The color scheme includes #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 along with standard white and black.
+
+► Use a maximum of one class or id selector.
+
+► Use one instance of the first-child or nth:child() pseudo classes.
+
+► Ensure that your HTML and CSS documents are valid.
+
+► Get as close as possible to the displayed design and structure for full credit.
+*/
+
+main {
+    padding: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* TABLE */
+table {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 10px 10px 10px #628ca6;
+}
+
+/* TABLE HEAD*/
+thead tr {
+    background-color: #7fb9c2; 
+    font-size: 1.5em;
+}
+
+/* TABLE BODY */
+tbody th {
+    padding: 10px;
+    text-emphasis: bold;
+    border: 1px solid lightgray;
+}
+
+tbody tr {
+    background-color: #e7f0ed;
+}
+
+tbody td {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+.special {
+    color: white;
+    background-color: #628ca6;
+}
+
+/* TABLE FOOT */
+tfoot tr td {
+    background-color: #7fb9c2; 
+    padding: 10px;
+    font-size: .75em; 
+}

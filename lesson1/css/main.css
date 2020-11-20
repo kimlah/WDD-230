@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+    color: #51ceca;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    max-width: 1000px;
+}
+
+header, footer {
+    background-color: #411969;
+    border: 8px solid #8de6e3;
+    color: #d8e3e4;
+    text-align: center;
+}
+
+header {
+    font-family: 'Tajawal', sans-serif;;
+    font-size: 22px;
+    padding: 1rem;
+}
+
+header img {
+    float: right;
+    margin: 10px;
+    outline: 5px solid #8de6e3;
+    border: 5px solid #d8e3e4;
+    max-width: 33%;
+}
+
+h2, p {
+    font-family: 'Open Sans', sans-serif;;
+}
+
+h2 {
+    text-align: center;
+}
+
+a: link {
+    color: white;
+}
+

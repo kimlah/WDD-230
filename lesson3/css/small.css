@@ -1,0 +1,105 @@
+/* Background color and line-height for entire page */
+body {
+    background-color: #E0E0E0;
+}
+main {
+    background-color: #95969D;
+    line-height: 1.25;
+    padding: 2rem;
+}
+
+/* Image CSS */
+img {
+    max-width: 375px;
+    border: 5px double #102F42;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Main CSS */
+h1 {
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    color: #E98A15;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    color: #102F42;
+    text-align: center;
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    line-height: 1.5;
+    font-size: 115%;
+}
+
+.motto {
+    color: #E0E0E0;
+}
+
+.header {
+    background-color: #16425B;
+    padding: 1rem;
+}
+
+/* Header, footer and main CSS */
+header, main, footer {
+    margin: 1.25rem auto;
+    max-width: 1000px;
+}
+
+header, footer {
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    background-color:#16425B;
+    border: 8px solid #FA9D4C;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+footer a:link, footer a:visited {
+    color: #E0E0E0;
+}
+
+footer a:hover {
+    color: #FA9D4C;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation CSS */
+nav {
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,.5);
+    color: #F2F2F2;
+}
+
+nav li.active {
+    background-color: rgba(0,0,0,.2);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,.5);
+}

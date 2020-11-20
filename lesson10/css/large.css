@@ -1,0 +1,60 @@
+@media only screen and (min-width: 75em) {
+    /*----------PRESTON----------*/
+      /* ARTICLE AND CONTACT IMG*/
+      .article figure.article-img, .contact figure.contact-img {
+        width: 200px;
+    }
+    
+    /*----------GALLERY----------*/
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+
+    .hover-large:hover {
+        box-shadow: 0 0 20px #333;
+    }
+
+    /*----------HOME/INDEX PAGE----------*/
+    /* TOWN CARDS */
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .cards section {
+        max-width: 100%;
+        margin-right: 8px;
+        margin-left: 0;
+    }
+
+    .cards section:last-child {
+        margin-right: 0;
+    }
+    
+    .cards h2 {
+        padding: 5px;
+    }
+    
+    
+    .cards img {
+        border: none;
+        width: 100%;
+        grid-column: span 2;
+    }
+
+    .cards h3 {
+        grid-column: span 2;
+        
+    }
+
+    .cards p {
+        grid-column: span 2;
+    }
+
+    /* INDEX ARTICLE AND CONTACT */
+    .index-article, .index-contact {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
