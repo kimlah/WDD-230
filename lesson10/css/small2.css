@@ -47,7 +47,7 @@ h3, h4, h5, h6 {
     text-align: center;
 }
 
-main p {
+main p, main ul, main li {
     font-family: 'Montserrat', sans-serif;
     color: black;
     line-height: 1.5;
@@ -196,7 +196,7 @@ footer {
     border-radius: 2px;
 }
 
-.forecast-head {
+.col-head {
     display: block;
     padding: 5px;
     text-align: center;
@@ -282,20 +282,17 @@ figcaption {
 }
 
 /* FORM */
-.storm-form {
-    max-width: 25rem;
-    margin: auto;
-}
 
-.storm-form fieldset {
-    background-color: #E0E0E0;
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    font-size: 1.25rem;
 }
 
 form fieldset {
     border: 2px solid #E98A15;
     border-radius: 2px;
-    padding: .5rem 2%;
-    font-size: 1.25rem;
 }
 
 form legend {
@@ -321,7 +318,7 @@ form label.top input, form label.top select {
     color: black;
     width: 100%;
     max-width: 20rem;
-    background-color: #34a5e750;
+    background-color: white;
 }
 
 textarea {
@@ -334,7 +331,7 @@ textarea {
     color: black;
     width: 100%;
     max-width: 20rem;
-    background-color: #34a5e750;
+    background-color: white;
     resize: none;
 }
 
@@ -354,21 +351,15 @@ form label.sbs {
     font-size: 1rem;
 }
 
-.additional-info {
-    display: block;
-    padding-top: .5rem;
-}
-
 form input.submitBtn {
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 2px;
     background-color: #102F42;
     color: white;
-    border-radius: 3px;
     padding: .75rem 1.5rem;
-    margin: 1rem auto;
-    width: 100%;
-    max-width: 25rem;
+    margin: 1rem 0 2rem 4%;
+    width: 96%;
+    max-width: 20rem;
     font-size: 1.25rem;
 }
 
@@ -379,7 +370,6 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: #102F42 solid 2px;
 }
-
 /*----------WIREFRAME----------*/
 .wireframes {
     text-align: center;
