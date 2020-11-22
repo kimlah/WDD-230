@@ -5,6 +5,8 @@
     "version": "0.2.0",
     "configurations": [
         {
+<<<<<<< HEAD
+=======
             "type": "java",
             "name": "CodeLens (Launch) - Hello",
             "request": "launch",
@@ -12,6 +14,7 @@
             "projectName": "kimlah.github.io_bc8080f1"
         },
         {
+>>>>>>> 94638d5c68d85c67120b28b7d92af2f20e07cbd7
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",

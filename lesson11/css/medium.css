@@ -1,0 +1,154 @@
+@media only screen and (min-width: 50em) {
+    /*----------ALL PAGES----------*/
+    /* logo */
+    .header figure.logo {
+        width: 100px;
+    }
+
+    /* Nav */
+    nav button {
+        display: none;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul.hide-navigation, nav ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        border: 1px solid rgba(0,0,0,.5);
+    }
+
+    /* Body CSS */
+    main {
+        max-width: 1200px;
+    }
+
+    /*----------PRESTON, SODA SPRINGS, FISH HAVEN----------*/
+    /* Weather Summary */
+    .weather-summary {
+        background-color: #95969D98;
+        position: absolute;
+        top: 52px;
+        left: 40px;
+        padding: 0rem 1.4rem .2rem;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .weather-summary h3 {
+        color: black;
+        margin-top: 3px;
+    }
+
+    .weather-summary p {
+        color: black;
+        margin-top: 6px;
+        margin-bottom: 4px;
+    }
+
+    /* ARTICLE AND CONTACT IMG*/
+    .article figure.article-img, .contact figure.contact-img {
+        width: 250px;
+    }
+
+    /*----------GALLERY----------*/
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*----------STORMCENTER----------*/
+    form fieldset {
+        border: 3px solid #E98A15;
+    }
+
+    /*----------HOME/INDEX PAGE----------*/
+    /* TOWN CARDS */
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto;
+        padding: 0;
+        max-width: 100%;
+        border: 5px double #102F42;
+        border-radius: 5px 5px;
+    }
+
+    .cards h2 {
+        grid-row: 1;
+        grid-column: span 2;
+        margin: 0;
+    }
+
+    .cards img {
+        float: left;
+        width: 100%;
+        margin: 0;
+    }
+
+    .cards h3 {
+        grid-column: 2;
+        margin: 10px 0;
+    }
+
+    .cards p {
+        grid-column: 2;
+        margin: 0;
+        line-height: 3;
+    }
+
+    /* INDEX ARTICLE */
+    .index-article-img {
+        width: 250px;
+    }
+
+    .index-article {
+        background-color: #16425B50;
+        margin: 15px auto;
+        max-width: 100%;
+        border: 5px double #102F42;
+        border-radius: 5px 5px;
+    }
+    
+    .index-article p {
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 5px;
+    }
+    /* INDEX CONTACT */
+    .index-contact {
+        background-color: #16425B50;
+        height: 275px;
+        margin: 20px auto 0 auto;
+        max-width: 100%;
+        border: 5px double #102F42;
+        border-radius: 5px 5px;
+        text-align: center;
+    }
+
+    .index-contact-img {
+        width: 300px;
+        margin: 0 4%;
+        float: left;
+    }
+
+    .index-contact-img img {
+        display: inline-block;
+    }
+    
+    .index-contact-info {
+        font-size: 1rem;
+    }
+
+    .index-contact-p {
+        line-height: 2;
+    }
+}
