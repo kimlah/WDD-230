@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small2.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
 </head>
@@ -46,72 +46,90 @@
         <h2 class="heading">Fish Haven, Idaho</h2>
         <div class="hero">
             <figure class = "hero-img">
-                <img src="images/fish-haven-hero.jpg" alt="sunset, snow and trees" sizes="90vw"
-                srcset = "images/fish-haven-400.jpg 400w,
-                images/fish-haven-600.jpg 600w, 
-                images/fish-haven-900.jpg 900w, 
-                images/fish-haven-1200.jpg 1200w">
+                <img src="images/fish-haven/fish-haven-hero.jpg" alt="sunset, snow and trees" sizes="90vw"
+                srcset = "images/fish-haven/fish-haven-400.jpg 400w,
+                images/fish-haven/fish-haven-600.jpg 600w, 
+                images/fish-haven/fish-haven-900.jpg 900w, 
+                images/fish-haven/fish-haven-1200.jpg 1200w">
             </figure>
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: 28</p>
-                <p>High: <span id = "temp">42</span> &#176;F</p>
-                <p>Wind Chill: <span id = "windchill"></span> &#176;F</p>
-                <p>Wind Speed: 72%</p>
-                <p>Humidity: <span id= "windSpeed">14</span> MPH</p>
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id = "currentTemp"></span> &#176;F</p>
+                <p>Wind Chill: <span id = "windChill"></span> &#176;F</p>
+                <p>Wind Speed: <span id="windSpeed"></span> </p>
+                <p>Humidity: <span id= "humidity"></span> </p>
             </section>
         </div>
 
-            <div class="forecast">
-                <h3 class="heading">Five Day Forecast</h3>
-                <div class="forecast-table">
-                    <div class="forecast-col">
-                        <span class="forecast-head">Sunday</span>
-                        <img class="weather-img" src="images/cloudy-rain.png" alt="weather image place holder">
-                        <span class="data">High of 42 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Monday</span>
-                        <img class="weather-img" src="images/cloudy-wind-rain.png" alt="weather image place holder">
-                        <span class="data">High of 40 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Tuesday</span>
-                        <img class="weather-img" src="images/fog.png" alt="weather image place holder">
-                        <span class="data">High of 43 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Wednesday</span>
-                        <img class="weather-img" src="images/cloudy-sunny.png" alt="weather image place holder">
-                        <span class="data">High of 44 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Thursday</span>
-                        <img class="weather-img" src="images/cloud-pouring.png" alt="weather image place holder">
-                        <span class="data">High of 39 &#176;F</span>
-                    </div>
+        <div class="forecast">
+            <h3 class="heading">Five Day Forecast</h3>
+            <div class="forecast-table">
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek1">
+                    <img class="weathericon1" src="#" alt="">
+                    <span class="col-temp" id="forecast1">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek2">
+                    <img class="weathericon2" src="#" alt="">
+                    <span class="col-temp" id="forecast2">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek3">
+                    <img class="weathericon3" src="#" alt="">
+                    <span class="col-temp" id="forecast3">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek4">
+                    <img class="weathericon4" src="#" alt="">
+                    <span class="col-temp" id="forecast4">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek5">
+                    <img class="weathericon5" src="#" alt="">
+                    <span class="col-temp" id="forecast5">
                 </div>
             </div>
+        </div>
 
         <article class="article">
             <h3 class="heading">Taking Care of Our Forests</h3>
-            <h4>By Forest Fuego</h4>
+            <h4>By the State Board of Land Commissioners</h4>
             <figure class="article-img">
-                <img src="images/fish-haven-article.jpg" alt="forest reflecting on a lake">
+                <img src="images/fish-haven/fish-haven-article.jpg" alt="forest reflecting on a lake">
                 <figcaption>Forests in Fish Haven, Idaho</figcaption>
             </figure>
             <p class="article-p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Eleifend mi in nulla posuere sollicitudin aliquam ultrices 
-                sagittis. Malesuada nunc vel risus commodo viverra maecenas. Aliquet porttitor lacus luctus 
-                accumsan tortor posuere ac ut consequat. In fermentum et sollicitudin ac orci phasellus egestas 
-                tellus rutrum. Pretium quam vulputate dignissim suspendisse in est. Sagittis nisl rhoncus mattis 
-                rhoncus urna neque viverra justo nec. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. 
-                At auctor urna nunc id. Id venenatis a condimentum vitae sapien pellentesque habitant morbi 
-                tristique. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Ipsum a arcu cursus vitae. 
-                Vulputate sapien nec sagittis aliquam. Non nisi est sit amet facilisis magna etiam. Congue mauris 
-                rhoncus aenean vel elit scelerisque mauris pellentesque. Vulputate eu scelerisque felis imperdiet 
-                proin fermentum leo vel. Pharetra massa massa ultricies mi quis.
+                With 40 percent of Idaho covered in trees, the management of our forests affects us all. All Idahoans 
+                benefit from the clean water, abundant wildlife habitat, recreation, and wood and paper products that 
+                healthy forests provide, along with many positive economic impacts. Arbor Day is April 26, a time to 
+                celebrate the benefits forests provide us, but also a time to reflect on how forests depend on humans 
+                for their continued health through active forest management – the sustainable cycle of harvesting 
+                followed by replanting of trees and using fire as a management tool to reduce overgrown vegetation. 
+                There are 21.4 million acres of forests in Idaho. About 10 million acres of federal forests in Idaho 
+                are overgrown, unhealthy, and prone to devastating fires. Impaired forest health conditions and wildfire 
+                know no boundaries. As Land Board members, we oversee the management of one million acres of forested 
+                state endowment lands. The lands are a gift to Idaho in all they offer. Timber sales on endowment 
+                lands generate millions of dollars in revenue for Idaho’s public schools annually. Sustainable forest 
+                management practices ensure these lands will continue to benefit public schools and Idaho citizens for 
+                years to come. However, 94 percent of forested state endowment lands border federal national forests in Idaho. 
+                Wildfire, insects, and disease move freely between federal, state, and private lands. 
+            </p>
+            <p>
+                To address the forest health crisis in Idaho and maintain healthy state endowment forests for public schools, 
+                we directed the Idaho Department of Lands to work with the U.S. Forest Service, forest industry, conservation groups, 
+                and others to help improve forest conditions on a scale that matters. The recently inked “Shared Stewardship” 
+                agreement recognizes that different land owners – federal, state, and private – need to work together 
+                to reduce the risk of fire and infestations of insects and disease in our forests. The state and federal 
+                government are using spatial planning tools to identify, coordinate, and treat priority landscapes across 
+                ownerships. The result will be reduced fuels to protect Idaho communities from wildfire, improved forest 
+                health, and job creation in the private sector. We are just getting going with Shared Stewardship in 
+                Idaho, but we are anchoring to our success with the Good Neighbor Authority, a related program that 
+                encourages collaboration, resource sharing, and a “get it done” approach to land management. We all 
+                love forests. But most of Idaho’s forests need to be conserved, not preserved. Active, sustainable 
+                forest management is part of conservation. The steps we are taking with your support will ensure our 
+                forests are healthy for future generations.
             </p>
         </article>
         <div class="contact">

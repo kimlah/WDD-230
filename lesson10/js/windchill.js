@@ -4,8 +4,8 @@
    t is the air average temperature in Fahrenheit, 
    and s is the wind speed in miles per hour. */
 
-let temp = 34;
-let windSpeed = 15;
+var temp = document.getElementById("temp").textContent;
+var windSpeed = document.getElementById("windSpeed").textContent;
 
 function getWindChill(temp, windSpeed) {
    if ((temp <= 50) && (windSpeed > 3.0)) {

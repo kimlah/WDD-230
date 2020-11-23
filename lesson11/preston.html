@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small2.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
 </head>
@@ -46,72 +46,84 @@
         <h2 class="heading">Preston, Idaho</h2>
         <div class="hero">
             <figure class = "hero-img">
-                <img src="images/hero-orig.jpg" alt="image of mountain" sizes="90vw"
-                srcset = "images/hero-400.jpg 400w,
-                images/hero-600.jpg 600w, 
-                images/hero-900.jpg 900w, 
-                images/hero-1200.jpg 1200w">
+                <img src="images/preston/hero-orig.jpg" alt="image of mountain" sizes="90vw"
+                srcset = "images/preston/hero-400.jpg 400w,
+                images/preston/hero-600.jpg 600w, 
+                images/preston/hero-900.jpg 900w, 
+                images/preston/hero-1200.jpg 1200w">
             </figure>
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: <span id="current-summary"></span>&deg;F</p>
-                <p>High: <span id = "max-temp"></span> &#176;F</p>
-                <p>Wind Chill: <span id = "wind-chill"></span> &#176;F</p>
-                <p>Wind Speed: <span id="wind-speed"></span>&deg;F</p>
-                <p>Humidity: <span id= "humitity"></span> MPH</p>
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id = "currentTemp"></span> &#176;F</p>
+                <p>Wind Chill: <span id = "windChill"></span> &#176;F</p>
+                <p>Wind Speed: <span id="windSpeed"></span> </p>
+                <p>Humidity: <span id= "humidity"></span> </p>
             </section>
         </div>
 
-            <div class="forecast">
-                <h3 class="heading">Five Day Forecast</h3>
-                <div class="forecast-table">
-                    <div class="forecast-col">
-                        <span class="forecast-head">Sunday</span>
-                        <img class="weather-img" src="images/cloudy-rain.png" alt="weather image place holder">
-                        <span class="data">High of 42 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Monday</span>
-                        <img class="weather-img" src="images/cloudy-wind-rain.png" alt="weather image place holder">
-                        <span class="data">High of 40 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Tuesday</span>
-                        <img class="weather-img" src="images/fog.png" alt="weather image place holder">
-                        <span class="data">High of 43 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Wednesday</span>
-                        <img class="weather-img" src="images/cloudy-sunny.png" alt="weather image place holder">
-                        <span class="data">High of 44 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Thursday</span>
-                        <img class="weather-img" src="images/cloud-pouring.png" alt="weather image place holder">
-                        <span class="data">High of 39 &#176;F</span>
-                    </div>
+        <div class="forecast">
+            <h3 class="heading">Five Day Forecast</h3>
+            <div class="forecast-table">
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek1">
+                    <img class="weathericon1" src="#" alt="">
+                    <span class="col-temp" id="forecast1">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek2">
+                    <img class="weathericon2" src="#" alt="">
+                    <span class="col-temp" id="forecast2">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek3">
+                    <img class="weathericon3" src="#" alt="">
+                    <span class="col-temp" id="forecast3">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek4">
+                    <img class="weathericon4" src="#" alt="">
+                    <span class="col-temp" id="forecast4">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek5">
+                    <img class="weathericon5" src="#" alt="">
+                    <span class="col-temp" id="forecast5">
                 </div>
             </div>
+        </div>
 
         <article class="article">
             <h3 class="heading">The Best Fishing Lures</h3>
-            <h4>By Whitney Johnson</h4>
+            <h4>By Idaho Department of Fish and Game</h4>
             <figure class="article-img">
-                <img src="images/article-img.jpg" alt="man fishing. Photo by Lum3n from Pexels">
+                <img src="images/preston/article-img.jpg" alt="man fishing. Photo by Lum3n from Pexels">
                 <figcaption>Fishing in Preston, Idaho</figcaption>
             </figure>
-            <p class="article-p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Eleifend mi in nulla posuere sollicitudin aliquam ultrices 
-                sagittis. Malesuada nunc vel risus commodo viverra maecenas. Aliquet porttitor lacus luctus 
-                accumsan tortor posuere ac ut consequat. In fermentum et sollicitudin ac orci phasellus egestas 
-                tellus rutrum. Pretium quam vulputate dignissim suspendisse in est. Sagittis nisl rhoncus mattis 
-                rhoncus urna neque viverra justo nec. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. 
-                At auctor urna nunc id. Id venenatis a condimentum vitae sapien pellentesque habitant morbi 
-                tristique. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Ipsum a arcu cursus vitae. 
-                Vulputate sapien nec sagittis aliquam. Non nisi est sit amet facilisis magna etiam. Congue mauris 
-                rhoncus aenean vel elit scelerisque mauris pellentesque. Vulputate eu scelerisque felis imperdiet 
-                proin fermentum leo vel. Pharetra massa massa ultricies mi quis.
+            <p>
+                For anglers, Idaho is truly a land of opportunity and variety. From alpine 
+                valleys to lowland deserts, a dazzling array of waters await discovery.
+            </p>
+            <p>    
+                Idaho is graced with 26,000 miles of streams and rivers, more than 3,000 
+                natural lakes, and a quarter-million acres of ponds and reservoirs. 
+                Inhabiting those waters are 42 game fish species, from giant white sturgeon 
+                to wild trout, catfish to kokanee, and smallmouth bass to salmon and steelhead.
+            </p>
+            <p>
+                Most Idaho waters have year-round fishing seasons. However, many rivers and 
+                streams and some lakes have special rules and seasons. Pick up a fishing 
+                rules book, which outlines season dates, special regulations and bag limits, 
+                at all Idaho Fish and Game offices and most sporting goods stores statewide.
+            </p>
+            <p>
+                To fish in Idaho you need:
+                <ul>
+                    <li>A fishing license.</li>
+                    <li>Rules and regulations.</li>
+                    <li>Proper gear.</li>
+                    <li>A place to go.</li>
+                </ul>
             </p>
         </article>
         <div class="contact">
