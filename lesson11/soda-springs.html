@@ -10,14 +10,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small2.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="banner">
-        <h3>Saturday: Soda Springs Muffins in the Park!  9:00 a.m. Saturday at the city park pavilion.</h3>
+        <h3>Saturday: Soda Springs Muffins in the Park!  9:00 a.m. Saturday at the Soda Springs Pavilion.</h3>
     </div>
 
     <header class="clearfix">
@@ -46,72 +46,72 @@
         <h2 class="heading">Soda Springs, Idaho</h2>
         <div class="hero">
             <figure class = "hero-img">
-                <img src="images/soda-springs-hero.jpg" alt="snow falling with forest in background" sizes="90vw"
-                srcset = "images/soda-springs-400.jpg 400w,
-                images/soda-springs-600.jpg 600w, 
-                images/soda-springs-900.jpg 900w, 
-                images/soda-springs-1200.jpg 1200w">
+                <img src="images/soda-springs/soda-springs-hero.jpg" alt="snow falling with forest in background" sizes="90vw"
+                srcset = "images/soda-springs/soda-springs-400.jpg 400w,
+                images/soda-springs/soda-springs-600.jpg 600w, 
+                images/soda-springs/soda-springs-900.jpg 900w, 
+                images/soda-springs/soda-springs-1200.jpg 1200w">
             </figure>
-            <section class="weather-summary" class="clearfix">
+            <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: 28</p>
-                <p>High: <span id = "temp">42</span> &#176;F</p>
-                <p>Wind Chill: <span id = "windchill"></span> &#176;F</p>
-                <p>Wind Speed: 72%</p>
-                <p>Humidity: <span id= "windSpeed">14</span> MPH</p>
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id = "currentTemp"></span> &#176;F</p>
+                <p>Wind Chill: <span id = "windChill"></span> &#176;F</p>
+                <p>Wind Speed: <span id="windSpeed"></span> </p>
+                <p>Humidity: <span id= "humidity"></span> </p>
             </section>
         </div>
 
-            <div class="forecast">
-                <h3 class="heading">Five Day Forecast</h3>
-                <div class="forecast-table">
-                    <div class="forecast-col">
-                        <span class="forecast-head">Sunday</span>
-                        <img class="weather-img" src="images/cloudy-rain.png" alt="weather image place holder">
-                        <span class="data">High of 42 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Monday</span>
-                        <img class="weather-img" src="images/cloudy-wind-rain.png" alt="weather image place holder">
-                        <span class="data">High of 40 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Tuesday</span>
-                        <img class="weather-img" src="images/fog.png" alt="weather image place holder">
-                        <span class="data">High of 43 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Wednesday</span>
-                        <img class="weather-img" src="images/cloudy-sunny.png" alt="weather image place holder">
-                        <span class="data">High of 44 &#176;F</span>
-                    </div>
-                    <div class="forecast-col">
-                        <span class="forecast-head">Thursday</span>
-                        <img class="weather-img" src="images/cloud-pouring.png" alt="weather image place holder">
-                        <span class="data">High of 39 &#176;F</span>
-                    </div>
+        <div class="forecast">
+            <h3 class="heading">Five Day Forecast</h3>
+            <div class="forecast-table">
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek1">
+                    <img class="weathericon1" src="#" alt="">
+                    <span class="col-temp" id="forecast1">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek2">
+                    <img class="weathericon2" src="#" alt="">
+                    <span class="col-temp" id="forecast2">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek3">
+                    <img class="weathericon3" src="#" alt="">
+                    <span class="col-temp" id="forecast3">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek4">
+                    <img class="weathericon4" src="#" alt="">
+                    <span class="col-temp" id="forecast4">
+                </div>
+                <div class="forecast-col">
+                    <span class="col-head" id="dayofweek5">
+                    <img class="weathericon5" src="#" alt="">
+                    <span class="col-temp" id="forecast5">
                 </div>
             </div>
+        </div>
 
         <article class="article">
-            <h3 class="heading">Article Title</h3>
-            <h4>By George Williamson</h4>
+            <h3 class="heading">NO PARKING ON CITY STREETS NOV. 1ST - MARCH 31ST</h3>
+            <h4>By the Mayor of Soda Springs</h4>
             <figure class="article-img">
-                <img src="images/article-img.jpg" alt="man fishing. Photo by Lum3n from Pexels">
-                <figcaption>Fishing in Preston, Idaho</figcaption>
+                <img src="images/soda-springs/soda-springs-article.jpg" alt="white truck plowing the streets">
+                <figcaption>Plowing the Street in Soda Springs, Idaho</figcaption>
             </figure>
-            <p class="article-p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Eleifend mi in nulla posuere sollicitudin aliquam ultrices 
-                sagittis. Malesuada nunc vel risus commodo viverra maecenas. Aliquet porttitor lacus luctus 
-                accumsan tortor posuere ac ut consequat. In fermentum et sollicitudin ac orci phasellus egestas 
-                tellus rutrum. Pretium quam vulputate dignissim suspendisse in est. Sagittis nisl rhoncus mattis 
-                rhoncus urna neque viverra justo nec. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. 
-                At auctor urna nunc id. Id venenatis a condimentum vitae sapien pellentesque habitant morbi 
-                tristique. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Ipsum a arcu cursus vitae. 
-                Vulputate sapien nec sagittis aliquam. Non nisi est sit amet facilisis magna etiam. Congue mauris 
-                rhoncus aenean vel elit scelerisque mauris pellentesque. Vulputate eu scelerisque felis imperdiet 
-                proin fermentum leo vel. Pharetra massa massa ultricies mi quis.
+            <p>
+                SNOW PLOWING SEASON IS HERE! Please remember the following to help the City with 
+                snow removal and be considerate of your neighbors. Parking of motor vehicles, 
+                trailers, snowmobiles or other objects on any city street is NOT permitted from 
+                November 1st to March 31st regardless of the amount of snow fall. Violations of 
+                the winter parking rules are an infraction with a fine of $100 to $300 for each 
+                occurrence. Parking on Main Street in the business district is allowed during 
+                business hours. Private snow removal reminder: It is unlawful to deposit snow on 
+                any private property or public street or sidewalk. Snow is required to be placed 
+                on your own property. Violation of this is a misdemeanor. The City of Soda Springs 
+                greatly appreciates the cooperation of all City Residents. Thank you and have a 
+                safe and happy winter.
             </p>
         </article>
         <div class="contact">
