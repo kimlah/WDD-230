@@ -248,12 +248,12 @@ footer {
 /* CONTACT */
 .contact {
     text-align: center;
-    line-height: 2;
+    line-height: 1;
 }
 
 .contact figure.contact-img {
     width: 50%;
-    margin: 2% 2% 2% 0;
+    margin: 5% 2% 5% 5%;
     float: left;
 }
 
@@ -414,67 +414,7 @@ form label.top input:required:valid {
     width: 100%;
 }
 
-/* INDEX ARTICLE */
-.index-article {
-    background-color: #16425B50;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    max-width: 100%;
-    border: 5px double #102F42;
-    border-radius: 5px 5px;
-}
-
-.index-article p {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.index-article-img {
-    width: 45%;
-    margin-right: 2%;
-    margin-top: 0;
-    margin-bottom: 1%;
-    float: right;
-    border-radius: 2px;
-}
-
-.index-article-img img {
-    width: 100%;
-}
-
-.article figure.index-article-img figcaption {
-    text-align: center;
-    font-size: .75rem;
-}
-
-/* INDEX CONTACT */
-.index-contact {
-    background-color: #16425B50;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    max-width: 100%;
-    border: 5px double #102F42;
-    border-radius: 5px 5px;
-    text-align: center;
-}
-
-.index-contact-img {
-    width: 100%;
-}
-
-.index-contact-img img {
-    display: none;
-    width: 100%;
-}
-
-.index-contact-info {
-    display: block;
-    font-size: .9rem;
-}
-
-.index-contact-p {
-    line-height: normal;
-}
+/* ARTICLE & CONTACT-same as city pages */
 
 /*----------ATTRIBUTIONS----------*/
 .attributions h3 {

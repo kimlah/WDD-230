@@ -52,7 +52,12 @@
 
     /* ARTICLE AND CONTACT IMG*/
     .article figure.article-img, .contact figure.contact-img {
-        width: 250px;
+        width: 350px;
+        margin-bottom: 1rem;
+    }
+
+    .contact {
+        line-height: 2;
     }
 
     /*----------GALLERY----------*/
@@ -67,12 +72,12 @@
 
     /*----------HOME/INDEX PAGE----------*/
     /* TOWN CARDS */
-    .cards {
+    div.cards {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .cards section {
+    div.cards section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 10px auto;
@@ -82,24 +87,24 @@
         border-radius: 5px 5px;
     }
 
-    .cards h2 {
+    div.cards h2 {
         grid-row: 1;
         grid-column: span 2;
         margin: 0;
     }
 
-    .cards img {
-        float: left;
+    div.cards img {
+        grid-row: span 4;
         width: 100%;
         margin: 0;
     }
 
-    .cards h3 {
+    div.cards h3 {
         grid-column: 2;
         margin: 10px 0;
     }
 
-    .cards p {
+    div.cards p {
         grid-column: 2;
         margin: 0;
         line-height: 3;
