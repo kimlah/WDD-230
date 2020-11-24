@@ -383,12 +383,12 @@ form label.top input:required:valid {
     padding: 5rem 2rem 2rem 2rem;
 }
 
-.cards {
+div.cards {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.cards section {
+div.cards section {
     background-color: #16425B50;
     margin-top: .5rem;
     margin-bottom: .5rem;
@@ -397,7 +397,7 @@ form label.top input:required:valid {
     border-radius: 5px 5px;
 }
 
-.cards h2 {
+div.cards h2 {
     padding: 0;
     margin: 0;
     color: #E98A15;
@@ -405,11 +405,11 @@ form label.top input:required:valid {
     padding: 5px;
 }
 
-.cards p {
+div.cards p {
     text-align: center;
 }
 
-.cards img {
+div.cards img {
     border: none;
     width: 100%;
 }
