@@ -196,7 +196,7 @@ footer {
     border-radius: 2px;
 }
 
-.col-head {
+.dayofweek {
     display: block;
     padding: 5px;
     text-align: center;
@@ -223,7 +223,7 @@ footer {
 	text-align: center;
 }
 
-.weather-img {
+.forecastIcon {
     border: none;
     height: 45px;
 }
