@@ -1,4 +1,5 @@
 /* Variables */
+    // Weather Summary and Forecast Variables
 const APIurl = 'https://api.openweathermap.org/data/2.5/';
 const weatherAPIurl = APIurl + 'weather';
 const forecastAPIurl =  APIurl + 'forecast';
@@ -9,16 +10,20 @@ const sodasprings = '?id=5607916' + ID + APIunits;
 const fishhaven = '?lat=42.0380399&lon=-111.4048681' + ID + APIunits;
 
 /* Concatanated Links */
+    // Preston
 const prestonForecast = forecastAPIurl + preston;
 const prestonWeather = weatherAPIurl + preston;
+    // Soda Springs
 const sodaspringsForecast = forecastAPIurl + sodasprings;
 const sodaspringsWeather = weatherAPIurl + sodasprings;
+    // Fish Haven
 const fishhavenForecast = forecastAPIurl + fishhaven;
 const fishhavenWeather = weatherAPIurl + fishhaven;
 
-/* Choosing which page needs weather */
+/* Choosing which page needs weather and events */
 let weatherURL = "";
 let forecastURL = "";
+
 if (document.getElementById("preston")) {
     weatherURL = prestonWeather;
     forecastURL = prestonForecast;
@@ -84,5 +89,25 @@ fetch(forecastURL)
                 forecastIcon[day].setAttribute("alt", `Icon representing ${forecast[day].weather[0].description}`);
             }
         }
-
     });
+
+/* WINDCHILL */
+        /* The formula to calculate the wind chill factor is 
+        f=35.74+0.6215t−35.75s0.16+0.4275ts0.16, 
+        where f is the wind chill factor in Fahrenheit, 
+        t is the air average temperature in Fahrenheit, 
+        and s is the wind speed in miles per hour. */
+
+function getWindChill(temp, windSpeed) {
+   if ((temp <= 50) && (windSpeed > 3.0)) {
+      var windChill = (35.74 + (0.6215 * temp) - 
+      (35.75 * (Math.pow(windSpeed, 0.16))) + 
+      (0.4275 * temp * (Math.pow(windSpeed, 0.16)))).toFixed(0);
+   }
+   else {
+      var windChill = "N/A";
+   }
+   return windChill;
+}
+
+document.getElementById("windchill").textContent = getWindChill(temp, windSpeed);

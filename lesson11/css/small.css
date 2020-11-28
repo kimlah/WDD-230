@@ -69,7 +69,8 @@ a {
 .header {
     display: flex;
     font-family: 'Inria Serif', serif;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
     align-items: center;
@@ -179,8 +180,8 @@ footer {
     color: white;
 }
 
-/* FORECAST, ARTICLE, CONTACT, REPORT-RECEIVED */
-.forecast, .article, .contact, .report-received {
+/* FORECAST, ARTICLE, CONTACT, REPORT-RECEIVED, EVENTS */
+.forecast, .article, .contact, .report-received, div.eventcard  {
     background-color: #16425B50;
     border: 5px double #102F42;
     border-radius: 5px 5px;
@@ -226,6 +227,11 @@ footer {
 .forecastIcon {
     border: none;
     height: 45px;
+}
+
+/* EVENT CARDS */
+div.eventcard p {
+    text-align: center;
 }
 
 /* ARTICLE */
