@@ -5,8 +5,6 @@
         width: 100px;
     }
 
-    
-
     /* Nav */
     nav button {
         display: none;
@@ -30,6 +28,16 @@
     }
 
     /*----------PRESTON, SODA SPRINGS, FISH HAVEN----------*/
+    /* HERO */
+    .hero figure.hero-img {
+        width: 100%;
+    }
+
+    .hero figure.hero-img img {
+        width: 100%;
+        border-radius: 5px 5px;
+    }
+
     /* Weather Summary */
     .weather-summary {
         background-color: #95969D98;
@@ -42,12 +50,10 @@
     }
 
     .weather-summary h3 {
-        color: black;
         margin-top: 3px;
     }
 
     .weather-summary p {
-        color: black;
         margin-top: 6px;
         margin-bottom: 4px;
     }
@@ -65,7 +71,7 @@
         margin: 5% 0 5% 5%;
         float: left;
     }
-    
+
     .contact {
         line-height: 2;
     }

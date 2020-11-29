@@ -163,7 +163,7 @@ footer {
 /*----------PRESTON, SODA SPRINGS, FISH HAVEN----------*/
 /* WEATHER SUMMARY */
 .weather-summary {
-    background-color: #16425B90;
+    background-color: #16425B50;
     padding: 1rem;
     width: 100%;
     border: 5px double #102F42;
@@ -171,7 +171,7 @@ footer {
 }
 
 .weather-summary h3, .weather-summary p {
-    color: white;
+    color: black;
 }
 
 /* FORECAST, ARTICLE, CONTACT, REPORT-RECEIVED, EVENTS */
