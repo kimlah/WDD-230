@@ -14,12 +14,13 @@
     /* TOWN CARDS */
     div.cards {
         display: grid;
+        width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
     }
     
     div.cards section {
         max-width: 100%;
-        margin-right: 8px;
+        margin-right: 10px;
         margin-left: 0;
     }
 
@@ -40,7 +41,6 @@
 
     div.cards h3 {
         grid-column: 1 / span 2;
-        
     }
 
     div.cards p {
