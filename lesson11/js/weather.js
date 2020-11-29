@@ -79,11 +79,11 @@ fetch(forecastURL)
             // Temperature
             let forecastTemp = document.getElementsByClassName('forecastTemp');
             for (let i = 0; i < forecastTemp.length; i++) {
-                forecastTemp[day].innerHTML = forecast[day].main.temp;
+                forecastTemp[day].innerHTML = (forecast[day].main.temp).toFixed(0) + "&#8457;";
             }
 
             // Icon Image
-            let weatherIcon = document.getElementsByClassName("forecastIcon");
+            let forecastIcon = document.getElementsByClassName("forecastIcon");
             for (let i = 0; i < forecastIcon.length; i++) {
                 forecastIcon[day].setAttribute("src", `https://openweathermap.org/img/wn/${forecast[day].weather[0].icon}@2x.png`);
                 forecastIcon[day].setAttribute("alt", `Icon representing ${forecast[day].weather[0].description}`);
@@ -110,4 +110,4 @@ function getWindChill(temp, windSpeed) {
    return windChill;
 }
 
-document.getElementById("windchill").textContent = getWindChill(temp, windSpeed);
+document.getElementById("windChill").textContent = getWindChill(currentTemp, windSpeed);

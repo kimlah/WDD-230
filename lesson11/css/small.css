@@ -68,16 +68,17 @@ a {
 /* HEADER */
 .header {
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Inria Serif', serif;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
-    align-items: center;
 }
 
-.name-motto {
-    margin: auto;
+.logo {
+    padding: 5px;
 }
 
 .motto {
@@ -212,13 +213,14 @@ footer {
     color: white;
     border: 1px solid #102F42;
     text-align: center;
+    width: 100px;
 }
 
 .forecast-col:hover {
     background-color: #102F42;
 }
 
-.data {
+.forecastTemp {
 	display: block;
 	padding: 0 5px 5px;
 	text-align: center;
@@ -226,8 +228,9 @@ footer {
 
 .forecastIcon {
     border: none;
-    height: 45px;
+    height: 60px;
 }
+
 
 /* EVENT CARDS */
 div.eventcard p {
