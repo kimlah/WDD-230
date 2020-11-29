@@ -53,11 +53,19 @@
     }
 
     /* ARTICLE AND CONTACT IMG*/
-    .article figure.article-img, .contact figure.contact-img {
-        width: 350px;
-        margin-bottom: 1rem;
+    .article figure.article-img {
+        width: 45%;
+        max-width: 350px;;
+        margin: 0 0 5% 5%;
     }
 
+    .contact figure.contact-img {
+        width: 45%;
+        max-width: 350px;;
+        margin: 5% 0 5% 5%;
+        float: left;
+    }
+    
     .contact {
         line-height: 2;
     }
