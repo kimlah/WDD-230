@@ -38,7 +38,6 @@ h2 {
     font-family: 'Inria Serif', serif;
     color: black;
     text-align: center;
-    padding-top: 2rem;
 }
 
 h3, h4, h5, h6 {
@@ -68,15 +67,17 @@ a {
 /* HEADER */
 .header {
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Inria Serif', serif;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color:#16425B;
     color: #E0E0E0;
-    align-items: center;
 }
 
-.name-motto {
-    margin: auto;
+.logo {
+    padding: 5px;
 }
 
 .motto {
@@ -144,18 +145,11 @@ footer {
     clear: both;
 }
 
-
-/*----------PRESTON, SODA SPRINGS, FISH HAVEN----------*/
-
-/* MAIN PRESTON PADDING */
-.preston, .soda-springs, .fish-haven, .index {
-    padding: 0 2rem 2rem 2rem;
-}
-
 /* HERO */
 .hero {
     position: relative;
 }
+
 .hero figure.hero-img {
     width: 100%;
     margin: 10px auto;
@@ -166,9 +160,10 @@ footer {
     border-radius: 5px 5px;
 }
 
+/*----------PRESTON, SODA SPRINGS, FISH HAVEN----------*/
 /* WEATHER SUMMARY */
 .weather-summary {
-    background-color: #16425B90;
+    background-color: #16425B50;
     padding: 1rem;
     width: 100%;
     border: 5px double #102F42;
@@ -176,16 +171,16 @@ footer {
 }
 
 .weather-summary h3, .weather-summary p {
-    color: white;
+    color: black;
 }
 
-/* FORECAST, ARTICLE, CONTACT, REPORT-RECEIVED */
-.forecast, .article, .contact, .report-received {
+/* FORECAST, ARTICLE, CONTACT, REPORT-RECEIVED, EVENTS */
+.forecast, .article, .contact, .report-received, div.eventcard  {
     background-color: #16425B50;
     border: 5px double #102F42;
     border-radius: 5px 5px;
     padding: 1rem;
-    margin: 10px 0 15px 0;
+    margin: 10px 0 0 0;
 }
 
 /* 5 DAY FORECAST */
@@ -196,7 +191,7 @@ footer {
     border-radius: 2px;
 }
 
-.col-head {
+.dayofweek {
     display: block;
     padding: 5px;
     text-align: center;
@@ -206,26 +201,34 @@ footer {
 }
 
 .forecast-col {
-    flex: 1 1 auto;
+    flex: 1 1 0;
+    width: 0;
     background-color: #16425B;
     color: white;
     border: 1px solid #102F42;
     text-align: center;
+    /*width: 100px;*/
 }
 
 .forecast-col:hover {
     background-color: #102F42;
 }
 
-.data {
+.forecastTemp {
 	display: block;
 	padding: 0 5px 5px;
 	text-align: center;
 }
 
-.weather-img {
+.forecastIcon {
     border: none;
-    height: 45px;
+    height: 60px;
+}
+
+
+/* EVENT CARDS */
+div.eventcard p {
+    text-align: center;
 }
 
 /* ARTICLE */
@@ -252,9 +255,8 @@ footer {
 }
 
 .contact figure.contact-img {
-    width: 50%;
+    width: 90%;
     margin: 5% 2% 5% 5%;
-    float: left;
 }
 
 .contact figure.contact-img img {
@@ -284,7 +286,6 @@ figcaption {
 }
 
 /* FORM */
-
 form {
     width: 90%;
     max-width: 500px;
@@ -379,11 +380,9 @@ form label.top input:required:valid {
 
 /*----------HOME/INDEX----------*/
 /* TOWN CARDS */
-.index {
-    padding: 5rem 2rem 2rem 2rem;
-}
-
 div.cards {
+    width: 90%;
+    margin: auto auto;
     display: grid;
     grid-template-columns: 1fr;
 }

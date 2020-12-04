@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Preston, Idaho Town Page</title>
-    <meta name="description" content="Preston, Idaho town page for Bright or Stormy. There will be 
-    a current weather summary, 5 day forecast, and article.">
+    <title>Fish Haven, Idaho Town Page</title>
+    <meta name="description" content="Fish Haven, Idaho town page for Bright or Stormy. Includes weather summary, 5 day forecast, town events and article.">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link href="css/normalize.css" rel="stylesheet">
@@ -42,7 +41,7 @@
     </header>
     
 
-    <main class="fish-haven">
+    <main id="fish-haven">
         <h2 class="heading">Fish Haven, Idaho</h2>
         <div class="hero">
             <figure class = "hero-img">
@@ -56,8 +55,8 @@
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="current"></span></p>
                 <p>Temperature: <span id = "currentTemp"></span> &#176;F</p>
-                <p>Wind Chill: <span id = "windChill"></span> &#176;F</p>
                 <p>Wind Speed: <span id="windSpeed"></span> </p>
+                <p>Wind Chill: <span id = "windChill"></span> &#176;F</p>
                 <p>Humidity: <span id= "humidity"></span> </p>
             </section>
         </div>
@@ -66,31 +65,35 @@
             <h3 class="heading">Five Day Forecast</h3>
             <div class="forecast-table">
                 <div class="forecast-col">
-                    <span class="col-head" id="dayofweek1">
-                    <img class="weathericon1" src="#" alt="">
-                    <span class="col-temp" id="forecast1">
+                    <span class="dayofweek" id="dayofweek1"></span>
+                    <img class="forecastIcon" id="icon1" src="#" alt="#">
+                    <span class="forecastTemp" id="forecast1"></span>
                 </div>
                 <div class="forecast-col">
-                    <span class="col-head" id="dayofweek2">
-                    <img class="weathericon2" src="#" alt="">
-                    <span class="col-temp" id="forecast2">
+                    <span class="dayofweek" id="dayofweek2"></span>
+                    <img class="forecastIcon" id="icon2" src="#" alt="#">
+                    <span class="forecastTemp" id="forecast2"></span>
                 </div>
                 <div class="forecast-col">
-                    <span class="col-head" id="dayofweek3">
-                    <img class="weathericon3" src="#" alt="">
-                    <span class="col-temp" id="forecast3">
+                    <span class="dayofweek" id="dayofweek3"></span>
+                    <img class="forecastIcon" id="icon3" src="#" alt="#">
+                    <span class="forecastTemp" id="forecast3"></span>
                 </div>
                 <div class="forecast-col">
-                    <span class="col-head" id="dayofweek4">
-                    <img class="weathericon4" src="#" alt="">
-                    <span class="col-temp" id="forecast4">
+                    <span class="dayofweek" id="dayofweek4"></span>
+                    <img class="forecastIcon" id="icon4" src="#" alt="#">
+                    <span class="forecastTemp" id="forecast4"></span>
                 </div>
                 <div class="forecast-col">
-                    <span class="col-head" id="dayofweek5">
-                    <img class="weathericon5" src="#" alt="">
-                    <span class="col-temp" id="forecast5">
+                    <span class="dayofweek" id="dayofweek5"></span>
+                    <img class="forecastIcon" id="icon5" src="#" alt="#">
+                    <span class="forecastTemp" id="forecast5"></span>
                 </div>
             </div>
+        </div>
+
+        <div class="eventcard">
+
         </div>
 
         <article class="article clearfix">
@@ -150,12 +153,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/web-font-load.js"></script>
-    <script src="js/banner.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/current-year.js"></script>
-    <script src="js/current-date.js"></script>
-    <script src="js/lazyload.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/weather.js"></script>
     </body>
 </html>
