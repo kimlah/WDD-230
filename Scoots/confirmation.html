@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>~Scoots Home</title>
+    <meta name="description" content="Scoots website for scooter, ATV and Jeep rentals in Cozumel">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body class="clearfix">
+    <header class="clearfix">
+        <div class="header">
+            <img class="logo" src="images/logo.png" alt="~Scoots logo, orange scooter.">
+            <div class="name-motto">
+            <h1>~Scoots</h1>
+                <h3 class="motto">MOTTO</h3>
+            </div>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()"> &#9776; Menu </button>
+            <ul id="menu" class="hide-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main class="clearfix">
+        <div class="confirmation">
+            <h2>Your Reservation has been received.</h2>
+            DISPLAY Reservation INFORMATION
+            <h2>We just need one more thing from you, your Deposit.</h2>
+                <form method="get" action="deposit.html">
+                    <fieldset>
+                        <legend><b>Billing Information</b></legend>
+                        <label class="">First Name<input type="text" name="fname" required></label>
+                        <label class="">Last Name<input type="text" name="lname" required></label>
+                        <label class="">Name on Card<input type="text" name="card-name" required></label>
+                        <label class="">Address<input type="text" name="address" required></label>
+                        <label class="">City<input type="text" name="city" required></label>
+                        <label class="">State<input type="text" name="state" placeholder="XX" required></label>
+                        <label class="">Zip<input type="number" name="zip" placeholder="12345" required></label>
+
+                        <label class="">Credit Card Number<input type="number" name="card-num" placeholder="XXXX-XXXX-XXXX-XXXX" required></label>
+                        <label class="">Exp Month<input type="number" name="exp-month" placeholder="XX" required></label>
+                        <label class="">Exp Year<input type="number" name="exp-year" placeholder="XXXX" required></label>
+                        <label class="">CVV<input type="number" name="cvv" placeholder="XXX" required></label>
+                    </fieldset>
+
+                    <input class="submitBtn" type="submit" value="Process My Deposit">
+
+                </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy;<span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <a href="wireframes.html">Wireframes</a> | <span id="currentDate"></span> | <a href="attributions.html"  target="blank">Attributions</a>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    </body>
+</html>

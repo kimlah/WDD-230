@@ -37,7 +37,58 @@
     
 
     <main class="reservations">
-       
+        <h2>Reservations</h2>
+        <p>* Required Fields</p>
+
+        <form method="get" action="confirmation.html">
+            <fieldset>
+                <legend><b>Your Information</b></legend>
+                    <label class="">First Name*<input type="text" name="fname" required></label>
+                    <label class="">Last Name*<input type="text" name="lname" required></label>
+                    <label class="">Phone #*<input type="tel" name="phone" placeholder="1234569876" required></label>
+                    <label class="">Email* <input type="email" name="email" placeholder="email@email.com" required></label>
+                    <label class="">Home State or Country* <input type="text" name="home-location" required></label>
+                    <label class="">Cruise Line <input type="text" name="cruise-line"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Reservation Details</b></legend>
+                <label class="">Rental Date*<input type="date" name="rental-date" required></label>
+                
+                <label class="">Number of Days*
+                    <select name="num-days">
+                        <option value=".5">Half Day - 3 Hours</option>
+                        <option value="1">1 Day</option>
+                        <option value="2">2 Days</option>
+                        <option value="3">3 Days</option>
+                        <option value="4">4 Days</option>
+                        <option value="5">5 Days</option>
+                        <option value="6">6 Days</option>
+                        <option value="7">7 Days</option>
+                    </select>
+                </label>
+
+                <label class="">Vehicle*
+                    <select name="vehicle">
+                        <option vale="honda-metro">Honda Metro Scooter - 1 Person</option>
+                        <option vale="honda-dio">Honda Dio Scooter - 2 People</option>
+                        <option vale="honda-pcx150">Honda PCX150 Scooter - 2 People</option>
+                        <option vale="honda-pioneer">Honda Pioneer ATV - 4 People</option>
+                        <option vale="jeep-wrangler-4door">Jeep Wrangler 4 Door with A/C - 5 People</option>
+                        <option vale="jeep-wrangler-2door">Jeep Wrangler 2 Door - 4 People</option>
+                    </select>
+                </label>
+
+                <label class="">Number of Vehicles*<input type="number" name="vehicle-num" required></label>
+
+                <label class="additional-info" >Special Requests
+                    <textarea cols="30" placeholder="Special accommodations, comments, questions, etc. Drop off requests-Please give the location for drop-off."></textarea>
+                </label>
+            </fieldset>
+
+            <input class="submitBtn" type="submit" value="Reserve my Ride">
+
+        </form>
     </main>
 
     <footer>
