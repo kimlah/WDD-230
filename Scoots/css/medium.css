@@ -1,0 +1,30 @@
+/*----------MEDIUM----------*/
+@media only screen and (min-width: 50em) {
+    /*----------ALL PAGES----------*/
+    /* logo */
+    .header figure.logo {
+        width: 100px;
+    }
+
+    /* Nav */
+    nav button {
+        display: none;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul.hide-navigation, nav ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        border: 1px solid rgba(0,0,0,.5);
+    }
+
+    /* Body CSS */
+    main {
+        max-width: 1200px;
+    }
+}
