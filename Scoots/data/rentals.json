@@ -1,81 +1,93 @@
 {
     "vehicle": [
         {
+            "picture": "./images/metro.jpg",
             "type":"Scooter",
             "make":"Honda Metro",
-            "max-people":"1",
+            "description": "Power: 49cc",
+            "seats":"1",
             "reservation": {
-                "half-day":"$20",
-                "full-day":"$30"
+                "halfday":"$20",
+                "fullday":"$30"
             },
             "walkIn": {
-                "half-day":"$25",
-                "full-day":"$35"
+                "halfday":"$25",
+                "fullday":"$35"
             }
         },
         {
+            "picture": "./images/dio.jpg",
             "type":"Scooter",
             "make":"Honda Dio",
-            "max-people":"2",
+            "description": "Power: 110cc",
+            "seats":"2",
             "reservation": {
-                "half-day":"$30",
-                "full-day":"$40"
+                "halfday":"$30",
+                "fullday":"$40"
             },
-            "walk-in": {
-                "half-day":"$35",
-                "full-day":"$45"
+            "walkIn": {
+                "halfday":"$35",
+                "fullday":"$45"
             }
         },
         {
+            "picture": "./images/pcx150.jpg",
             "type":"Scooter",
             "make":"Honda PCX150",
-            "max-people":"2",
+            "description": "Power: 149cc",
+            "seats":"2",
             "reservation": {
-                "half-day":"$40",
-                "full-day":"$50"
+                "halfday":"$40",
+                "fullday":"$50"
             },
-            "walk-in": {
-                "half-day":"$45",
-                "full-day":"$55"
+            "walkIn": {
+                "halfday":"$45",
+                "fullday":"$55"
             }
         },
         {
+            "picture": "./images/pioneer.jpg",
             "type":"ATV",
             "make":"Honda Pioneer",
-            "max-people":"4",
+            "description": "Model: 1000",
+            "seats":"4",
             "reservation": {
-                "half-day":"$50",
-                "full-day":"$70"
+                "halfday":"$50",
+                "fullday":"$70"
             },
-            "walk-in": {
-                "half-day":"$60",
-                "full-day":"$80"
+            "walkIn": {
+                "halfday":"$60",
+                "fullday":"$80"
             }
         },
         {
+            "picture": "./images/wrangler-4.jpg",
             "type":"Jeep",
-            "make":"4 Door Wrangler",
-            "max-people":"5",
+            "make":"Jeep Wrangler",
+            "description": "manual with A/C",
+            "seats":"5",
             "reservation": {
-                "half-day":"$70",
-                "full-day":"$100"
+                "halfday":"$70",
+                "fullday":"$100"
             },
-            "walk-in": {
-                "half-day":"$85",
-                "full-day":"$125"
+            "walkIn": {
+                "halfday":"$85",
+                "fullday":"$125"
             }
         },
         {
+            "picture": "./images/wrangler-2.jpg",
             "type":"Jeep",
-            "make":"2 Door Wrangler",
-            "max-people":"4",
+            "make":"Jeep Wrangler",
+            "description": "Manual with open air",
+            "seats":"4",
             "reservation": {
-                "half-day":"$60",
-                "full-day":"$85"
+                "halfday":"$60",
+                "fullday":"$85"
             },
-            "walk-in": {
-                "half-day":"$70",
-                "full-day":"$90"
+            "walkIn": {
+                "halfday":"$70",
+                "fullday":"$90"
             }
         }
     ]

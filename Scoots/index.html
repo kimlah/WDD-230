@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>~Scoots Home</title>
     <meta name="description" content="Scoots website for scooter, ATV and Jeep rentals in Cozumel">
+    <meta name="google-site-verification" content="UeTTrN3v3lCy3l4N8VXJGmI-BDUpDwbd-kOV2IuXG9Q" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link href="css/normalize.css" rel="stylesheet">
@@ -15,11 +16,10 @@
 </head>
 
 <body class="clearfix">
-    <header class="clearfix">
-        <div class="header">
-            <img class="logo" src="images/logo.png" alt="~Scoots logo, orange scooter.">
+    <header>
+        <div class="clearfix">
+            <img class="logo" src="images/logo3.png" alt="~Scoots logo, orange scooter.">
             <div class="name-motto">
-            <h1>~Scoots</h1>
                 <h3 class="motto">MOTTO</h3>
             </div>
         </div>
@@ -37,34 +37,45 @@
     
 
     <main class="index">
-        <div>
+        <div class="rental-summary">
             <h2>Cruise Cozumel, Your Way!</h2>
-
-        </div>
-        <div class="">
             <h2>Check out our rides!</h2>
-                <h3>Scooters</h3>
-                    <img src="images/Scooter-icon.png" alt="ALT DESCRIPTION">
-                    <ul>
-                        <li>Honda Metro - 1 Person</li>
-                        <li>Honda Dio - 2 People</li>
-                        <li>Honda PCX150 - 2 People</li>
-                    </ul>
-                <h3>ATVs</h3>
-                    <img src="images/ATV-icon.png" alt="ALT DESCRIPTION">
-                    <ul>
-                        <li>Honda Pioneer - 4 People</li>
-                    </ul>
-                <h3>Jeeps</h3>
-                    <img src="images/Jeep-icon.png" alt="ALT DESCRIPTION">
-                    <ul>
-                        <li>Jeep Wrangler - 4 Door with A/C - 5 People</li>
-                        <li>Jeep Wrangler - 2 Door - 4 People</li>
-                    </ul>
+                <h3 class="scooter-summary">Scooters</h3>
+                    <img src="images/metro2.jpg" alt="ALT DESCRIPTION">
+                        <p>Honda Metro - 1 Person</p>
+                    <img src="images/dio2.jpg" alt="ALT DESCRIPTION">
+                        <p>Honda Dio - 2 People</p>
+                    <img src="images/pcx1502.jpg" alt="ALT DESCRIPTION">
+                        <p>Honda PCX150 - 2 People</p>
+                <h3 class="atv-summary">ATVs</h3>
+                    <img src="images/pioneer2.jpg" alt="ALT DESCRIPTION">
+                        <p>Honda Pioneer - 4 People</p>
+                <h3 class="jeep-summary">Jeeps</h3>
+                    <img src="images/wrangler-43.jpg" alt="ALT DESCRIPTION">
+                        <p>Jeep Wrangler - 4 Door with A/C - 5 People</p>
+                    <img src="images/wrangler-23.jpg" alt="ALT DESCRIPTION">
+                        <p>Jeep Wrangler - 2 Door - 4 People</p>
         </div>
 
-        <div class="weather">
-
+        <div class="cozumel">
+            <h2 class="heading">Three Day Forecast</h2>
+            <div class="forecast-table">
+                <div class="forecast-col">
+                    <span class="dayofweek" id="dayofweek1"></span>
+                    <img class="forecastIcon" id="icon1" src="#" alt="#">
+                    <span class="forecastTemp" id="forecast1"></span>
+                </div>
+                <div class="forecast-col">
+                    <span class="dayofweek" id="dayofweek2"></span>
+                    <img class="forecastIcon" id="icon2" src="#" alt="#">
+                    <span class="forecastTemp" id="forecast2"></span>
+                </div>
+                <div class="forecast-col">
+                    <span class="dayofweek" id="dayofweek3"></span>
+                    <img class="forecastIcon" id="icon3" src="#" alt="#">
+                    <span class="forecastTemp" id="forecast3"></span>
+                </div>
+            </div>
         </div>
 
         <div class="clearfix">
@@ -74,36 +85,52 @@
                     Visit us at our two locations:
                 </h3>
 
+            <div>
                 <h3 class="location-heading">Playa del Carmen-Cozumel Ferry Dock</h3>
-                <img src="images/Location-icon.png">
-                <p class="contact-p"> 6587 Emerald Lane, el Centro de Cozumel 98999</p>
-                <img src="images/Phone-icon.png">
-                <p class="contact-p">(000)000-0000</p>
-                <img src="images/Email-icon.png">
-                <p class="contact-p">scoots-carmen-cozumel@gmail.com</p>
-
-                <h3 class="location-heading">Terminal Puerta Maya</h3>
-                <img src="images/Location-icon.png">
-                <p class="contact-p"> 9875 Cherry Lane, Somewhere, Cozumel 98999</p>
-                <img src="images/Phone-icon.png">
-                <p class="contact-p">(000)000-0000</p>
-                <img src="images/Email-icon.png">
-                <p class="contact-p">scoots-puerta-maya@gmail.com</p>
+                <div class="contact-details">
+                    <img src="images/Location-icon.png">
+                    <p class="contact-p"> 6587 Emerald Lane, el Centro de Cozumel 98999</p>
+                </div>
+                <div class="contact-details">
+                    <img src="images/Phone-icon.png">
+                    <p class="contact-p">(000)000-0000</p>
+                </div>
+                <div class="contact-details">
+                    <img src="images/Email-icon.png">
+                    <p class="contact-p">scoots-carmen-cozumel@gmail.com</p>
+                </div>
             </div>
+
+            <div>
+                <h3 class="location-heading">Terminal Puerta Maya</h3>
+                <div class="contact-details">
+                    <img src="images/Location-icon.png">
+                    <p class="contact-p"> 9875 Cherry Lane, Somewhere, Cozumel 98999</p>
+                </div>
+                <div class="contact-details">
+                    <img src="images/Phone-icon.png">
+                    <p class="contact-p">(000)000-0000</p>
+                </div>
+                <div class="contact-details">
+                    <img src="images/Email-icon.png">
+                    <p class="contact-p">scoots-puerta-maya@gmail.com</p>
+                </div>
+            </div>
+        </div>
+            <h2 class="heading">Or Visit us on Social Media</h2>
             <div class="social">
-                <h2 class="heading">Or Visit us on Social Media</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com/"> <img src="images/facebook-icon.png"></a></li>
-                    <li><a href="https://www.instagram.com/"> <img src="images/instagram-icon.png"></a></li>
-                    <li><a href="https://twitter.com/?lang=en"> <img src="images/twitter-icon.png"></a></li>
-                    <li><a href="https://www.youtube.com/"> <img src="images/youtube-icon-2.png"></a></li>
-                </ul>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"> <img class="social1" src="images/facebook-icon.png"></a>
+                    <a href="https://www.instagram.com/"> <img class="social2" src="images/instagram-icon.png"></a>
+                    <a href="https://twitter.com/?lang=en"> <img class="social3" src="images/twitter-icon.png"></a>
+                    <a href="https://www.youtube.com/"> <img class="social4" src="images/youtube-icon-2.png"></a>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
-        &copy;<span id="currentYear"></span> - ~Scoots Project | Keeley Imlah | <a href="wireframes.html">Wireframes</a> | <span id="currentDate"></span> | <a href="attributions.html"  target="blank">Attributions</a>
+        &copy;<span id="currentYear"></span> - ~Scoots Project | Keeley Imlah | <span id="currentDate"></span> | <a href="attributions.html"  target="blank">Attributions</a>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
