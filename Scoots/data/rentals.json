@@ -64,7 +64,7 @@
             "photo": "wrangler-43.jpg",
             "type":"Jeep",
             "make":"Jeep Wrangler",
-            "description": "manual with A/C",
+            "description": "Manual with A/C",
             "seats":"5",
             "reservation": {
                 "halfday":"$70",

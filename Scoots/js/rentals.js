@@ -12,19 +12,23 @@ fetch(file)
         for (let i = 0; i < vehicle.length; i++) {
             let card = document.createElement("section");
 
-            let image = document.createElement("img");
-                image.setAttribute("src", "images/" + vehicle[i].photo);
-                image.setAttribute("alt", `Photo of ${vehicle[i].make}`);
-                card.appendChild(image);
-
             let h2 = document.createElement("h2");
                 h2.textContent = vehicle[i].make;
                 card.appendChild(h2);
                 document.querySelector("div.vehicle-cards").appendChild(card);
 
+            let image = document.createElement("img");
+                image.setAttribute("src", "images/" + vehicle[i].photo);
+                image.setAttribute("alt", `Photo of ${vehicle[i].make}`);
+                card.appendChild(image);
+
             let h3 = document.createElement("h3");
-                h3.textContent = "Extra Information: " + vehicle[i].description + ", Seats " + vehicle[i].seats;
+                h3.textContent = vehicle[i].description + ", Seats " + vehicle[i].seats;
                 card.appendChild(h3);
+            
+            let p5 = document.createElement("p");
+                p5.textContent = "Classification: " + vehicle[i].type;
+                card.appendChild(p5);
 
             let p1 = document.createElement("p");
                 p1.textContent = "Reservation Half Day: " + vehicle[i].reservation.halfday;

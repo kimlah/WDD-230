@@ -36,5 +36,54 @@
     .social img {
         width: 75px;
     }
+
+    /*------RENTALS------*/
+    div.vehicle-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div.vehicle-cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        border: solid 2px black;
+    }
+
+    div.vehicle-cards h2 {
+        border-bottom: solid 2px black;
+        grid-row: 1;
+        grid-column: span 2;
+    }
+
+    div.vehicle-cards img {
+        grid-row: span 6;
+        width: 100%;
+    }
+
+    div.vehicle-cards section:nth-child(even) img {
+        grid-column: 2;
+    }
+
+    div.vehicle-cards section:nth-child(even) h3{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    div.vehicle-cards section:nth-child(even) p {
+        grid-column: 1;
+    }
+
+    div.vehicle-cards p {
+        grid-column: 2;
+        margin: 0;
+        line-height: 1;
+    }
+
+    div.vehicle-cards h3 {
+        grid-column: 2;
+        margin-top: 50px;
+        line-height: 1;
+    }
     
 }
