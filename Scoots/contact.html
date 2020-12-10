@@ -17,9 +17,8 @@
 <body class="clearfix">
     <header class="clearfix">
         <div class="header">
-            <img class="logo" src="images/logo.png" alt="~Scoots logo, orange scooter.">
+            <img class="logo" src="images/logo3.png" alt="~Scoots logo, orange scooter.">
             <div class="name-motto">
-            <h1>~Scoots</h1>
                 <h3 class="motto">MOTTO</h3>
             </div>
         </div>
@@ -36,48 +35,76 @@
     </header>
     
 
-    <main class="index">
+    <main class="contact">
         <div class="clearfix">
+            <form method="get" action="contact-confirm.html">
+                <h2>We'd Love To Hear From You</h2>
+                <fieldset>
+                        <label class="top">Name<input type="text" name="name" required></label>
+                        <label class="top">Email<input type="email" name="email" placeholder="email@email.com" required></label>
+                        <label class="top">Questions or Comments
+                            <textarea cols="30" placeholder="If you have any questions, comments or concerns let us know!" required></textarea>
+                    </label>
+                </fieldset>
+    
+                <input class="submitBtn" type="submit" value="Contact Us">
+    
+            </form>
+
             <div class="contact">
-                <h2 class="heading">Contact Information</h2>
-                <h3>Scoots has two locations in Cozumel to meet your vacations transportation needs
-                    Visit us at our two locations:
-                </h3>
-
-                <h3 class="location-heading">Playa del Carmen-Cozumel Ferry Dock</h3>
-                <img src="images/Location-icon.png">
-                <p class="contact-p"> 6587 Emerald Lane, el Centro de Cozumel 98999</p>
-                <img src="images/Phone-icon.png">
-                <p class="contact-p">(000)000-0000</p>
-                <img src="images/Email-icon.png">
-                <p class="contact-p">scoots-carmen-cozumel@gmail.com</p>
-
-                <h3 class="location-heading">Terminal Puerta Maya</h3>
-                <img src="images/Location-icon.png">
-                <p class="contact-p"> 9875 Cherry Lane, Somewhere, Cozumel 98999</p>
-                <img src="images/Phone-icon.png">
-                <p class="contact-p">(000)000-0000</p>
-                <img src="images/Email-icon.png">
-                <p class="contact-p">scoots-puerta-maya@gmail.com</p>
+                <h2 class="heading">~Scoots has two locations in Cozumel to meet your vacations transportation needs.</h2>
+                    <div id="google-map" style="width:100%; height:400px;"></div>
+                    <div>
+                        <h3 class="location-heading">Playa del Carmen-Cozumel Ferry Dock</h3>
+                        <div class="contact-details">
+                            <img src="images/Location-icon.png">
+                            <p class="contact-p"> 6587 Emerald Lane, el Centro de Cozumel 98999</p>
+                        </div>
+                        <div class="contact-details">
+                            <img src="images/Phone-icon.png">
+                            <p class="contact-p">(000)000-0000</p>
+                        </div>
+                        <div class="contact-details">
+                            <img src="images/Email-icon.png">
+                            <p class="contact-p">scoots-carmen-cozumel@gmail.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="location-heading">Terminal Puerta Maya</h3>
+                        <div class="contact-details">
+                            <img src="images/Location-icon.png">
+                            <p class="contact-p"> 9875 Cherry Lane, Somewhere, Cozumel 98999</p>
+                        </div>
+                        <div class="contact-details">
+                            <img src="images/Phone-icon.png">
+                            <p class="contact-p">(000)000-0000</p>
+                        </div>
+                        <div class="contact-details">
+                            <img src="images/Email-icon.png">
+                            <p class="contact-p">scoots-puerta-maya@gmail.com</p>
+                        </div>
+                    </div>
             </div>
+            
             <div class="social">
                 <h2 class="heading">Or Visit us on Social Media</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com/"> <img src="images/facebook-icon.png"></a></li>
-                    <li><a href="https://www.instagram.com/"> <img src="images/instagram-icon.png"></a></li>
-                    <li><a href="https://twitter.com/?lang=en"> <img src="images/twitter-icon.png"></a></li>
-                    <li><a href="https://www.youtube.com/"> <img src="images/youtube-icon-2.png"></a></li>
-                </ul>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"> <img class="social1" src="images/facebook-icon.png"></a>
+                    <a href="https://www.instagram.com/"> <img class="social2" src="images/instagram-icon.png"></a>
+                    <a href="https://twitter.com/?lang=en"> <img class="social3" src="images/twitter-icon.png"></a>
+                    <a href="https://www.youtube.com/"> <img class="social4" src="images/youtube-icon-2.png"></a>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
-        &copy;<span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <a href="wireframes.html">Wireframes</a> | <span id="currentDate"></span> | <a href="attributions.html"  target="blank">Attributions</a>
+        &copy;<span id="currentYear"></span> - The Weather School Project | Keeley Imlah | <span id="currentDate"></span> | <a href="attributions.html"  target="blank">Attributions</a>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk993O_22hSDqjEDzo438CWZeBPAhRxkg&callback=myMap"></script>
+    <script src="js/google-map.js"></script>
     </body>
 </html>

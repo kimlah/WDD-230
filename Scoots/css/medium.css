@@ -27,4 +27,14 @@
     main {
         max-width: 1200px;
     }
+
+    /*------CONTACT------*/
+    .social-links {
+        width: 50%;
+    }
+
+    .social img {
+        width: 75px;
+    }
+    
 }

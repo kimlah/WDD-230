@@ -1,4 +1,4 @@
-/*----------SCOOTS PLAN----------*/
+/*----------~SCOOTS----------*/
 
 /* Clearfix: Force an element not to collapse */
 .clearfix:after {
@@ -13,18 +13,17 @@
 }
 
 body {
-    background-color: #EDE7E3;
+    background-color: #16697A;
 }
 
 main {
-    background-color: #82C0CC;
+    background-color: #EDE7E3;
+    color: black;
     margin: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-/*----------SMALL----------*/
-/* MAIN */
 h1 {
     font-family: 'Prata', serif;
     text-align: center;
@@ -37,25 +36,21 @@ h2, h3, h4, h5, h6 {
 
 main p, main ul, main li {
     font-family: 'Open Sans', sans-serif;
-    padding: 1.5rem;
 }
 
 /* HEADER */
 header {
     text-align: center;
-    background-color: #16697A;
-    padding-top: 1rem;
-    color: white;
+    background-color: #82C0CC;
 }
 
-/* FOOTER */
-footer {
-    margin: auto;
-    font-family: 'Inria Serif', serif;
-    padding: 1rem;
-    background-color: #16697A;
-    color: white;
-    text-align: center;
+.logo {
+    max-width: 400px;
+    justify-content: flex-start;
+}
+
+.motto {
+    display: inline-block;
 }
 
 /* NAVIGATION */
@@ -63,7 +58,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    color: #102F42 ;
+    color: black;
 } 
 
 nav {
@@ -98,77 +93,235 @@ nav ul li a:hover {
     background-color: rgba(0,0,0,.4);
 }
 
+/* FOOTER */
+footer {
+    margin: auto;
+    font-family: 'Inria Serif', serif;
+    padding: 1rem;
+    background-color: #16697A;
+    color: white;
+    text-align: center;
+}
+
 /*------INDEX------*/
-.logo {
-    display: block;
-    margin: auto auto;
-    max-width: 400px;
-}
 
-/*------TARGET AUDIENCE------*/
-main ul {
-    list-style-position: inside;
-  }
-  
-main li {
-    line-height: normal;
-    text-align: center;
-}
-
-/*------COLOR SCHEME------*/
-table {
-    margin: auto auto;
-}
-table tr td {
-    border: 2px double black;
-}
-
-.color1 {
-    background-color: #16697A;
-    color: white;
-}
-
-.color2 {
-    background-color: #489FB5;
-}
-
-.color3 {
-    background-color: #82C0CC;
-}
-
-.color4 {
-    background-color: #EDE7E3;
-}
-
-.color5 {
-    background-color: #FFA21F;
-}
-
-/*------TYPOGRAPHY------*/
-.typography h1 {
-    background-color: #16697A;
-    color: white;
-}
-
-/*------WIREFRAME------*/
-.wireframes {
-    text-align: center;
-}
-
-.small {
-    display: block;
-    max-width: 50%;
-    margin: auto auto;
-}
-
-.medium {
-    display: block;
-    max-width: 75%;
-    margin: auto auto;
-}
-
-.large {
-    display: block;
+/* DIV SECTIONS */
+.rental-summary, .cozumel, .contact {
     max-width: 90%;
     margin: auto auto;
 }
+
+.index img {
+    max-width: 250px;
+}
+
+/* RENTAL SUMMARY */
+.rental-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.rental-summary p {
+    margin: auto auto;
+}
+
+.rental-summary img {
+    margin: auto auto;
+    border: #FFA21F 2px double;
+    width: 250px;
+}
+
+
+/* 3 DAY FORECAST */
+.forecast-table {
+    display: flex;
+    flex-flow: row;
+    border-right: 1px solid white;
+    border-radius: 2px;
+}
+
+.dayofweek {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid white;
+	color: black;
+}
+
+.forecast-col {
+    flex: 1 1 0;
+    width: 0;
+    background-color: #FFA21F;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.forecast-col:hover {
+    background-color: #FFA21F;
+}
+
+.forecastTemp {
+	display: block;
+	padding: 0 5px 5px;
+	text-align: center;
+}
+
+.forecastIcon {
+    border: none;
+    height: 60px;
+}
+
+/*------CONTACT------*/
+/* Also contact css for index.html */
+.contact-details {
+    text-align: center;
+}
+
+.contact img {
+    width: 50px; 
+}
+
+.contact p {
+    display: inline;
+}
+
+/* SOCIAL */
+.social {
+    
+    color: white;
+    max-width: 90%;
+    margin: auto auto;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 75%;
+    margin: auto auto;
+}
+
+.social img {
+    width: 50px;
+}
+
+.social1 {
+    grid-column: 0 / 1;
+}
+
+.social2 {
+    grid-column: 1 / 2;
+}
+
+.social3 {
+    grid-column: 2 / 3;
+}
+
+.social4 {
+    grid-column: 3 / 4;
+}
+
+/*------RENTALS------*/
+.rentals img {
+    margin: auto auto;
+}
+
+.rentals p {
+    text-align: center;
+}
+
+.rentals div.card section {
+    background-color: #102F42;
+}
+
+/*------RESERVATIONS, CONFIRMATION, DEPOSIT------*/
+.reservations p, .confirmation p {
+    text-align: center;
+}
+
+/* FORM */
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+form fieldset {
+    border: 2px solid #102F42;
+    border-radius: 3px;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div, form label.rating {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 2px solid #102F42;
+    border-radius: 2px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: white;
+}
+
+textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 2px solid #102F42;
+    border-radius: 2px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: white;
+    resize: none;
+}
+
+form :placeholder {
+    color:black;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    line-height: .3;
+    font-size: 1rem;
+}
+
+form input.submitBtn {
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 2px;
+    background-color: #102F42;
+    color: white;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 2rem 4%;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 1.25rem;
+}
+
+form label.top input:required {
+    border-left: red solid 2px;
+}
+
+form label.top input:required:valid {
+    border-left: #102F42 solid 2px;
+}
+
+/*------TOURS------*/
+.tours, .places-visit {
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
