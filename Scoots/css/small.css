@@ -223,16 +223,38 @@ footer {
 }
 
 /*------RENTALS------*/
-.rentals img {
-    margin: auto auto;
+.rentals ul {
+    text-align: center;
+    line-height: 1.5;
+    list-style-type: none;
 }
 
 .rentals p {
     text-align: center;
 }
 
-.rentals div.card section {
-    background-color: #102F42;
+div.vehicle-cards {
+    width: 90%;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div.vehicle-cards section {
+    background-color: #82C0CC;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+div.vehicle-cards h2 {
+    background-color: #FFA21F;
+    padding: 10px;
+    margin: 0;
+}
+
+div.vehicle-cards img {
+    width: 100%;
+    margin: auto;
 }
 
 /*------RESERVATIONS, CONFIRMATION, DEPOSIT------*/
