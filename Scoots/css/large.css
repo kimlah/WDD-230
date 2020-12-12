@@ -3,5 +3,68 @@
     .social-links {
         width: 40%;
     }
+
+    /*------TOURS------*/
+    .places-visit .location img {
+        max-width: 100%;
+    }
+
+    .location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .location h3 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .location img {
+        grid-column: 1 / 2;
+        grid-row: 2 / 6;
+    }
+    
+    .location .p1 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        padding: 0 25px;
+    }
+    
+    .location .p2 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        padding: 0 25px;
+    }
+    
+    .location .p3 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+        padding: 0 25px;
+    }
+    
+    .location:nth-child(even) h3 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .location:nth-child(even) img {
+        grid-column: 2 / 3;
+        grid-row: 2 / 6;
+    }
+    
+    .location:nth-child(even) .p1 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .location:nth-child(even) .p2 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    .location:nth-child(even) .p3 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
     
 }
