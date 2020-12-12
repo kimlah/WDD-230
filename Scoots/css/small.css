@@ -98,8 +98,8 @@ footer {
     margin: auto;
     font-family: 'Inria Serif', serif;
     padding: 1rem;
-    background-color: #16697A;
-    color: white;
+    background-color: #82C0CC;
+    color: black;
     text-align: center;
 }
 
@@ -111,24 +111,28 @@ footer {
     margin: auto auto;
 }
 
-.index img {
-    max-width: 250px;
-}
-
 /* RENTAL SUMMARY */
-.rental-summary {
+div.rental-summary {
+    width: 90%;
+    margin: auto auto;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.rental-summary p {
-    margin: auto auto;
+div.rental-summary section {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
-.rental-summary img {
-    margin: auto auto;
-    border: #FFA21F 2px double;
-    width: 250px;
+div.rental-summary h2 {
+    background-color: #16697A;
+    padding: 10px;
+    margin: 0;
+}
+
+div.rental-summary img {
+    width: 100%;
+    margin: auto;
 }
 
 
@@ -189,8 +193,6 @@ footer {
 
 /* SOCIAL */
 .social {
-    
-    color: white;
     max-width: 90%;
     margin: auto auto;
 }
@@ -264,8 +266,8 @@ div.vehicle-cards img {
 
 /* FORM */
 form {
-    width: 90%;
-    max-width: 600px;
+    width: 75%;
+    max-width: 350px;
     margin: auto;
 }
 

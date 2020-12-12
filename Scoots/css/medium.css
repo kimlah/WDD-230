@@ -86,4 +86,31 @@
         line-height: 1;
     }
     
+    /*------INDEX------*/
+    /* RENTAL SUMMARY */
+    div.rental-summary {
+        width: 90%;
+        margin: auto auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.rental-summary section {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #82C0CC;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    div.rental-summary h2 {
+        background-color: #16697A;
+        padding: 10px;
+        margin: 0;
+    }
+
+    div.rental-summary img {
+        width: 80%;
+        margin: auto auto;
+    }
 }
