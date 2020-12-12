@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #16697A;
+    background-color: #82C0CC20;
 }
 
 main {
@@ -103,6 +103,20 @@ footer {
     text-align: center;
 }
 
+a:link {
+    color: #102F42;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /*------INDEX------*/
 
 /* DIV SECTIONS */
@@ -142,6 +156,7 @@ div.rental-summary img {
     flex-flow: row;
     border-right: 1px solid white;
     border-radius: 2px;
+    padding-bottom: 2rem;
 }
 
 .dayofweek {
@@ -179,6 +194,20 @@ div.rental-summary img {
 
 /*------CONTACT------*/
 /* Also contact css for index.html */
+.contact {
+    background-color: #102F4225;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact h2 {
+    background-color: #82C0CC80;
+    padding: 1rem 0;
+    margin: 0;
+    grid-column: span 2;
+    grid-row: 0 / 1;
+}
+
 .contact-details {
     text-align: center;
 }
@@ -194,12 +223,20 @@ div.rental-summary img {
 /*GOOGLE MAP*/
 .google-map {
     margin-top: 2rem;
+    grid-column: span 2;
 }
 
 /* SOCIAL */
 .social {
     max-width: 90%;
     margin: auto auto;
+    background-color: #102F4225;
+    padding-bottom: 1.5rem;
+}
+
+.social h2 {
+    background-color: #82C0CC80;
+    padding: 1rem 0;
 }
 
 .social-links {
