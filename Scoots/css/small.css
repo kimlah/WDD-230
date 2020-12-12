@@ -125,7 +125,7 @@ div.rental-summary section {
 }
 
 div.rental-summary h2 {
-    background-color: #16697A;
+    background-color: #82C0CC80;
     padding: 10px;
     margin: 0;
 }
@@ -243,13 +243,13 @@ div.vehicle-cards {
 }
 
 div.vehicle-cards section {
-    background-color: #82C0CC;
+    background-color: #102F4224;
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
 
 div.vehicle-cards h2 {
-    background-color: #FFA21F;
+    background-color: #82C0CC80;
     padding: 10px;
     margin: 0;
 }
@@ -274,11 +274,13 @@ form {
 form fieldset {
     border: 2px solid #102F42;
     border-radius: 3px;
+    margin-bottom: 15px;
 }
 
 form legend {
     margin: 0 1rem;
     padding: 0 .5rem;
+    font-size: larger;
 }
 
 form label.top, form div, form label.rating {
@@ -326,8 +328,8 @@ form label.sbs {
 form input.submitBtn {
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 2px;
-    background-color: #102F42;
-    color: white;
+    background-color: #82C0CC80;
+    color: black;
     padding: .75rem 1.5rem;
     margin: 1rem 0 2rem 4%;
     width: 96%;
@@ -336,7 +338,7 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-    border-left: red solid 2px;
+    border-left: #FFA21F solid 2px;
 }
 
 form label.top input:required:valid {
@@ -346,6 +348,55 @@ form label.top input:required:valid {
 /*------TOURS------*/
 .tours, .places-visit {
     text-align: center;
-    padding: 1rem 3rem;
+    margin: 1rem 3rem;
+    background-color: #102F4225;
 }
 
+.tours h2, .places-visit h2 {
+    background-color: #82C0CC80;
+    color: black;
+    padding: 1rem 0;
+    margin-bottom: 0;
+}
+
+.tours p {
+    margin: 1rem 3rem;
+}
+
+.places-visit .location img {
+    max-width: 100%;
+    margin: auto auto;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.location h3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.location img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.location .p1 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding: 0 25px;
+}
+
+.location .p2 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    padding: 0 25px;
+}
+
+.location .p3 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    padding: 0 25px;
+}

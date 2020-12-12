@@ -65,7 +65,7 @@
         grid-column: 2;
     }
 
-    div.vehicle-cards section:nth-child(even) h3{
+    div.vehicle-cards section:nth-child(even) h3 {
         grid-column: 1;
         grid-row: 2;
     }
@@ -98,19 +98,34 @@
     div.rental-summary section {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: #82C0CC;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
+        background-color: #16697A25;
+        
+    }
+
+    div.rental-summary section:nth-child(even) {
+        border: solid 2px black;
+    }
+
+    div.rental-summary section:nth-child(odd) {
+        border-left: solid 2px black;
+        border-bottom: solid 2px black;
+        border-top: solid 2px black;
     }
 
     div.rental-summary h2 {
-        background-color: #16697A;
+        background-color: #82C0CC80;
         padding: 10px;
         margin: 0;
+        border-bottom: solid 1px black;
     }
 
     div.rental-summary img {
         width: 80%;
         margin: auto auto;
+    }
+
+    /*------TOURS------*/
+    .places-visit .location img {
+        max-width: 80%;
     }
 }
