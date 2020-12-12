@@ -191,6 +191,11 @@ div.rental-summary img {
     display: inline;
 }
 
+/*GOOGLE MAP*/
+.google-map {
+    margin-top: 2rem;
+}
+
 /* SOCIAL */
 .social {
     max-width: 90%;
