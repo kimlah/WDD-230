@@ -161,7 +161,7 @@ div.rental-summary img {
 .weather-summary {
     background-image: url("../images/weather-beach.jpg");
     background-color: #102F4225;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     width: 90%;
     margin: auto;
     margin-bottom: 1rem;
@@ -336,6 +336,7 @@ div.rental-summary img {
 div.rental-info {
     max-width: 90%;
     margin: auto;
+    padding-bottom: 1rem;
 }
 .rentals ul {
     text-align: center;
@@ -476,7 +477,14 @@ form label.top input:required:valid {
 }
 
 /*------TOURS------*/
-.tours, .places-visit {
+.tours {
+    text-align: center;
+    margin: 1rem 3rem;
+    background-color: #102F4225;
+    padding-bottom: 1rem;
+}
+
+.places-visit {
     text-align: center;
     margin: 1rem 3rem;
     background-color: #102F4225;
@@ -537,12 +545,13 @@ form label.top input:required:valid {
 }
 
 .places-visit a:link {
-    color: #102F4290;
+    color: #511f73;
     text-decoration: none;
+    font-size: larger;
 }
 
 .places-visit a:visited {
-    color: white;
+    color: #60308c;
     text-decoration: none;
 }
 
