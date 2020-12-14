@@ -1,7 +1,7 @@
 {
     "vehicle": [
         {
-            "photo": "2metro2.jpg",
+            "photo": "metro.jpg",
             "type":"Scooter",
             "make":"Honda Metro",
             "description": "Power: 49cc",
@@ -16,7 +16,7 @@
             }
         },
         {
-            "photo": "dio2.jpg",
+            "photo": "dio.jpg",
             "type":"Scooter",
             "make":"Honda Dio",
             "description": "Power: 110cc",
@@ -31,7 +31,7 @@
             }
         },
         {
-            "photo": "pcx150-3.jpg",
+            "photo": "pcx150.jpg",
             "type":"Scooter",
             "make":"Honda PCX150",
             "description": "Power: 149cc",
@@ -46,7 +46,7 @@
             }
         },
         {
-            "photo": "2pioneer2.jpg",
+            "photo": "pioneer.jpg",
             "type":"ATV",
             "make":"Honda Pioneer",
             "description": "Model: 1000",
@@ -61,7 +61,7 @@
             }
         },
         {
-            "photo": "4door-wrangler2.jpg",
+            "photo": "4door-wrangler.jpg",
             "type":"Jeep",
             "make":"Jeep Wrangler",
             "description": "Manual with A/C",
@@ -76,7 +76,7 @@
             }
         },
         {
-            "photo": "2door-wrangler2.jpg",
+            "photo": "2door-wrangler.jpg",
             "type":"Jeep",
             "make":"Jeep Wrangler",
             "description": "Manual with open air",

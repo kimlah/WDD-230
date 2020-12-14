@@ -36,68 +36,75 @@
     </header>
     
 
-    <main class="index">
-        <div class="rental-summary"></div>
-
-        <div class="cozumel">
-            <h2>Three Day Forecast</h2>
-            <div class="forecast-table">
-                <div class="forecast-col">
-                    <span class="dayofweek" id="dayofweek1"></span>
-                    <img class="forecastIcon" id="icon1" src="#" alt="#">
-                    <span class="forecastTemp" id="forecast1"></span>
-                </div>
-                <div class="forecast-col">
-                    <span class="dayofweek" id="dayofweek2"></span>
-                    <img class="forecastIcon" id="icon2" src="#" alt="#">
-                    <span class="forecastTemp" id="forecast2"></span>
-                </div>
-                <div class="forecast-col">
-                    <span class="dayofweek" id="dayofweek3"></span>
-                    <img class="forecastIcon" id="icon3" src="#" alt="#">
-                    <span class="forecastTemp" id="forecast3"></span>
+    <main id="cozumel" class="index">
+        <div class="weather">
+            <div class="weather-summary">
+                <h1>Book a stay, Rent a Scooter, Enjoy the Weather!</h1>
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id = "currentTemp"></span></p>
+                <p>Feels Like: <span id="feelsLike"></span></p>
+                <p>Humidity: <span id= "humidity"></span> </p>
+            </div>
+            
+            <div class="forecast">
+                <h2>Three Day Forecast</h2>
+                <div class="forecast-table">
+                    <div class="forecast-col">
+                        <span class="dayofweek" id="dayofweek1"></span>
+                        <img class="forecastIcon" id="icon1" src="#" alt="#">
+                        <span class="forecastTemp" id="forecast1"></span>
+                    </div>
+                    <div class="forecast-col">
+                        <span class="dayofweek" id="dayofweek2"></span>
+                        <img class="forecastIcon" id="icon2" src="#" alt="#">
+                        <span class="forecastTemp" id="forecast2"></span>
+                    </div>
+                    <div class="forecast-col">
+                        <span class="dayofweek" id="dayofweek3"></span>
+                        <img class="forecastIcon" id="icon3" src="#" alt="#">
+                        <span class="forecastTemp" id="forecast3"></span>
+                    </div>
                 </div>
             </div>
         </div>
+
+        
+        <div class="rental-summary"></div>
 
         <div class="clearfix">
             <div class="contact">
                 <h2>~Scoots has two locations in Cozumel to meet your vacations transportation needs.</h2>
                    
-                    <div class="carmen">
-                        <h3 class="location-heading">Playa del Carmen-Cozumel Ferry Dock</h3>
-                        <div class="contact-details">
-                            <img src="images/Location-icon.png">
-                            <p class="contact-p"> 6587 Emerald Lane, el Centro de Cozumel 98999</p>
-                        </div>
-                        <div class="contact-details">
-                            <img src="images/Phone-icon.png">
-                            <p class="contact-p">(000)000-0000</p>
-                        </div>
-                        <div class="contact-details">
-                            <img src="images/Email-icon1.png">
-                            <p class="contact-p">scoots-carmen-cozumel@gmail.com</p>
-                        </div>
+                <div class="carmen">
+                    <h3 class="location-heading">Playa del Carmen-Cozumel Ferry Dock</h3>
+                    <div class="contact-a">
+                        <img src="images/Location-icon.png">
+                        <p> 6587 Emerald Lane, el Centro de Cozumel 98999</p>
                     </div>
-                    <div class="puerta-maya">
-                        <h3 class="location-heading">Terminal Puerta Maya</h3>
-                        <div class="contact-details">
-                            <img src="images/Location-icon.png">
-                            <p class="contact-p"> 9875 Cherry Lane, Somewhere, Cozumel 98999</p>
-                        </div>
-                        <div class="contact-details">
-                            <img src="images/Phone-icon.png">
-                            <p class="contact-p">(000)000-0000</p>
-                        </div>
-                        <div class="contact-details">
-                            <img src="images/Email-icon1.png">
-                            <p class="contact-p">scoots-puerta-maya@gmail.com</p>
-                        </div>
+                    <div class="contact-p">
+                        <img src="images/Phone-icon.png">
+                        <p>(000)000-0000</p>
                     </div>
-                    <div class="google-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.721553252969!2d-86.97627228463321!3d20.476626611772037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748c7f4fdb3%3A0xdb8282c1f62f9d90!2sCozumel%2C%2077600%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1607731538293!5m2!1sen!2sus" 
-                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="contact-e">
+                        <img src="images/Email-icon.png">
+                        <p class="contact-p">scoots-carmen-cozumel@gmail.com</p>
                     </div>
+                </div>
+                <div class="puerta-maya">
+                    <h3 class="location-heading">Terminal Puerta Maya</h3>
+                    <div class="contact-a">
+                        <img src="images/Location-icon.png">
+                        <p> 9875 Cherry Lane, Somewhere, Cozumel 98999</p>
+                    </div>
+                    <div class="contact-p">
+                        <img src="images/Phone-icon.png">
+                        <p class="contact-p">(000)000-0000</p>
+                    </div>
+                    <div class="contact-e">
+                        <img src="images/Email-icon.png">
+                        <p class="contact-p">scoots-puerta-maya@gmail.com</p>
+                    </div>
+                </div>
             </div>
             <div class="social">
                 <h2>Or Visit us on Social Media</h2>
@@ -105,7 +112,7 @@
                     <a href="https://www.facebook.com/"> <img class="social1" src="images/facebook-icon.png"></a>
                     <a href="https://www.instagram.com/"> <img class="social2" src="images/instagram-icon.png"></a>
                     <a href="https://twitter.com/?lang=en"> <img class="social3" src="images/twitter-icon.png"></a>
-                    <a href="https://www.youtube.com/"> <img class="social4" src="images/youtube-icon-2.png"></a>
+                    <a href="https://www.youtube.com/"> <img class="social4" src="images/youtube-icon.png"></a>
                 </div>
             </div>
         </div>
@@ -118,5 +125,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/main.js"></script>
     <script src="js/rental-summary.js"></script>
+    <script src="js/weather.js"></script>
     </body>
 </html>

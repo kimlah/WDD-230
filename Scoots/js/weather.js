@@ -1,33 +1,19 @@
-/* Variables */
-    // Weather Summary and Forecast Variables
-const APIurl = 'https://api.openweathermap.org/data/2.5/';
-const weatherAPIurl = APIurl + 'weather';
-const forecastAPIurl =  APIurl + 'forecast';
-const ID = '&appid=cc326e22c40b514d2512902cd32e0862';
-const APIunits = '&units=imperial';
-const cozumel = '?id=3530103' + ID + APIunits;
-
-/* Concatanated Links */
-    // Cozumel
-const cozumelForecast = forecastAPIurl + cozumel;
-const cozumelWeather = weatherAPIurl + cozumel;
-
-/* Choosing which page needs weather and events */
-let weatherURL = "";
-let forecastURL = "";
-
-document.getElementById("cozumel"); 
-    weatherURL = cozumelWeather;
-    forecastURL = cozumelForecast;
+if (document.getElementById("cozumel")) { 
+    weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=3530103&appid=cc326e22c40b514d2512902cd32e0862&units=imperial';
+    forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=3530103&appid=cc326e22c40b514d2512902cd32e0862&units=imperial';
+}
 
 /* Weather Function */
 fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
+        
+        //console.table(jsObject);
 
         const desc = jsObject.weather[0].description; 
         document.getElementById('current').innerHTML = jsObject.weather[0].description;
-        document.getElementById('currentTemp').innerHTML = Math.round(t) + "&#8457;";
+        document.getElementById('currentTemp').innerHTML = Math.round(jsObject.main.temp) + "&#8457;";
+        document.getElementById('feelsLike').innerHTML = Math.round(jsObject.main.feels_like) + "&#8457;";
         document.getElementById('humidity').innerHTML = jsObject.main.humidity;
     });
 
