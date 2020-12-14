@@ -333,6 +333,9 @@ div.rental-summary img {
 }
 
 /*------RENTALS------*/
+div.rental-info {
+    max-width: 90%;
+    margin: auto;
 }
 .rentals ul {
     text-align: center;
