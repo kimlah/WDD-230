@@ -45,7 +45,8 @@ header {
 }
 
 .logo {
-    max-width: 400px;
+    width: 400px;
+    max-width: 100%;
     justify-content: flex-start;
 }
 
@@ -63,10 +64,11 @@ nav button {
 
 nav {
     margin: 0 auto;
-    background-color: #FFA21F;
+    background-color: #102F4290;
 }
 
 nav ul {
+    color: white;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -78,7 +80,6 @@ nav ul li a {
     text-align: center;
     text-decoration: none;
     border-top: 1px solid black;
-    color: black;
 }
 
 nav ul.hide-navigation {
@@ -90,7 +91,13 @@ nav li.active {
 }
 
 nav ul li a:hover {
-    background-color: rgba(0,0,0,.4);
+    background-color: #FFA21F;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited, nav a:hover {
+    color: white;
 }
 
 /* FOOTER */
@@ -128,7 +135,7 @@ a:hover {
 /* RENTAL SUMMARY */
 div.rental-summary {
     width: 90%;
-    margin: auto auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -137,6 +144,7 @@ div.rental-summary section {
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
+
 
 div.rental-summary h2 {
     background-color: #82C0CC80;
@@ -149,36 +157,65 @@ div.rental-summary img {
     margin: auto;
 }
 
+/* WEATHER SUMMARY */
+.weather-summary {
+    background-image: url("../images/weather-beach.jpg");
+    background-color: #102F4225;
+    padding-bottom: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.weather-summary h1, .forecast h2 {
+    background-color: #82C0CC80;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.weather-summary p {
+    text-align: center;
+    font-size: larger;
+}
 
 /* 3 DAY FORECAST */
+.forecast {
+    background-color: #102F4225;
+    padding-bottom: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
 .forecast-table {
     display: flex;
     flex-flow: row;
-    border-right: 1px solid white;
     border-radius: 2px;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+    width: 90%;
+    margin: auto;
 }
 
 .dayofweek {
     display: block;
     padding: 5px;
     text-align: center;
-    background-color: white;
-    border-bottom: 1px solid white;
+    background-color: #82C0CC;
+    border-bottom: 1px solid #102F42;
 	color: black;
 }
 
 .forecast-col {
     flex: 1 1 0;
     width: 0;
-    background-color: #FFA21F;
-    color: white;
-    border: 1px solid white;
+    background-color: #82C0CC40;
+    color: black;
+    border: 1px solid #102F42;
     text-align: center;
 }
 
 .forecast-col:hover {
-    background-color: #FFA21F;
+    background-color: #FFA21F50;
 }
 
 .forecastTemp {
@@ -189,7 +226,6 @@ div.rental-summary img {
 
 .forecastIcon {
     border: none;
-    height: 60px;
 }
 
 /*------CONTACT------*/
@@ -198,32 +234,62 @@ div.rental-summary img {
     background-color: #102F4225;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 2rem;
+    max-width: 90%;
 }
 
 .contact h2 {
     background-color: #82C0CC80;
-    padding: 1rem 0;
     margin: 0;
+    padding: .5rem .5rem;
     grid-column: span 2;
     grid-row: 0 / 1;
+    max-width: 100%;
 }
 
-.contact-details {
+.carmen h3, .puerta-maya h3 {
+    grid-row: 1 / 2;
     text-align: center;
+    height: 3.5rem;
 }
 
-.contact img {
+.contact-a, .contact-p, .contact-e {
+    text-align: center;
+    display: block;
+}
+.carmen .contact-a img, .puerta-maya .contact-a img {
+    grid-row: 2 / 3;
+    width: 50px; 
+}
+.carmen .contact-a p, .puerta-maya .contact-a p {
+    grid-row: 3 / 4;
+}
+
+.carmen .contact-p img, .puerta-maya .contact-p img {
+    grid-row: 4 / 5;
     width: 50px; 
 }
 
-.contact p {
-    display: inline;
+.carmen .contact-p p, .puerta-maya .contact-p p {
+    grid-row: 5 / 6;
 }
+
+.carmen .contact-e img, .puerta-maya .contact-e img {
+    grid-row: 6 / 7;
+    width: 50px; 
+}
+
+.carmen .contact-e p, .puerta-maya .contact-e p {
+    grid-row: 7 / 8;
+}
+
 
 /*GOOGLE MAP*/
 .google-map {
     margin-top: 2rem;
     grid-column: span 2;
+    max-width: 100%;
 }
 
 /* SOCIAL */
@@ -267,19 +333,34 @@ div.rental-summary img {
 }
 
 /*------RENTALS------*/
+}
 .rentals ul {
     text-align: center;
     line-height: 1.5;
     list-style-type: none;
+    max-width: 90%;
+    margin: auto;
+    padding-left: 0;
 }
 
+.rentals li {
+    list-style-type: none;
+    text-align: center;
+}
 .rentals p {
     text-align: center;
 }
 
+.rentals h3 {
+    text-align: center;
+    max-width: 100%;
+    margin: 0;
+    padding: .5rem;
+}
+
 div.vehicle-cards {
     width: 90%;
-    margin: auto auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -299,6 +380,10 @@ div.vehicle-cards h2 {
 div.vehicle-cards img {
     width: 100%;
     margin: auto;
+}
+
+div.vehicle-cards p {
+    text-align: center;
 }
 
 /*------RESERVATIONS, CONFIRMATION, DEPOSIT------*/
@@ -415,9 +500,14 @@ form label.top input:required:valid {
     grid-template-columns: 1fr;
 }
 
+.location p {
+    line-height: 1;
+}
+
 .location h3 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    margin: 15px;
 }
 
 .location img {
@@ -441,4 +531,18 @@ form label.top input:required:valid {
     grid-column: 1 / 2;
     grid-row: 5 / 6;
     padding: 0 25px;
+}
+
+.places-visit a:link {
+    color: #102F4290;
+    text-decoration: none;
+}
+
+.places-visit a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.places-visit a:hover {
+    text-decoration: underline;
 }

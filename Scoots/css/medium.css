@@ -128,4 +128,25 @@
     .places-visit .location img {
         max-width: 80%;
     }
+
+    /*------CONTACT------*/
+    .carmen, .puerta-maya {
+        padding: 0 15px;
+    }
+    .carmen h3, .puerta-maya h3 {
+        grid-row: 1 / 2;
+    }
+    
+    .carmen .contact-a , .puerta-maya .contact-a {
+        grid-row: 2 / 3;
+    }
+    
+    
+    .carmen .contact-p, .puerta-maya .contact-p {
+        grid-row: 3 / 4;
+    }
+    
+    .carmen .contact-e, .puerta-maya .contact-e {
+        grid-row: 4 / 5;
+    }
 }
