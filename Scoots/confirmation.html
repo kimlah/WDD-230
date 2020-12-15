@@ -43,18 +43,18 @@
                 <form method="get" action="deposit.html">
                     <fieldset>
                         <legend><b>Billing Information</b></legend>
-                        <label class="top">First Name<input type="text" name="fname" required></label>
-                        <label class="top">Last Name<input type="text" name="lname" required></label>
+                        <label class="top">First Name<input type="text" pattern="[A-Za-z]{2,}" name="fname" required></label>
+                        <label class="top">Last Name<input type="text" pattern="[A-Za-z]{2,}" name="lname" required></label>
                         <label class="top">Name on Card<input type="text" name="card-name" required></label>
                         <label class="top">Address<input type="text" name="address" required></label>
-                        <label class="top">City<input type="text" name="city" required></label>
-                        <label class="top">State<input type="text" name="state" placeholder="XX" required></label>
-                        <label class="top">Zip<input type="number" name="zip" placeholder="12345" required></label>
+                        <label class="top">City<input type="text" pattern="[A-Za-z]{2,}" name="city" required></label>
+                        <label class="top">State<input type="text" pattern="[A-Za-z]{2}" name="state" placeholder="XX" required></label>
+                        <label class="top">Zip<input type="number" pattern="[0-9]{5,}" name="zip" placeholder="12345" required></label>
 
-                        <label class="top">Credit Card Number<input type="number" name="card-num" placeholder="XXXX-XXXX-XXXX-XXXX" required></label>
-                        <label class="top">Exp Month<input type="number" name="exp-month" placeholder="XX" required></label>
-                        <label class="top">Exp Year<input type="number" name="exp-year" placeholder="XXXX" required></label>
-                        <label class="top">CVV<input type="number" name="cvv" placeholder="XXX" required></label>
+                        <label class="top">Credit Card Number<input type="number" pattern="[0-9]{13,16}" name="card-num" placeholder="XXXX-XXXX-XXXX-XXXX" required></label>
+                        <label class="top">Exp Month<input type="number" pattern="[0-9]{2}" name="exp-month" placeholder="XX" required></label>
+                        <label class="top">Exp Year<input type="number" pattern="[0-9]{4}" name="exp-year" placeholder="XXXX" required></label>
+                        <label class="top">CVV<input type="number" pattern="[0-9]{3}" name="cvv" placeholder="XXX" required></label>
                     </fieldset>
 
                     <input class="submitBtn" type="submit" value="Process My Deposit">
