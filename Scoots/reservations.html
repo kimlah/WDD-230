@@ -43,11 +43,11 @@
 
             <fieldset>
                 <legend><b>Your Information</b></legend>
-                    <label class="top">First Name*<input type="text" name="fname" required></label>
-                    <label class="top">Last Name*<input type="text" name="lname" required></label>
-                    <label class="top">Phone #*<input type="tel" name="phone" placeholder="1234569876" required></label>
+                    <label class="top">First Name*<input type="text" pattern="[A-Za-z]{2,}" name="fname" required></label>
+                    <label class="top">Last Name*<input type="text" pattern="[A-Za-z]{2,}" name="lname" required></label>
+                    <label class="top">Phone #*<input type="tel" pattern="[0-9]{10,}"name="phone" placeholder="1234569876" required></label>
                     <label class="top">Email* <input type="email" name="email" placeholder="email@email.com" required></label>
-                    <label class="top">Home State or Country* <input type="text" name="home-location" required></label>
+                    <label class="top">Home State or Country* <input type="text" pattern="[A-Za-z]{2,}" name="home-location" required></label>
                     <label class="top">Cruise Line <input type="text" name="cruise-line"></label>
             </fieldset>
 
@@ -79,7 +79,7 @@
                     </select>
                 </label>
 
-                <label class="top">Number of Vehicles*<input type="number" name="vehicle-num" required></label>
+                <label class="top">Number of Vehicles*<input type="number" name="vehicle-num" min="1" required></label>
 
                 <label class="top" >Special Requests
                     <textarea cols="30" placeholder="Special accommodations, comments, questions, etc. Drop off requests-Please give the location for drop-off."></textarea>
